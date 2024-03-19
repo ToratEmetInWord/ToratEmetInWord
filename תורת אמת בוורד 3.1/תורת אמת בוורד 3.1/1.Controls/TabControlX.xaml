@@ -1,0 +1,147 @@
+﻿<UserControl x:Class="תורת_אמת_בוורד_3._1._1.Controls.TabControlX"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:תורת_אמת_בוורד_3._1._1.Controls"
+             mc:Ignorable="d" 
+             FlowDirection="RightToLeft"
+             FontSize="14"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TabControl x:Name="tabControl">
+            <TabControl.Resources>
+                <Style TargetType="TabControl">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabControl">
+                                <Border  BorderBrush="WhiteSmoke" BorderThickness="{TemplateBinding BorderThickness}" Padding="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="1">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <!--navigation-->
+                                            <Border Grid.Column="2" BorderBrush="LightGray" 
+                                                    BorderThickness="0.5" Margin="0,1,0,0">
+                                                <DockPanel  HorizontalAlignment="Right" Background="WhiteSmoke">
+                                                    <Button x:Name="TabScrollRight"
+                                                             ToolTip="הקודם"
+                                                             Click="TabScrollRight_Click" Background="WhiteSmoke"
+                                                             BorderThickness="0" BorderBrush="{x:Null}">
+                                                        <TextBlock x:Name="TabScrollRightIcon" Text="⏵"
+                                                                   LineStackingStrategy="BlockLineHeight" LineHeight="12"/>
+                                                    </Button>
+                                                    <Button x:Name="TabsDropDown" ToolTip="תפריט"
+                                                         Click="TabsDropDown_Click"   Background="WhiteSmoke"     
+                                                         BorderThickness="0" BorderBrush="{x:Null}">
+                                                        <Button.ContextMenu>
+                                                            <ContextMenu FlowDirection="{Binding Path=DraggableTabControl}" />
+                                                        </Button.ContextMenu>
+                                                        <TextBlock x:Name="tabsListIcon" Text="≡" FontWeight="DemiBold"
+                                                                   LineStackingStrategy="BlockLineHeight" LineHeight="12"/>
+                                                    </Button>
+                                                    <Button x:Name="TabscrollLeft"  ToolTip="הבא"
+                                                             Click="TabscrollLeft_Click" 
+                                                             Background="WhiteSmoke" Margin="0,0,1,0"
+                                                             BorderThickness="0" BorderBrush="{x:Null}">
+                                                        <TextBlock x:Name="tabsScrollLeftIcon" Text="⏴"
+                                                                   LineStackingStrategy="BlockLineHeight" LineHeight="12"/>
+                                                    </Button>
+                                                </DockPanel>
+                                            </Border>
+
+                                            <!--Tabheaders-->
+                                            <Border Width="5" Background="WhiteSmoke" Grid.Column="1"/>
+                                            <Grid Grid.Column="0">
+                                                <ListBox x:Name="TabHeaderListBox" Margin="-2,-2,-2,-20"  Padding="0"  
+                                                     ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                                                     ItemsSource="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Items}" 
+                                                     SelectedItem="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=SelectedItem}" 
+                                                     BorderBrush="{x:Null}" IsEnabled="True" Background="WhiteSmoke"
+                                                        SelectionChanged="TabHeaderListBox_SelectionChanged">
+                                                    <ListBox.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <StackPanel Orientation="Horizontal"/>
+                                                        </ItemsPanelTemplate>
+                                                    </ListBox.ItemsPanel>
+                                                    <ListBox.ItemContainerStyle>
+                                                        <Style TargetType="ListBoxItem">
+                                                            <Setter Property="Template">
+                                                                <Setter.Value>
+                                                                    <ControlTemplate TargetType="ListBoxItem">
+                                                                        <ContentPresenter />
+                                                                    </ControlTemplate>
+                                                                </Setter.Value>
+                                                            </Setter>
+                                                        </Style>
+                                                    </ListBox.ItemContainerStyle>
+                                                </ListBox>
+                                            </Grid>
+                                        </Grid>
+
+                                        <Border x:Name="ContentPanel"
+                            Grid.Row="0"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            Padding="{TemplateBinding Padding}">
+                                            <ContentPresenter x:Name="PART_SelectedContentHost"
+                                ContentSource="SelectedContent"/>
+                                        </Border>
+
+                                    </Grid>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+
+                <Style TargetType="TabItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                                <Border x:Name="TabBorder" 
+                                        Padding="3,2,0,4" Margin="0,0,1.5,0"  BorderThickness="0,1.5,0,0"
+                                        Background="WhiteSmoke" BorderBrush="Transparent"
+                                        AllowDrop="True" Drop="TabBorder_Drop" 
+                                        MouseMove="TabBorder_MouseMove"
+                                        DragEnter="TabBorder_DragEnter" DragLeave="TabBorder_DragLeave">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text="{TemplateBinding Header}" ToolTip="{TemplateBinding Header}" Grid.Column="0" 
+                                                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                                            Margin="0" Padding="0" MaxWidth="200" FontSize="14"/>
+                                        <Button x:Name="Button_TabClose" ToolTip="סגור" Grid.Column="1" Click="Button_TabClose_Click" 
+                                                    Margin="4,0,2,0" Background="{x:Null}" BorderBrush="{x:Null}">
+                                            <TextBlock Text="𝗑" LineStackingStrategy="BlockLineHeight" FontSize="12"
+                                                       LineHeight="14" Foreground="DimGray">
+                                            </TextBlock>
+                                        </Button>
+                                    </Grid>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter TargetName="TabBorder" Property="Background" Value="white"/>
+                                        <Setter TargetName="TabBorder" Property="BorderBrush" Value="lightblue"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+
+            </TabControl.Resources>
+        </TabControl>
+    </Grid>
+</UserControl>

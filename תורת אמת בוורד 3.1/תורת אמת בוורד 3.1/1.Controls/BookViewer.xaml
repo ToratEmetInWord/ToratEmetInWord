@@ -1,0 +1,165 @@
+﻿<UserControl x:Class="תורת_אמת_בוורד_3._1._1.Controls.BookViewer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:תורת_אמת_בוורד_3._1._1.Controls"
+            xmlns:treeSource="clr-namespace:תורת_אמת_בוורד_3._1.TreeModels"             
+             mc:Ignorable="d" 
+             FlowDirection="RightToLeft"
+             d:DesignHeight="450" d:DesignWidth="350">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Padding" Value="3"/>
+                <Setter Property="Width" Value="25"/>
+                <Setter Property="Height" Value="25"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Background" Value="{x:Null}"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="Background" Value="WhiteSmoke"/>
+            </Style>
+            <Style TargetType="ToggleButton">
+                <Setter Property="Padding" Value="3"/>
+                <Setter Property="Width" Value="25"/>
+                <Setter Property="Height" Value="25"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Background" Value="{x:Null}"/>
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
+            <Style TargetType="TextBlock">
+                <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/>
+                <Setter Property="LineHeight" Value="16"/>
+            </Style>
+            <Style TargetType="ComboBox">
+                <Style.Resources>
+                    <!--<SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="#FFF6F6F6" />-->
+                    <SolidColorBrush x:Key="{x:Static SystemColors.WindowFrameBrushKey}" Color="#FFACACAC" />
+                </Style.Resources>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <WrapPanel x:Name="toolBarPanel" Grid.Row="0" Grid.ColumnSpan="3"
+                   Background="WhiteSmoke">
+            <ComboBox x:Name="RelativeBooksCombo" Width="0" ItemsSource="{Binding ComboViewlist}">
+                <ComboBox.Resources>
+                    <DataTemplate DataType="{x:Type treeSource:TreeItem}">
+                        <StackPanel x:Name="FileItemPanel" Orientation="Horizontal" 
+                        ToolTip="לחץ לפתיחת הספר, או סמן v לתצוגה משולבת"
+                        Tag="{Binding BindsDirectlyToSource=True}">
+                            <TextBlock x:Name="FileItemButton" Text="🗎" FontSize="16" 
+                           Margin="0,-1,3,0" Background="{x:Null}"
+                           Tag="{Binding BindsDirectlyToSource=True}"
+                           MouseDown="ReltiveBooks_FileItemButton_MouseDown"/>
+                            <CheckBox IsChecked="{Binding IsChecked3}"
+                          Checked="RelativeBooks_CheckChanged"
+                          Unchecked="RelativeBooks_CheckChanged">
+                                <TextBlock Text="{Binding Name}" Tag="{Binding BindsDirectlyToSource=True}"
+                               PreviewMouseDown="ReltiveBooks_FileItemButton_MouseDown"/>
+                            </CheckBox>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.Resources>
+            </ComboBox>
+            <Button x:Name="BookInfoButton" ToolTip="מידע על הספר"
+                    Click="BookInfoButton_Click">
+                <TextBlock  Text="ⓘ" FontSize="18"/>
+            </Button>
+            <Button x:Name="RealtiveBooksButton" ToolTip="ספרים קרובים"
+                    Click="RealtiveBooksButton_Click">
+                <TextBlock Text="📚" FontSize="12" LineHeight="10"/>
+            </Button>
+            <Button x:Name="ChapterTreeButton" ToolTip="הצג \ הסתר עץ כותרות"
+                    Click="ChapterTreeButton_Click">
+                <TextBlock  Text="㆔" FontSize="13"/>
+            </Button>
+            <Button x:Name="ShowLessButton" ToolTip="הצג פחות"
+                    Click="ShowLessButton_Click">
+                <TextBlock Text="⇲"/>
+            </Button>
+            <Button x:Name="ShowMoreButton" ToolTip="הצג יותר"
+                    Click="ShowMoreButton_Click">
+                <TextBlock Text="⇱"/>
+            </Button>
+            <Button x:Name="PreviousButton" ToolTip="הקודם"
+                    Click="PreviousButton_Click">
+                <TextBlock Text="⎘"/>
+            </Button>
+            <Button x:Name="NextButton" ToolTip="הבא"
+                    Click="NextButton_Click">
+                <TextBlock Text="⎗"/>
+            </Button>
+            <Button x:Name="NikkudButton" ToolTip="הצג/הסתר ניקוד"
+                    Click="NikkudButton_Click">
+                <Image Source="/תורת אמת בוורד 3.1;component/Resources/Komatz.png" 
+                       Height="6"/>
+            </Button>
+            <Button x:Name="CatillationsButton" ToolTip="הצג/הסתר טעמים"
+                    Click="CatillationsButton_Click">
+                <Image Source="/תורת אמת בוורד 3.1;component/Resources/Cantillations.png" 
+                       Height="8"/>
+            </Button>
+            <Button x:Name="RefreshButton" ToolTip="רענן" Click="RefreshButton_Click">
+                <TextBlock Text="⟳" FontWeight="DemiBold"/>
+            </Button>
+            <ToggleButton x:Name="ToggleSearchButton" ToolTip="חיפוש"
+                          Click="ToggleSearchButton_Click">
+                <TextBlock Text="⌕" LineHeight="19.1" 
+                           FontSize="15" FontWeight="DemiBold"/>
+            </ToggleButton>
+        </WrapPanel>
+
+        <Border x:Name="SearchToolBar" Background="WhiteSmoke"
+              Grid.Row="1" Grid.ColumnSpan="3"
+                Padding="3,3,3,5" Visibility="Collapsed">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+                <TextBox x:Name="SearchTextBox" Grid.Column="0"
+                     KeyDown="SearchTextBox_KeyDown"/>
+                <StackPanel Orientation="Horizontal" Grid.Column="1"
+                            Margin="5,0,5,0">
+                    <Button x:Name="SearchNextButton" Height="18" Width="20"
+                            Click="SearchNextButton_Click">
+                        <TextBlock Text="⋁" FontSize="10" Margin="-8,0,0,0"
+                               LineHeight="12">
+                            <TextBlock.RenderTransform>
+                                <ScaleTransform ScaleX="2"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                    </Button>
+                    <Button x:Name="SearchPreviousButton" Height="18" Width="20"
+                            Click="SearchPreviousButton_Click">
+                        <TextBlock Text="⋀" FontSize="10" Margin="-8,0,0,0"
+                           LineHeight="12">
+                            <TextBlock.RenderTransform>
+                                <ScaleTransform ScaleX="2"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <TextBlock Grid.Row="2" x:Name="AdressTextBlock" 
+           Grid.ColumnSpan="3" FontSize="12" Padding="3"
+           Text="{Binding AdressBlockText}"
+           ToolTip="{Binding AdressBlockText}"/>
+
+        <Separator Grid.Row="3" Grid.ColumnSpan="3"/>
+
+        <local:WebViewControl  x:Name="webViewControl"
+                       Grid.Column="2" Grid.Row="4"/>
+
+    </Grid>
+</UserControl>
