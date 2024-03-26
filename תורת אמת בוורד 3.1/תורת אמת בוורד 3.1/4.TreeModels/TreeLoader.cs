@@ -12,16 +12,16 @@ namespace תורת_אמת_בוורד_3._1.TreeModels
         public void PopulateTree(TreeView treeView)
         {            
             CreateTree();
-            if (treeView != null) { treeView.ItemsSource = GlobalsX.RootItems; };
+            if (treeView != null) { treeView.ItemsSource = StaticGlobals.RootItems; };
         }              
         void CreateTree()
         {
-            if (GlobalsX.RootItems == null)
+            if (StaticGlobals.RootItems == null)
             {
-                GlobalsX.RootItems = new ObservableCollection<TreeItem>();
+                StaticGlobals.RootItems = new ObservableCollection<TreeItem>();
 
                 BooksFolder.CreateShortcuts();
-                string[] items = Directory.GetFiles(GlobalsX.booksFolder, "*.lnk");
+                string[] items = Directory.GetFiles(StaticGlobals.booksFolder, "*.lnk");
                 foreach (string item in items)
                 {
                     string path = BooksFolder.GetShortcutTarget(item);
@@ -39,7 +39,7 @@ namespace תורת_אמת_בוורד_3._1.TreeModels
                     }
                 }
 
-                string[] folders = Directory.GetDirectories(GlobalsX.booksFolder);
+                string[] folders = Directory.GetDirectories(StaticGlobals.booksFolder);
                 foreach (string folder in folders) 
                 {
                     AddRootFolderItem(folder);
@@ -50,12 +50,12 @@ namespace תורת_אמת_בוורד_3._1.TreeModels
         void AddRootFileItem(string filePath)
         {
             FileTreeItem rootItem = NewFileTreeItem(filePath);
-            GlobalsX.RootItems.Add(rootItem);
+            StaticGlobals.RootItems.Add(rootItem);
         }
         void AddRootFolderItem(string folderPath)
         {
             FolderTreeItem rootItem = NewFolderTreeItem(folderPath);            
-            GlobalsX.RootItems.Add(rootItem);
+            StaticGlobals.RootItems.Add(rootItem);
             PopulateSubFolders(folderPath, rootItem);
         }
         void PopulateSubFolders(string parentFolder, TreeItem parentItem)
@@ -99,7 +99,7 @@ namespace תורת_אמת_בוורד_3._1.TreeModels
                 Name = filePath.GetCleanFileName(),
                 Address = filePath
             };
-            GlobalsX.treeItemsList.Add(fileTreeItem);
+            StaticGlobals.treeItemsList.Add(fileTreeItem);
             return fileTreeItem;
         }
     }

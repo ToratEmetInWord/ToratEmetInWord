@@ -18,8 +18,8 @@
 	<contextMenus>
 		<contextMenu idMso="ContextMenuText">
 			<menuSeparator id="Separator1"/>
-			<button id="CopyToSearch" getImage="GetImage" label="העתק לחיפוש באוצר הספרים" onAction="CopyToSearch_Click" />
-			<button id="BookNameSearch" getImage="GetImage" label="העתק לפתיחת ספר באוצר הספרים" onAction="CopyToOpenBook_Click" />
+			<button id="CopyToSearch" getImage="GetImage" label="העתק לחיפוש בתורת אמת" onAction="CopyToSearch_Click" />
+			<button id="BookNameSearch" getImage="GetImage" label="העתק לאיתור ספר בתורת אמת" onAction="CopyToOpenBook_Click" />
 		</contextMenu>
 	</contextMenus>
 </customUI>

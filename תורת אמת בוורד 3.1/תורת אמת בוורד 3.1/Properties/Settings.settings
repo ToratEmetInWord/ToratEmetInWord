@@ -6,10 +6,10 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="OpenFileWindowLeft" Type="System.Double" Scope="User">
-      <Value Profile="(Default)">100</Value>
+      <Value Profile="(Default)">215</Value>
     </Setting>
     <Setting Name="SearchWindowLeft" Type="System.Double" Scope="User">
-      <Value Profile="(Default)">100</Value>
+      <Value Profile="(Default)">215</Value>
     </Setting>
     <Setting Name="RecentBooks" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)" />
@@ -58,6 +58,18 @@
     </Setting>
     <Setting Name="UseArmaicDictionary" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShemHashemDisplayOptions" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DefaultExternalFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="OpenFileRecentSearches" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Setting" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

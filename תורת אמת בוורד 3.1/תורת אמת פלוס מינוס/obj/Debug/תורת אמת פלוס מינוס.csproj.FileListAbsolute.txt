@@ -1,0 +1,59 @@
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\תורת אמת פלוס מינוס.csproj.AssemblyReference.cache
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\תורת אמת פלוס מינוס.csproj.ResolveComReference.cache
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\OpenFileControl.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\MainWindow.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\App.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\תורת אמת פלוס מינוס_Content.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\תורת אמת פלוס מינוס_MarkupCompile.cache
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\תורת אמת פלוס מינוס_MarkupCompile.lref
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\BookViewer.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\ProgressBarX.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\SearchControl.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\SearchExplorerControl.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\תורת אמת פלוס מינוס.exe.config
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\תורת אמת פלוס מינוס.exe
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\תורת אמת פלוס מינוס.pdb
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Emoji.Wpf.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Lucene.Net.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Microsoft.Web.WebView2.Core.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Stfu.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\System.ValueTuple.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Typography.GlyphLayout.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Typography.OpenFont.dll
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Lucene.Net.pdb
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Lucene.Net.xml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Microsoft.Web.WebView2.Core.xml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\bin\Debug\System.ValueTuple.xml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\BookViewer.baml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\OpenFileControl.baml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\ProgressBarX.baml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\SearchControl.baml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\MainWindow.baml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\SearchExplorerControl.baml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\תורת אמת פלוס מינוס.g.resources
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\תורת_אמת_פלוס_מינוס.Properties.Resources.resources
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\תורת אמת פלוס מינוס.csproj.GenerateResource.cache
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\תורת אמת פלוס מינוס.csproj.CoreCompileInputs.cache
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\תורת אמת.C028BD37.Up2Date
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\תורת אמת פלוס מינוס.exe
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\תורת אמת פלוס מינוס.pdb
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\DockingControls\DetachedTabWindow.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\DockingControls\DockerControl.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\DockingControls\DraggableTabControl.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\DockingControls\LayoutControl.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\DockingControls\OverLayPane.g.cs
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\DockingControls\DetachedTabWindow.baml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\DockingControls\DockerControl.baml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\DockingControls\DraggableTabControl.baml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\DockingControls\LayoutControl.baml
+C:\Users\0533105132\source\repos\תורת אמת בוורד 3.1\תורת אמת פלוס מינוס\obj\Debug\1.Controls\DockingControls\OverLayPane.baml

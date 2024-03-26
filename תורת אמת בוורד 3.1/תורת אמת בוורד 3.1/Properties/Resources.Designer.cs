@@ -63,29 +63,9 @@ namespace תורת_אמת_בוורד_3._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BooksFolder {
-            get {
-                object obj = ResourceManager.GetObject("BooksFolder", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Cantillations {
             get {
                 object obj = ResourceManager.GetObject("Cantillations", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Delete {
-            get {
-                object obj = ResourceManager.GetObject("Delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,49 +93,9 @@ namespace תורת_אמת_בוורד_3._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap history_6 {
-            get {
-                object obj = ResourceManager.GetObject("history_6", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Komatz {
             get {
                 object obj = ResourceManager.GetObject("Komatz", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap NewFolderIcon {
-            get {
-                object obj = ResourceManager.GetObject("NewFolderIcon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap NewTxtFile {
-            get {
-                object obj = ResourceManager.GetObject("NewTxtFile", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap SearchIcon {
-            get {
-                object obj = ResourceManager.GetObject("SearchIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

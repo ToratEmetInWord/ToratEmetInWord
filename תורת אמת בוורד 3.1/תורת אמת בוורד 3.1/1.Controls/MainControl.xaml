@@ -5,10 +5,26 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:תורת_אמת_בוורד_3._1._1.Controls"
              xmlns:treeSource="clr-namespace:תורת_אמת_בוורד_3._1.TreeModels"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              xmlns:emj="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
              FlowDirection="RightToLeft"
-             d:DesignHeight="450" d:DesignWidth="350">
+             d:DesignHeight="450" d:DesignWidth="350"
+             PreviewKeyDown="UserControl_PreviewKeyDown">
+    <UserControl.Resources>
+        <Style TargetType="ToolTip">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToolTip">
+                        <Border BorderBrush="#FFACACAC" BorderThickness="1"
+                         Padding="3" Background="White">
+                            <TextBlock Text="{TemplateBinding Content}" 
+                  TextWrapping="Wrap" MaxWidth="200"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -19,14 +35,14 @@
             <WrapPanel.Resources>
                 <Style TargetType="Button">
                     <Setter Property="Padding" Value="3"/>
-                    <Setter Property="Height" Value="28"/>
-                    <Setter Property="Width" Value="28"/>
+                    <Setter Property="Height" Value="36"/>
+                    <Setter Property="Width" Value="36"/>
                     <Setter Property="BorderThickness" Value="0"/>
                     <Setter Property="Background" Value="{x:Null}"/>
                 </Style>
                 <Style TargetType="ComboBox">
                     <Style.Resources>
-                        <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="#FFF6F6F6" />
+                        <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="WhiteSmoke" />
                         <SolidColorBrush x:Key="{x:Static SystemColors.WindowFrameBrushKey}" Color="#FFACACAC" />
                     </Style.Resources>
                 </Style>
@@ -48,23 +64,32 @@
                     </Style>
                 </ComboBox.Resources>
                 <ComboBoxItem Name="OpenExternalFile" Content="פתח קובץ שאינו בספריה"
+                              ToolTip="מאפשר גם פתיחת קבצי PDF (שם לב לאפשרות החיפוש למעלה!("
                               Selected="OpenExternalFile_Selected"/>
-                <ComboBoxItem Name="OpenFilesFolder" Content="פתח את תיקית הספרים"
+                <ComboBoxItem Name="SetExternalDefaultFolder" Content="בחר תיקיית ברירת מחדל לקבצים חיצוניים"
+                              Selected="SetExternalDefaultFolder_Selected"/>
+                <ComboBoxItem Name="OpenFilesFolder" Content="פתח את תיקית הספרים" ToolTip="מאפשר למחוק ולהוסיף קיצורי דרך עבור מיקומי הספרים שלכם"
                               Selected="OpenFilesFolder_Selected"/>
                 <ComboBoxItem Name="ChangeFolderLocation" Content="בחר מיקום אחר עבור התוסף"
                               Selected="ChangeFolderLocation_Selected"/>
                 <ComboBoxItem Name="CreateNewIndex" Content="צור אינדקס חדש"
                               Selected="CreateNewIndex_Selected"/>
+                <ComboBoxItem Name="DeleteIndex" Content="מחק אינדקס"
+                              Selected="DeleteIndex_Selected"/>
                 <ComboBoxItem Name="ResetFontSettings" Content="אפס הגדרות גופן"
                               Selected="ResetFontSettings_Selected"/>
+                <ComboBoxItem Name="ShemHashemDisplayOptions" Content="תצוגת שם השם"
+                              Selected="ShemHashemDisplayOptions_Selected"/>
                 <ComboBoxItem Name="AboutButton" Content="אודות"
                               Selected="AboutButton_Selected"/>
             </ComboBox>
             <Button x:Name="MenuButton" Click="MenuButton_Click">
                 <TextBlock Text="☰" FontSize="14"/>
             </Button>
-            
-            <Button x:Name="OpenFile" Click="OpenFile_Click" ToolTip="פתח ספר">
+
+            <Button x:Name="OpenFile" ToolTip="פתח ספר (לחץ לחיצה ימנית כדי לפתוח את התפריט בחלונית נפרדת)"
+                    Click="OpenFile_Click" 
+                    PreviewMouseRightButtonDown="OpenFile_PreviewMouseRightButtonDown">
                 <emj:TextBlock Text="📁" FontSize="18" Margin="0,-2,0,0"/>
             </Button>
             
@@ -87,15 +112,16 @@
                     <TextBlock Text="⟲" FontSize="24" LineHeight="23"/>
                 </Grid>
             </Button>
-            
-            <Button x:Name="SearchButton" ToolTip="חיפוש"
-                    Click="SearchButton_Click">
+
+            <Button x:Name="SearchButton" ToolTip="חיפוש (לחץ לחיצה ימנית כדי לפתוח את התפריט בחלונית נפרדת)"
+                    Click="SearchButton_Click"
+                    PreviewMouseRightButtonDown="SearchButton_PreviewMouseRightButtonDown">
                 <emj:TextBlock Text="🔍" FontSize="14" Margin="0,0,0,0"/>
             </Button>
             
             
             <Border BorderThickness="1" BorderBrush="LightGray" 
-                    Height="20">
+                    Height="26" Margin="5,0,5,0">
             <StackPanel Orientation="Horizontal">
                     <StackPanel.Resources>
                         <Style TargetType="Button">
@@ -104,6 +130,8 @@
                             <Setter Property="Background" Value="{x:Null}"/>
                             <Setter Property="BorderThickness" Value="0"/>
                             <Setter Property="FontWeight" Value="Medium"/>
+                            <Setter Property="FontFamily" Value="Baskerville Old Face"/>
+                            <Setter Property="FontSize" Value="14"/>
                         </Style>
                     </StackPanel.Resources>
 
@@ -121,13 +149,27 @@
                     </ComboBox>
 
                     <Button x:Name="FontsButton" ToolTip="בחר גופן" 
-                    Content="F" FontFamily="Baskerville Old Face" Margin="0,1,0,0"
+                            Content="F"
                             Click="FontsButton_Click"/>
 
                     <Button x:Name="IncreaseFontSize" ToolTip="הגדל גופן" 
-                    Content="🗛" Click="IncreaseFontSize_Click"/>
+                    Click="IncreaseFontSize_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="🗛"/>
+                            <TextBlock Text="▴" LineHeight="12" Margin="-5,0,0,0"
+                                       Foreground="DarkBlue"/>
+                        </StackPanel>
+                    </Button>
                     <Button x:Name="DecreaseFontSize" ToolTip="הקטן גופן"
-                    Content="🗚" Click="DecreaseFontSize_Click"/>
+                    Click="DecreaseFontSize_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="🗚" FontSize="12"/>
+                            <TextBlock Text="▾" LineHeight="12" Margin="-5,0,0,0"
+                                       Foreground="DarkBlue"/>
+                        </StackPanel>
+                    </Button>
+
+                    
 
                 
                 </StackPanel>
@@ -139,9 +181,16 @@
                        Height="18"/>
             </Button>
 
+            <Button x:Name="CopyRightButton" ToolTip="זכויות יוצרים"
+                    Click="CopyRightButton_Click">
+                <emj:TextBlock Text="©" FontSize="14" 
+                               FontWeight="DemiBold" LineHeight="20"/>
+            </Button>
+
         </WrapPanel>
 
-        <local:TabControlX Grid.Row="1" x:Name="tabControl"/>
+        <local:TabControlX Grid.Row="1" x:Name="tabControlHost">
+        </local:TabControlX>
 
     </Grid>
 </UserControl>

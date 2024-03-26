@@ -26,16 +26,39 @@
     <NoStandardLibraries>false</NoStandardLibraries>
     <RootNamespace>תורת_אמת_בוורד_3._1</RootNamespace>
     <AssemblyName>תורת אמת בוורד 3.1</AssemblyName>
-    <LoadBehavior>3</LoadBehavior>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <DefineConstants>VSTO40;UseOfficeInterop</DefineConstants>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
-    <BootstrapperComponentsLocation>HomeSite</BootstrapperComponentsLocation>
     <ResolveComReferenceSilent>true</ResolveComReferenceSilent>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>False</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <PublishUrl>C:\Users\0533105132\Desktop\</PublishUrl>
+    <InstallUrl />
+    <TargetCulture>en</TargetCulture>
+    <ApplicationVersion>1.0.0.9</ApplicationVersion>
+    <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>days</UpdateIntervalUnits>
+    <ProductName>תורת אמת בוורד 3.1</ProductName>
+    <PublisherName />
+    <SupportUrl />
+    <FriendlyName>תורת אמת בוורד 3.1</FriendlyName>
+    <OfficeApplicationDescription />
+    <LoadBehavior>3</LoadBehavior>
   </PropertyGroup>
   <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
       <Visible>False</Visible>
       <ProductName>Microsoft Visual Studio 2010 Tools for Office Runtime %28x86 and x64%29</ProductName>
@@ -106,20 +129,20 @@
     <Reference Include="Emoji.Wpf, Version=0.3.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Emoji.Wpf.0.3.4\lib\net40\Emoji.Wpf.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib, Version=1.4.2.13, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
-      <HintPath>..\packages\SharpZipLib.1.4.2\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll</HintPath>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
       <HintPath>..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2365.46, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2365.46\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.2420.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2420.47\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2365.46, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2365.46\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.2420.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2420.47\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.2365.46, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2365.46\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.2420.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.2420.47\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -278,16 +301,17 @@
     <Compile Include="1.Controls\TabControlX.xaml.cs">
       <DependentUpon>TabControlX.xaml</DependentUpon>
     </Compile>
-    <Compile Include="1.Controls\WebViewControl.xaml.cs">
-      <DependentUpon>WebViewControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="2.ViewModels\AramaicDictionaryViewModel.cs" />
     <Compile Include="2.ViewModels\BookViewerViewModel.cs" />
     <Compile Include="2.ViewModels\MainControlViewModel.cs" />
     <Compile Include="2.ViewModels\OpenFileControlViewModel.cs" />
     <Compile Include="2.ViewModels\SearchControlViewModel.cs" />
     <Compile Include="2.ViewModels\SearchExplorerControlViewModel.cs" />
+    <Compile Include="3.Models\CopyRight.cs" />
     <Compile Include="3.Models\Levenshtein.cs" />
+    <Compile Include="3.Models\MoveTabToNewWindow.cs" />
+    <Compile Include="3.Models\OpenFileRecentSearches.cs" />
+    <Compile Include="3.Models\OptionsWindow.cs" />
     <Compile Include="3.Models\ProgressBarDelegate.cs" />
     <Compile Include="3.Models\RecentBooks.cs" />
     <Compile Include="3.Models\RecentSearches.cs" />
@@ -309,6 +333,7 @@
     <Compile Include="5.BookParsingModels\ToratEmetTemplates.cs" />
     <Compile Include="5.BookParsingModels\Navigate_To_Header.cs" />
     <Compile Include="6.WebViewModels\WebViewContextMenu.cs" />
+    <Compile Include="6.WebViewModels\WebViewControl.cs" />
     <Compile Include="6.WebViewModels\WebViewMessageHandler.cs" />
     <Compile Include="6.WebViewModels\WebViewCommands.cs" />
     <Compile Include="7.SearchModels\ContainsSearch.cs" />
@@ -325,7 +350,7 @@
     <Compile Include="8.Extensions\HebrewNumbering.cs" />
     <Compile Include="8.Extensions\PrivateExtensions.cs" />
     <Compile Include="8.Extensions\SearchExtensions.cs" />
-    <Compile Include="GlobalsX.cs" />
+    <Compile Include="StaticGlobals.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -370,11 +395,6 @@
     <None Include="תורת אמת בוורד 3.1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\BooksFolder.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="1.Controls\AramaicDictionaryControl.cs.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -407,23 +427,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="1.Controls\WebViewControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Delete.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\FolderIcon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\NewFolderIcon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -434,11 +440,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\TxtFileIcon.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\NewTxtFile.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -469,20 +470,15 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\history 6.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SearchIcon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="ToratEmetRibbon.xml" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Dictionary.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Todo.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -506,19 +502,19 @@
     <VisualStudio>
       <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
         <ProjectProperties HostName="Word" HostPackage="{29A7B9D7-A7F1-4328-8EF0-6B2D1A56B2C1}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="Word" Language="cs" TemplatesPath="" DebugInfoExeName="#Software\Microsoft\Office\16.0\Word\InstallRoot\Path#WINWORD.EXE" DebugInfoCommandLine="/x" AddItemTemplatesGuid="{51063C3A-E220-4D12-8922-BDA915ACD783}" />
-        <Host Name="Word" GeneratedCodeNamespace="תורת_אמת_בוורד_3._1" IconIndex="0">
-          <HostItem Name="ThisAddIn" Code="ThisAddIn.cs" CanonicalName="AddIn" CanActivate="false" IconIndex="1" Blueprint="ThisAddIn.Designer.xml" GeneratedCode="ThisAddIn.Designer.cs" />
+        <Host Name="Word" GeneratedCodeNamespace="תורת_אמת_בוורד_3._1" PublishedHash="69C324AB27932AA2FBF2B7EA72250886FF164DE6" IconIndex="0">
+          <HostItem Name="ThisAddIn" Code="ThisAddIn.cs" CanonicalName="AddIn" PublishedHash="E6E7BD959D5B6641EB2B6B625853BCE6F7421702" CanActivate="false" IconIndex="1" Blueprint="ThisAddIn.Designer.xml" GeneratedCode="ThisAddIn.Designer.cs" />
         </Host>
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2365.46\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2365.46\build\Microsoft.Web.WebView2.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.2365.46\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.2365.46\build\Microsoft.Web.WebView2.targets'))" />
     <Error Condition="!Exists('..\packages\JeremyAnsel.HLSL.Targets.1.0.13\build\JeremyAnsel.HLSL.Targets.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JeremyAnsel.HLSL.Targets.1.0.13\build\JeremyAnsel.HLSL.Targets.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.2420.47\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.2420.47\build\Microsoft.Web.WebView2.targets'))" />
   </Target>
   <Import Project="..\packages\JeremyAnsel.HLSL.Targets.1.0.13\build\JeremyAnsel.HLSL.Targets.targets" Condition="Exists('..\packages\JeremyAnsel.HLSL.Targets.1.0.13\build\JeremyAnsel.HLSL.Targets.targets')" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2420.47\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2420.47\build\Microsoft.Web.WebView2.targets')" />
 </Project>

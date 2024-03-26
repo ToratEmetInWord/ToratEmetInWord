@@ -35,9 +35,15 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
             ProgressBarDelgate.AttachProgressBar(progressBar);
             SearchTypeCombo.SelectedIndex = Settings.Default.SearchMethodComboIndex;
             //updatePbDelegate = new UpdateProgressBarDelegate(progressBar.SetValue);            
+            Loaded +=SearchControl_Loaded;
+        }
+
+        private void SearchControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            SearchTextBox.SelectAll();
             SearchTextBox.Focus();
         }
-        
+
         private void SearchTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
@@ -86,12 +92,12 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
         private void ShowAllSnippetsCheckBox_CheckChanged(object sender, RoutedEventArgs e)
         {
             bool isChecked = ShowAllSnippetsCheckBox.IsChecked ?? false; // Use false as default if it's null
-            WebViewCommands.ToggleSnippets(webView.webView, isChecked);
+            WebViewCommands.ToggleSnippets(webView, isChecked);
         }
 
         private void SearchExplorerButton_Click(object sender, RoutedEventArgs e)
         {
-            GlobalsX.ShowSearchExplorerWindow();
+            StaticGlobals.ShowSearchExplorerWindow();
         }
 
         private void RecentSearchesCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)

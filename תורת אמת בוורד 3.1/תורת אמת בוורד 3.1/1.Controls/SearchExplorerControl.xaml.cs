@@ -36,7 +36,7 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
 
         private void SearchExplorerControl_Loaded(object sender, RoutedEventArgs e)
         {
-            foreach (var item in GlobalsX.treeItemsList)
+            foreach (var item in StaticGlobals.treeItemsList)
             {
                 if (Properties.Settings.Default.CheckedTreeItems != null &&
                         Properties.Settings.Default.CheckedTreeItems.Contains(item.Address))
@@ -49,7 +49,7 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
                     item.IsChecked2 = true;
                 }
             }
-            var list = new ObservableCollection<TreeItem>(GlobalsX.treeItemsList.Where(item => item.IsChecked2 == true).ToList());
+            var list = new ObservableCollection<TreeItem>(StaticGlobals.treeItemsList.Where(item => item.IsChecked2 == true).ToList());
             viewModel.ResultList = list;
         }
 

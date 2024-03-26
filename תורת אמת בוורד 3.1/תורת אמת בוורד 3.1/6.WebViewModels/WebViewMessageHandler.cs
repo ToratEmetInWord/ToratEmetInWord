@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows;
 using תורת_אמת_בוורד_3._1._2.ViewModels;
 using תורת_אמת_בוורד_3._1._3.Models;
 using תורת_אמת_בוורד_3._1._5.BookParsingModels;
@@ -37,7 +38,7 @@ namespace תורת_אמת_בוורד_3._1._6.WebViewModels
                 else if (message.Contains("openComboContent="))
                 {
                     string content = "לא נמצא תוכן תואם";
-                    message = message.Replace("openComboContent=", "");
+                    message = message.Replace("openComboContent=", "").Replace("`", "");
                     string[] splitMessage = message.Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
 
                     BookParser parser = new BookParser();
@@ -47,7 +48,7 @@ namespace תורת_אמת_בוורד_3._1._6.WebViewModels
                     {
                         bookName = chapterItem.Id.GetTextTillFirstChar(',');
                         BookExport bookExport = new BookExport();
-                        content = $"<div style=\"color:gray\">{bookName}</div>{bookExport.ComboViewChapterExport(chapterItem)}";
+                        content = $"<div style=\"color:gray\">{chapterItem.Id}</div>{bookExport.ComboViewChapterExport(chapterItem)}";
                         content = content.Replace("\r\n", "\\n");
                         
                     }
@@ -61,6 +62,10 @@ namespace תורת_אמת_בוורד_3._1._6.WebViewModels
                     document.getElementById(`{label}`).innerHTML = bookname;";
                     webView2.CoreWebView2.ExecuteScriptAsync(script2);
 
+                }
+                else if (message.Contains("keyEvent="))
+                {
+                    MessageBox.Show(message);
                 }
             };
         }

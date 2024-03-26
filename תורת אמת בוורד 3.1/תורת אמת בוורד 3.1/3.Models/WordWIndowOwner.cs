@@ -14,7 +14,7 @@ namespace תורת_אמת_בוורד_3._1._3.Models
     {
         public static void SetOwner(Window window, UserControl userControl)
         {
-            window.Content = null;
+            if (userControl != null) { window.Content = null; }
             IntPtr wordWindowHandle = IntPtr.Zero;
             try
             {
@@ -27,7 +27,7 @@ namespace תורת_אמת_בוורד_3._1._3.Models
             }
             WindowInteropHelper helper = new WindowInteropHelper(window);             // Set the owner using the obtained handle
             helper.Owner = wordWindowHandle;
-            window.Content = userControl;
+            if (userControl != null) { window.Content = userControl; }
         }
     }
 }

@@ -6,10 +6,11 @@
              xmlns:local="clr-namespace:תורת_אמת_בוורד_3._1._1.Controls"
              mc:Ignorable="d" 
              FlowDirection="RightToLeft"
+             AllowDrop="True"
              FontSize="14"
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="350">
     <Grid>
-        <TabControl x:Name="tabControl">
+        <TabControl x:Name="tabControl" SelectionChanged="tabControl_SelectionChanged">
             <TabControl.Resources>
                 <Style TargetType="TabControl">
                     <Setter Property="Template">
@@ -87,7 +88,7 @@
                                             </Grid>
                                         </Grid>
 
-                                        <Border x:Name="ContentPanel"
+                                        <Border x:Name="ContentPanel" AllowDrop="True" PreviewDrop="ContentPanel_PreviewDrop"
                             Grid.Row="0"
                             Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"

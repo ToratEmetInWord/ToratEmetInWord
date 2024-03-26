@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using תורת_אמת_בוורד_3._1._5.BookParsingModels;
 using תורת_אמת_בוורד_3._1._8.Extensions;
+using תורת_אמת_בוורד_3._1.Properties;
 
 namespace תורת_אמת_בוורד_3._1._3.Models
 {
@@ -17,10 +18,13 @@ namespace תורת_אמת_בוורד_3._1._3.Models
         ToratEmetTemplates templates;
         Stack<ChapterItem> itemStack = new Stack<ChapterItem>();
         BookItem newBook;
-        string targetId = "";
         Regex chapterHederRegex = new Regex(@"פרק |פסוק |משנה |דף |הלכה |סימן |סעיף |תשובה |רמז |פרשה |מזמור |חלק |מדרש |פי?סקה |אות |כלל ", RegexOptions.Compiled);
 
-        public ChapterItem GetTargetItem(string filePath, string id)
+        public BookParser()
+        {
+        }
+
+        public ChapterItem GetTargetItem(string filePath, string targetId)
         {
             string fileName = filePath.GetCleanFileName();            
             Parse(filePath, fileName);
@@ -148,31 +152,31 @@ namespace תורת_אמת_בוורד_3._1._3.Models
             else if (line.StartsWith("#"))
             {
                 line = line.Replace("# ", "");
-                AddIdItem("<h2 id>" + line + "</h2>", 1, line);
+                AddIdItem("<h2 dir=\"rtl\" id>" + line + "</h2><p dir=\"rtl\">", 1, line);
             }
-            else if (line.StartsWith("@"))
+            else if (line.StartsWith("@")||line.StartsWith("הקדמה")||line.StartsWith("פתיחה")||line.StartsWith("שער"))
             {
                 line = line.Replace("@ ", "");
-                AddIdItem("<h2 id>" + line + "</h2>", 2, line);
+                AddIdItem("<h2 dir=\"rtl\" id>" + line + "</h2><p dir=\"rtl\">", 2, line);
             }
             else if (line.StartsWith("^"))
             {
                 line = line.Replace("^ ", "");
-                AddIdItem("<h2 id>" + line + "</h2>", 2, line);
+                AddIdItem("<h2 dir=\"rtl\" id>" + line + "</h2><p dir=\"rtl\">", 2, line);
             }
             else if (line.StartsWith("~"))
             {
                 line = line.Replace("~ ", "");
-                AddIdItem("<h3 id>" + line + "</h3>", 3, line);
+                AddIdItem("<h3 dir=\"rtl\" id>" + line + "</h3><p dir=\"rtl\">", 3, line);
             }
             else if (line.StartsWith("!"))
             {
                 line = line.Replace("! ", "").Replace("{", "").Replace("}", "");
-                AddIdItem("<span class=\"inlineHeader\" id>" + line + "</span>", 4, line);
+                AddIdItem("<span dir=\"rtl\" class=\"inlineHeader\" id>" + line + "</span>", 4, line);
             }
             else 
             {
-                AddItem(line.Replace(@"//", "") + "<p>", 5, "");
+                AddItem(line.ShemHashemWriting().Replace(@"//", "") + "<p dir=\"rtl\">", 5, "");
             }
         }
 

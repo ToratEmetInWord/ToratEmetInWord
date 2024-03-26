@@ -23,7 +23,6 @@ namespace TextSearchApp.SearchModels
         WildcardQuery wildcardQuery;
         Sort sort;
         TopDocs topDocs;
-        bool creatingIndex;
 
         string searchTerm;
         public void Dispose()
@@ -48,7 +47,7 @@ namespace TextSearchApp.SearchModels
                     {
                         sort = new Sort(new SortField("DocNumber", SortField.INT)); // Sort by file order as an integer
                         resultsDictionary = new Dictionary<string, List<string>>();
-                        using (directory = FSDirectory.Open(new DirectoryInfo(GlobalsX.indexFolder)))
+                        using (directory = FSDirectory.Open(new DirectoryInfo(StaticGlobals.indexFolder)))
                         using (reader = IndexReader.Open(directory, readOnly: true))
                         using (searcher = new IndexSearcher(reader))
                         {
@@ -56,7 +55,7 @@ namespace TextSearchApp.SearchModels
                             string[] searchWords = searchTerm.Split(' ');
                             foreach (string word in searchWords)
                             {
-                                Term term = new Term("CleanSnippet", word);
+                                Term term = new Term("Snippet", word);
                                 wildcardQuery = new WildcardQuery(term);
                                 topDocs = searcher.Search(wildcardQuery, null, int.MaxValue, sort);
                             }

@@ -33,14 +33,14 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
         {
             tabItem = tabitem;
             InitializeComponent();
-            viewModel = new BookViewerViewModel (this, bookItem, webViewControl.webView);
+            viewModel = new BookViewerViewModel (this, bookItem, webViewControl);
             DataContext = viewModel;
             viewModel.PopulateRealtiveBooksCombo();           
         }
         public void Dispose()
         {
-            webViewControl.webView.Dispose();
-            viewModel.Dispose();
+            webViewControl.Dispose();
+            if (viewModel != null) { viewModel.Dispose(); }
             viewModel = null;
         }
 
@@ -121,5 +121,19 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
         {
             viewModel.SearchPrevious(SearchTextBox.Text);
         }
+
+        private void OpenInNewWIndowButton_Click(object sender, RoutedEventArgs e)
+        {
+            MoveTabToNewWindow.Execute(tabItem);
+        }
+
+        private void UserControl_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyboardDevice.Modifiers == ModifierKeys.Alt && e.Key == Key.C)
+            {
+                WebViewCommands.CopyToWord(webViewControl);
+            }
+        }
+
     }
 }

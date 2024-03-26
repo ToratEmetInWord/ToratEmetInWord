@@ -1,0 +1,4 @@
+﻿create copy to search and copy tofilesearchMethods
+showsearchexplorer command
+create steowner method
+openselected needs work

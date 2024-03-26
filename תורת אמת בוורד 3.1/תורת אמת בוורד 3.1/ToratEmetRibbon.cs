@@ -48,26 +48,25 @@ namespace תורת_אמת_בוורד_3._1
         }
         public void OpenTaskPaneButton_Click(IRibbonControl control)
         {
-            GlobalsX.LoadTaskPane();
+            StaticGlobals.LoadTaskPane();
         }
         public void DictionaryButton_Click(IRibbonControl control)
         {
-            GlobalsX.LoadTaskPane();
-            GlobalsX.ShowAramaicDictionary();
+            StaticGlobals.ShowAramaicDictionary();
         }
         public void CopyToOpenBook_Click(IRibbonControl control)
         {
             Word.Application wordApp = Globals.ThisAddIn.Application;             // Get a reference to the Word application
             Word.Document doc = wordApp.ActiveDocument;            // Get the active document
             string selectedText = doc.Application.Selection.Text.Trim();             // Insert  at the current selection or cursor position
-            GlobalsX.CopyToFileSearch(selectedText);
+            StaticGlobals.CopyToFileSearch(selectedText);
         }
         public void CopyToSearch_Click(IRibbonControl control)
         {
             Word.Application wordApp = Globals.ThisAddIn.Application;             // Get a reference to the Word application
             Word.Document doc = wordApp.ActiveDocument;            // Get the active document
             string selectedText = doc.Application.Selection.Text.Trim();             // Insert  at the current selection or cursor position
-            GlobalsX.CopyToSearch(selectedText);           
+            StaticGlobals.CopyToSearch(selectedText);           
         }
 
         #endregion

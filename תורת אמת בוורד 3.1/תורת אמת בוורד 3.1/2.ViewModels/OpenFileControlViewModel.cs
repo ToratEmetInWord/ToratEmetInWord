@@ -1,20 +1,10 @@
-﻿using FolderPicker;
-using Lucene.Net.Search;
-using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Input;
 using תורת_אמת_בוורד_3._1._3.Models;
 using תורת_אמת_בוורד_3._1._4.TreeModels;
 using תורת_אמת_בוורד_3._1.TreeModels;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
 
 namespace תורת_אמת_בוורד_3._1._2.ViewModels
 {
@@ -36,15 +26,26 @@ namespace תורת_אמת_בוורד_3._1._2.ViewModels
                 OnPropertyChanged(nameof(ResultList));
             }
         }
-        public void Search(string searchTerm, ListBox resultListBox)
+        public void Search(string searchTerm, ComboBox resultBox)
         {
+            OpenFileRecentSearches recentSearches = new OpenFileRecentSearches();
+            recentSearches.UpdateList(searchTerm);
+
             Properties.Settings.Default.OpenFileControlLastSearch = searchTerm;
             Properties.Settings.Default.Save();
 
             TreeItemSearch treeItemSearch = new TreeItemSearch();
             ObservableCollection<TreeItem>  results = treeItemSearch.SearchFileList(searchTerm);
-            ResultList = results;  resultListBox.Tag = treeItemSearch.searchId;
-            if (results.Count == 0) {  MessageBox.Show("לא נמצאו תוצאות");    }
+            resultBox.Tag = treeItemSearch.searchId;  
+            ResultList = results;
+            if (results.Count == 0) {  MessageBox.Show("לא נמצאו תוצאות"); }
+        }
+
+        public void OpenSelectedFile(FileTreeItem fileTreeItem, string adress)
+        {
+            OpenSelected openSelected = new OpenSelected();
+            openSelected.OpenSelectedFile(fileTreeItem, fileTreeItem.Name + adress, null);
+            if (StaticGlobals.openFileWindow != null) { StaticGlobals.openFileWindow.Close(); }
         }
     }
 }

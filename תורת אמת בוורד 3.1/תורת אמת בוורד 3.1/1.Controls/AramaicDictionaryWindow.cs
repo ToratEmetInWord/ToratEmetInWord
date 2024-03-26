@@ -30,6 +30,12 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
 
             System.Drawing.Bitmap image = Properties.Resources.toratemetinWord;
             Icon = Imaging.CreateBitmapSourceFromHBitmap(image.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
+            PreviewKeyDown +=AramaicDictionaryWindow_PreviewKeyDown;
+        }
+
+        private void AramaicDictionaryWindow_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == System.Windows.Input.Key.Escape) { Close(); }  
         }
 
         public void SetOwner()

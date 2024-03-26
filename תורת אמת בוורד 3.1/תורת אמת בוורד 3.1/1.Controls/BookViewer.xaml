@@ -7,7 +7,8 @@
             xmlns:treeSource="clr-namespace:תורת_אמת_בוורד_3._1.TreeModels"             
              mc:Ignorable="d" 
              FlowDirection="RightToLeft"
-             d:DesignHeight="450" d:DesignWidth="350">
+             d:DesignHeight="450" d:DesignWidth="350"
+             PreviewKeyDown="UserControl_PreviewKeyDown">
     <Grid>
         <Grid.Resources>
             <Style TargetType="Button">
@@ -31,11 +32,10 @@
                 <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/>
                 <Setter Property="LineHeight" Value="16"/>
             </Style>
-            <Style TargetType="ComboBox">
-                <Style.Resources>
-                    <!--<SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="#FFF6F6F6" />-->
-                    <SolidColorBrush x:Key="{x:Static SystemColors.WindowFrameBrushKey}" Color="#FFACACAC" />
-                </Style.Resources>
+            <Style TargetType="ComboBoxItem">
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="MaxWidth" Value="225"/>
             </Style>
         </Grid.Resources>
         <Grid.RowDefinitions>
@@ -55,14 +55,15 @@
                         ToolTip="לחץ לפתיחת הספר, או סמן v לתצוגה משולבת"
                         Tag="{Binding BindsDirectlyToSource=True}">
                             <TextBlock x:Name="FileItemButton" Text="🗎" FontSize="16" 
-                           Margin="0,-1,3,0" Background="{x:Null}"
-                           Tag="{Binding BindsDirectlyToSource=True}"
-                           MouseDown="ReltiveBooks_FileItemButton_MouseDown"/>
+                                       Margin="0,-3,3,0" Background="{x:Null}"
+                                       Tag="{Binding BindsDirectlyToSource=True}"
+                                       MouseDown="ReltiveBooks_FileItemButton_MouseDown"
+                                       LineStackingStrategy="MaxHeight"/>      
                             <CheckBox IsChecked="{Binding IsChecked3}"
-                          Checked="RelativeBooks_CheckChanged"
-                          Unchecked="RelativeBooks_CheckChanged">
+                                      Checked="RelativeBooks_CheckChanged"
+                                      Unchecked="RelativeBooks_CheckChanged">   
                                 <TextBlock Text="{Binding Name}" Tag="{Binding BindsDirectlyToSource=True}"
-                               PreviewMouseDown="ReltiveBooks_FileItemButton_MouseDown"/>
+                                           PreviewMouseDown="ReltiveBooks_FileItemButton_MouseDown" />
                             </CheckBox>
                         </StackPanel>
                     </DataTemplate>
@@ -109,7 +110,12 @@
             <Button x:Name="RefreshButton" ToolTip="רענן" Click="RefreshButton_Click">
                 <TextBlock Text="⟳" FontWeight="DemiBold"/>
             </Button>
-            <ToggleButton x:Name="ToggleSearchButton" ToolTip="חיפוש"
+            <Button x:Name="OpenInNewWIndowButton" 
+                    ToolTip="פתח בחלונית חדשה"
+                    Click="OpenInNewWIndowButton_Click">
+                <TextBlock Text="🗗"/>
+            </Button>
+            <ToggleButton x:Name="ToggleSearchButton" ToolTip="חיפוש (לחץ Cntrl + F לפתיחת חיפוש משודרג)"
                           Click="ToggleSearchButton_Click">
                 <TextBlock Text="⌕" LineHeight="19.1" 
                            FontSize="15" FontWeight="DemiBold"/>

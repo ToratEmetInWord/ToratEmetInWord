@@ -18,7 +18,7 @@ namespace תורת_אמת_בוורד_3._1._4.TreeModels
         public string searchId;
         public TreeItem GetItemDirectly(string searchTerm)
         {
-            foreach (TreeItem fileItem in GlobalsX.treeItemsList)
+            foreach (TreeItem fileItem in StaticGlobals.treeItemsList)
             {
                 if (fileItem.Address == searchTerm) return fileItem;
             }
@@ -47,7 +47,7 @@ namespace תורת_אמת_בוורד_3._1._4.TreeModels
         {
             ObservableCollection<TreeItem> itemList = new ObservableCollection<TreeItem>();
             string[] searchArray = searchTerm.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            foreach (TreeItem fileItem in GlobalsX.treeItemsList)
+            foreach (TreeItem fileItem in StaticGlobals.treeItemsList)
             {
                 if (searchArray.All(word => fileItem.Name.Contains(word)))
                 {
@@ -60,7 +60,7 @@ namespace תורת_אמת_בוורד_3._1._4.TreeModels
         {
             string[] saerchArray = searchTerm.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             ObservableCollection<TreeItem> itemList = new ObservableCollection<TreeItem>();
-            foreach (FileTreeItem fileItem in GlobalsX.treeItemsList)
+            foreach (FileTreeItem fileItem in StaticGlobals.treeItemsList)
             {
                 string[] itemNameArray = fileItem.Name.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 if (Levenshtein.CompareArray(saerchArray, itemNameArray, 3) == true)

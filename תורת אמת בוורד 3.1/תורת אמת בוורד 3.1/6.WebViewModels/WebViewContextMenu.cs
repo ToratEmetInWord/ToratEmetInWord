@@ -12,6 +12,7 @@ using System.Drawing;
 using System.Windows.Interop;
 using System.Windows.Media.Imaging;
 using System;
+using Microsoft.Web.WebView2.WinForms;
 
 namespace תורת_אמת_בוורד_3._1._6.WebViewModels
 {
@@ -69,6 +70,8 @@ namespace תורת_אמת_בוורד_3._1._6.WebViewModels
             }
 
             cm.Add(new Separator());
+            AddCopyToSearchItems(cm);
+            cm.Add(new Separator());
             cm.Add(BuidRelativeBooksMenu());
             cm.Add(new Separator());
             AddTabHandlerItems(cm);
@@ -119,7 +122,7 @@ namespace תורת_אמת_בוורד_3._1._6.WebViewModels
             };
             cm.Add(newItem2);
 
-            MenuItem newItem3 = new MenuItem { Header = "העתק לוורד (ללא עיצוב)" };
+            MenuItem newItem3 = new MenuItem { Header = "העתק לוורד (ללא עיצוב)", InputGestureText = "Alt + C", };
             newItem3.Click += (s, ex) =>
             {
                 WebViewCommands.CopyToWord(bookViewer.webView);
@@ -140,6 +143,26 @@ namespace תורת_אמת_בוורד_3._1._6.WebViewModels
             };
             cm.Add(newItem5);
         }
+
+        void AddCopyToSearchItems(ObservableCollection<object> cm)
+        {
+            MenuItem newItem = new MenuItem { Header = "העתק טקסט לחיפוש" };
+            newItem.Click += async (s, ex) =>
+            {
+                string selectedText = await bookViewer.webView.ExecuteScriptAsync("window.getSelection().toString();");
+                StaticGlobals.CopyToSearch(selectedText);
+            };
+            cm.Add(newItem);
+
+            newItem = new MenuItem { Header = "העתק טקסט לאיתור ספר" };
+            newItem.Click += async (s, ex) =>
+            {
+                string selectedText = await bookViewer.webView.ExecuteScriptAsync("window.getSelection().toString();");
+                StaticGlobals.CopyToFileSearch(selectedText);
+            };
+            cm.Add(newItem);
+        }
+
         MenuItem BuidRelativeBooksMenu()
         {
             MenuItem newItem = new MenuItem { Header = "ספרים קרובים" };
@@ -151,7 +174,7 @@ namespace תורת_אמת_בוורד_3._1._6.WebViewModels
                     menuItem.Click += (s, ex) =>
                     {
                         OpenSelected openSelected = new OpenSelected();
-                        openSelected.OpenSelectedFile(fileItem, bookViewer.currentId);
+                        openSelected.OpenSelectedFile(fileItem, bookViewer.currentId, tabItem.Parent as TabControl);
                     };
                     newItem.Items.Add(menuItem);
                 }             
@@ -176,36 +199,11 @@ namespace תורת_אמת_בוורד_3._1._6.WebViewModels
             newItem = new MenuItem { Header = "פתח בחלון חדש" };
             newItem.Click += (s, ex) =>
             {
-                TabControl tabControl = tabItem.Parent as TabControl;
-                tabControl.Items.Remove(tabItem);
-                TabControl newTabControl = new TabControl();
-                newTabControl.Items.Add(tabItem);
-                System.Drawing.Bitmap image = Properties.Resources.toratemetinWord;
-                Window window = new Window 
-                {
-                    Content = newTabControl,
-                    FlowDirection = FlowDirection.RightToLeft,
-                    Icon = Imaging.CreateBitmapSourceFromHBitmap(image.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions()),
-                };
-                tabItem.IsSelected = true;
-                GlobalsX.windowList.Add(window);
-                window.Closing += Window_Closing;
-                window.Show();
+                MoveTabToNewWindow.Execute(tabItem);
             };
             cm.Add(newItem);
         }
 
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            if (sender is Window window) 
-            {
-                GlobalsX.windowList.Remove(window);
-            }
-            
-            if (tabItem.Content is BookViewer viewer)
-            { 
-                viewer.Dispose();
-            }
-        }
+       
     }
 }

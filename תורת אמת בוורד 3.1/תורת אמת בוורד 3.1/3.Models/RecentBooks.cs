@@ -19,7 +19,7 @@ namespace תורת_אמת_בוורד_3._1._3.Models
             ObservableCollection<TreeItem> itemList = new ObservableCollection<TreeItem>();
             foreach (string bookItem in recentBooksHeaders)
             {
-                TreeItem treeItem = GlobalsX.treeItemsList.FirstOrDefault(fileItem => fileItem.Address.Equals(bookItem));
+                TreeItem treeItem = StaticGlobals.treeItemsList.FirstOrDefault(fileItem => fileItem.Address.Equals(bookItem));
                 if (treeItem != null) { itemList.Add(treeItem); }
             }
             if (itemList.Count > 0) { comboBox.ItemsSource = itemList; }

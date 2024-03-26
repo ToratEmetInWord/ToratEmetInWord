@@ -12,6 +12,7 @@ using TextSearchApp.SearchModels;
 using תורת_אמת_בוורד_3._1;
 using תורת_אמת_בוורד_3._1._2.ViewModels;
 using תורת_אמת_בוורד_3._1._3.Models;
+using תורת_אמת_בוורד_3._1._8.Extensions;
 using תורת_אמת_בוורד_3._1.Properties;
 
 namespace TextSearchApp
@@ -55,11 +56,11 @@ namespace TextSearchApp
         {
             if (viewModel.SearchAll == true)
             {
-                filesList = GlobalsX.treeItemsList.Select(item => item.Address).ToList();
+                filesList = StaticGlobals.treeItemsList.Select(item => item.Address).ToList();
             }
             else if (Settings.Default.SearchExplorerTabIndex == 0)
             {
-                filesList = GlobalsX.treeItemsList.Where(item => item.IsChecked == true).Select(item => item.Address).ToList();
+                filesList = StaticGlobals.treeItemsList.Where(item => item.IsChecked == true).Select(item => item.Address).ToList();
                 if (filesList.Count == 0)
                 {
                     filesList.AddRange(Settings.Default.CheckedTreeItems.Cast<string>());
@@ -67,7 +68,7 @@ namespace TextSearchApp
             }
             else if (Settings.Default.SearchExplorerTabIndex == 1)
             {
-                filesList = GlobalsX.treeItemsList.Where(item => item.IsChecked2 == true).Select(item => item.Address).ToList();
+                filesList = StaticGlobals.treeItemsList.Where(item => item.IsChecked2 == true).Select(item => item.Address).ToList();
                 if (filesList.Count == 0)
                 {
                     filesList.AddRange(Settings.Default.CheckedListBoxItems.Cast<string>());
@@ -91,7 +92,7 @@ namespace TextSearchApp
                                     </a>
                                 </summary>
                                 <p>
-                                {content}
+                                {content.ShemHashemWriting()}
                                 </p>
                             </details>";
         }

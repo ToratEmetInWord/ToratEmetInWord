@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Stfu.Linq;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -20,8 +21,12 @@ namespace תורת_אמת_בוורד_3._1._3.Models
     {
         public void OpenExternalFile()
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "(*.pdf;*.txt;*.html)|*.pdf;*.txt;*.html";
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Multiselect = false,
+                Filter = "(*.pdf;*.txt;*.html)|*.pdf;*.txt;*.html",
+                InitialDirectory = Properties.Settings.Default.DefaultExternalFolder,
+            };
             if (openFileDialog.ShowDialog() == true)
             {
                 string filePath = openFileDialog.FileName;
@@ -32,25 +37,37 @@ namespace תורת_אמת_בוורד_3._1._3.Models
                 {
                     BookItem newBook = CreateBook(fileName, filePath);
                     ChapterItem targitItem = GetTargetItem("", newBook);
-                    TabItem tabItem = CreateNewTab(fileName);
+                    TabItem tabItem = CreateNewTab(fileName, null);
                     BookViewer bookViewer = new BookViewer(newBook, tabItem);
                     bookViewer.viewModel.currentChapter = targitItem;
                     tabItem.Content = bookViewer;
                     bookViewer.viewModel.currentChapter = targitItem;
                 }
-                if (extension == ".pdf"|| extension == ".html")
+                else if (extension == ".pdf")
                 {
                     WebViewControl webViewControl = new WebViewControl();
-                    webViewControl.webView.CoreWebView2InitializationCompleted += (sender, e) =>
+                    webViewControl.CoreWebView2InitializationCompleted += (sender, e) =>
                     {
-                        webViewControl.webView.CoreWebView2.Navigate(filePath); 
+                        webViewControl.CoreWebView2.Navigate(filePath); 
                     };
-                    TabItem tabItem = CreateNewTab(fileName);
+                    TabItem tabItem = CreateNewTab(fileName, null);
+                    tabItem.Content = webViewControl;
+                    var window = Globals.ThisAddIn.Application.ActiveWindow;
+                    StaticGlobals.taskPanesDictionary[window].Width = Math.Max(StaticGlobals.taskPanesDictionary[window].Width, 600);
+                }
+                else if (extension == ".html")
+                {
+                    WebViewControl webViewControl = new WebViewControl();
+                    webViewControl.CoreWebView2InitializationCompleted += (sender, e) =>
+                    {
+                        webViewControl.CoreWebView2.Navigate(filePath);
+                    };
+                    TabItem tabItem = CreateNewTab(fileName, null);
                     tabItem.Content = webViewControl;
                 }
             }
         }
-        public void OpenSelectedFile(TreeItem selectedItem, string targetItemId)
+        public void OpenSelectedFile(TreeItem selectedItem, string targetItemId, TabControl tabControl)
         {
             if (selectedItem is FileTreeItem fileTreeItem)
             {
@@ -62,7 +79,7 @@ namespace תורת_אמת_בוורד_3._1._3.Models
                     BookItem newBook = CreateBook(fileName, filePath);
                     newBook.RelativeBooks = GetRelativeBooks(fileTreeItem);
                     ChapterItem targitItem = GetTargetItem(targetItemId, newBook);
-                    TabItem tabItem = CreateNewTab(fileName);
+                    TabItem tabItem = CreateNewTab(fileName, tabControl);
                     BookViewer bookViewer = new BookViewer(newBook, tabItem);
                     bookViewer.viewModel.currentChapter = targitItem;
                     tabItem.Content = bookViewer;
@@ -75,24 +92,42 @@ namespace תורת_אמת_בוורד_3._1._3.Models
             BookParser bookParser = new BookParser();
             return bookParser.Parse(filePath, fileName);
         }
-        ObservableCollection<object> GetRelativeBooks(TreeItem treeItem)
+        ObservableCollection<object> GetRelativeBooks(TreeItem sourceTreeItem)
         {
-            ObservableCollection<object> itemList = new ObservableCollection<object>();
-            if (treeItem.Parent != null)
+            List<TreeItem> itemList = new List<TreeItem>();
+            if (sourceTreeItem.Parent != null)
             {
-                foreach (TreeItem item in treeItem.Parent.Children)
+                foreach (TreeItem item in sourceTreeItem.Parent.Children)
                 {
-                    if (item != treeItem)
+                    if (item != sourceTreeItem)
                     {
                         itemList.Add(item);
                     }
                     else
                     {
-                        treeItem = item;
+                        sourceTreeItem = item;
                     }
                 }
             }
-            return itemList;
+
+            string nameFragment;
+            List<TreeItem> Relatives;
+            string[] splitFileName = sourceTreeItem.Name.Split(' ');
+            if (splitFileName.Length > 0) 
+            {
+                nameFragment = splitFileName[0].Trim(',').Trim(' ');
+                Relatives = StaticGlobals.treeItemsList.Where(item => (item.Name.EndsWith(nameFragment) 
+                || item.Name.StartsWith(nameFragment)) && !itemList.Contains(item)).ToList() ;
+                if (Relatives.Count > 0) { itemList.AddRange(Relatives); }
+                nameFragment = splitFileName[splitFileName.Length - 1].Trim(',').Trim(' ');
+            }
+            else { nameFragment = sourceTreeItem.Name; }
+            Relatives =  StaticGlobals.treeItemsList.Where(item => (item.Name.EndsWith(nameFragment)
+                || item.Name.StartsWith(nameFragment)) && !itemList.Contains(item)).ToList();
+            if (Relatives.Count > 0) { itemList.Concat(Relatives); }
+
+            itemList.Remove(sourceTreeItem);
+            return new ObservableCollection<object>(itemList.Select(item => item.DeepCopyFileTreeItem()).ToList());
         }
         ChapterItem GetTargetItem(string targetItemId, BookItem BookItem)
         {
@@ -106,24 +141,25 @@ namespace תורת_אמת_בוורד_3._1._3.Models
             if (targetItem == null) { targetItem = BookItem.RootItem; }
             return targetItem;
         }
-        TabItem CreateNewTab(string fileName)
+        TabItem CreateNewTab(string fileName, TabControl tabControl)
         {
+            if (tabControl == null) { tabControl = GetTabControl(); }
             TabItem tabItem = new TabItem
             {
                 Header = fileName,
             };
-            TabControl().Items.Add(tabItem);
+            tabControl.Items.Add(tabItem);
             tabItem.IsSelected = true;
             return tabItem;
         }
-        TabControl TabControl()
+        TabControl GetTabControl()
         {
             var currentWindow = Globals.ThisAddIn.Application.ActiveWindow;
-            if (!GlobalsX.mainControlsDictionary.ContainsKey(currentWindow))
+            if (!StaticGlobals.mainControlsDictionary.ContainsKey(currentWindow))
             {
-                GlobalsX.LoadTaskPane();
+                StaticGlobals.LoadTaskPane();
             }
-            return GlobalsX.mainControlsDictionary[currentWindow].tabControl.tabControl;
+            return StaticGlobals.mainControlsDictionary[currentWindow].tabControlHost.tabControl;
         }
         void updateRecentBooks(string filePath)
         {

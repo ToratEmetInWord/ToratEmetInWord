@@ -1,20 +1,11 @@
-﻿using Microsoft.Office.Interop.Word;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using אוצר_הספרים_לוורד.Controls;
 using תורת_אמת_בוורד_3._1._2.ViewModels;
 using תורת_אמת_בוורד_3._1._3.Models;
@@ -27,13 +18,13 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
     /// </summary>
     public partial class MainControl : UserControl
     {
-        MainControlViewModel viewModel;
+        public MainControlViewModel viewModel;
         public MainControl()
         {
             viewModel = new MainControlViewModel();
             DataContext = viewModel;
             InitializeComponent();
-            viewModel.populateRecentBooks(RecentBooksCombo);
+            viewModel.ShowOpenFileTab(tabControlHost.tabControl);
         }
 
         private void MenuButton_Click(object sender, RoutedEventArgs e)
@@ -43,10 +34,15 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
         }
         private void OpenFile_Click(object sender, RoutedEventArgs e)
         {
+            viewModel.ShowOpenFileTab(tabControlHost.tabControl);
+        }
+        private void OpenFile_PreviewMouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
             viewModel.OpenFile();
         }
         private void RecentBooksButton_Click(object sender, RoutedEventArgs e)
-        {            
+        {
+            viewModel.populateRecentBooks(RecentBooksCombo);
             if (RecentBooksCombo.Items.Count > 0){ RecentBooksCombo.IsDropDownOpen = true;  }
         }
         private void RecentBooksItem_Click(object sender, MouseButtonEventArgs e)
@@ -54,12 +50,16 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
             if (sender is StackPanel stackPanel)
             {
                 OpenSelected openSelected = new OpenSelected();
-                openSelected.OpenSelectedFile(stackPanel.Tag as TreeItem, "");
+                openSelected.OpenSelectedFile(stackPanel.Tag as TreeItem, "", null);
             }
         }
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            GlobalsX.ShowSearchWindow();
+            viewModel.ShowSearchTab(tabControlHost.tabControl);
+        }
+        private void SearchButton_PreviewMouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            viewModel.ShowSearchWindow();
         }
         private void FontsButton_Click(object sender, RoutedEventArgs e)
         {
@@ -74,7 +74,7 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
         }
         private void OpenFilesFolder_Selected(object sender, RoutedEventArgs e)
         {
-            Process.Start("explorer.exe", GlobalsX.mainFolder);
+            Process.Start("explorer.exe", StaticGlobals.mainFolder);
         }
         private void CreateNewIndex_Selected(object sender, RoutedEventArgs e)
         {
@@ -117,7 +117,7 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
 
         private void DictionaryButton_Click(object sender, RoutedEventArgs e)
         {
-            GlobalsX.ShowAramaicDictionary();
+            StaticGlobals.ShowAramaicDictionary();
         }
 
         private void AboutButton_Selected(object sender, RoutedEventArgs e)
@@ -125,5 +125,36 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
             try { System.Diagnostics.Process.Start("https://mitmachim.top/post/704012"); }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
+
+        private void ShemHashemDisplayOptions_Selected(object sender, RoutedEventArgs e)
+        {
+            viewModel.ShemHashemDisplayOptions();
+        }
+
+        private void DeleteIndex_Selected(object sender, RoutedEventArgs e)
+        {
+            viewModel.DeleteIndex();
+        }
+
+        private void CopyRightButton_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.ShowCopyRight(tabControlHost.tabControl);
+        }
+
+        private void SetExternalDefaultFolder_Selected(object sender, RoutedEventArgs e)
+        {
+            viewModel.SetDefaultExternalFolder();
+        }
+
+        private void UserControl_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.O && Keyboard.Modifiers == ModifierKeys.Control)
+            {
+                viewModel.ShowOpenFileTab(tabControlHost.tabControl);
+            }
+        }
+
+
+
     }
 }

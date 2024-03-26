@@ -1,9 +1,12 @@
 ﻿using Microsoft.Web.WebView2.Wpf;
 using System;
 using System.IO;
+using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Windows;
+using תורת_אמת_בוורד_3._1._1.Controls;
 using Word = Microsoft.Office.Interop.Word;
 
 namespace תורת_אמת_בוורד_3._1._6.WebViewModels
@@ -193,9 +196,6 @@ else
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }  
         }
-
-
-       
 
 
     }

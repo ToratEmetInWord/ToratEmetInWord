@@ -31,6 +31,7 @@ namespace תורת_אמת_בוורד_3._1._2.ViewModels
         bool _searchAllCheckBox = Properties.Settings.Default.SearchALL;
         bool _chooseBooksIsEnabled =! Properties.Settings.Default.SearchALL;
         bool _expandSnippets;
+        Visibility _progressBarVisibility = Visibility.Collapsed;
         public string SearchString
         {
             get { return _searchString; }
@@ -40,6 +41,18 @@ namespace תורת_אמת_בוורד_3._1._2.ViewModels
                 {
                     _searchString = value;
                     OnPropertyChanged(nameof(SearchString));
+                }
+            }
+        }
+        public Visibility ProgressBarVisibility
+        {
+            get { return _progressBarVisibility; }
+            set
+            {
+                if (_progressBarVisibility != value)
+                {
+                    _progressBarVisibility = value;
+                    OnPropertyChanged(nameof(ProgressBarVisibility));
                 }
             }
         }
@@ -127,7 +140,7 @@ namespace תורת_אמת_בוורד_3._1._2.ViewModels
 
         public void InitializeWebview()
         {
-            webView = searchControl.webView.webView;
+            webView = searchControl.webView;
             webView.WebMessageReceived += (sender, e) =>
             {
                 try
@@ -137,11 +150,11 @@ namespace תורת_אמת_בוורד_3._1._2.ViewModels
                     message = Regex.Replace(message, @"\s{2,}", "");
                     string[] splitMessage = message.Split('|');
 
-                    TreeItem TreeItem = GlobalsX.treeItemsList.FirstOrDefault(item => item.Address == splitMessage[0]);
+                    TreeItem TreeItem = StaticGlobals.treeItemsList.FirstOrDefault(item => item.Address == splitMessage[0]);
                     string targetId = splitMessage[1].CleanHeaders().RemoveTextTillFirstChar(',').Trim();
                     
                     OpenSelected openSelected = new OpenSelected();
-                    openSelected.OpenSelectedFile(TreeItem, targetId);
+                    openSelected.OpenSelectedFile(TreeItem, targetId, null);
                 }
                 catch (Exception ex) { MessageBox.Show(ex.Message); }
             };
@@ -168,11 +181,14 @@ namespace תורת_אמת_בוורד_3._1._2.ViewModels
             }
             else
             {
+                ProgressBarVisibility = Visibility.Visible;
                 isBusy =true;
-                RecentSearches recentSearches = new RecentSearches();
-                recentSearches.UpdateList(SearchString);
+                string searchText = SearchString.ShemHashemWritingReverse();
 
-                await searchMethod.ExcuteSearchMethod(SearchString);
+                RecentSearches recentSearches = new RecentSearches();
+                recentSearches.UpdateList(searchText);
+
+                await searchMethod.ExcuteSearchMethod(searchText);
                 resultsList = searchMethod.GetSearchResults();
                 if (resultsList != null && resultsList.Count >  0)
                 {
@@ -182,6 +198,7 @@ namespace תורת_אמת_בוורד_3._1._2.ViewModels
                 }
                 else { MessageBox.Show("לא נמצאו תוצאות"); }               
                 MaxProgress = 100;
+                ProgressBarVisibility = Visibility.Collapsed;
                 isBusy = false;
             }           
         }

@@ -13,9 +13,9 @@ namespace TextSearchApp.SearchModels
 
         public bool IndexExists()
         {
-            if (Directory.Exists(GlobalsX.indexFolder))
+            if (Directory.Exists(StaticGlobals.indexFolder))
             {
-                int filesCount = Directory.GetFileSystemEntries(GlobalsX.indexFolder).Length;
+                int filesCount = Directory.GetFileSystemEntries(StaticGlobals.indexFolder).Length;
                 if (filesCount > 0)
                 {
                     return true;
@@ -26,7 +26,7 @@ namespace TextSearchApp.SearchModels
 
         public void DeleteIndex()
         {
-            if (Directory.Exists(GlobalsX.indexFolder)) { Directory.Delete(GlobalsX.indexFolder, true); Directory.CreateDirectory(GlobalsX.indexFolder); }
+            if (Directory.Exists(StaticGlobals.indexFolder)) { Directory.Delete(StaticGlobals.indexFolder, true); Directory.CreateDirectory(StaticGlobals.indexFolder); }
         }
     }
 }

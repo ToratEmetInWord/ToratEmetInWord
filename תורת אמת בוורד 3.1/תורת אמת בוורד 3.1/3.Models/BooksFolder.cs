@@ -14,7 +14,7 @@ namespace תורת_אמת_בוורד_3._1._3.Models
     {
         public static void CreateShortcuts()
         {
-            string[] shortcuts = Directory.GetFiles(GlobalsX.booksFolder, "*.lnk");
+            string[] shortcuts = Directory.GetFiles(StaticGlobals.booksFolder, "*.lnk");
             if (shortcuts.Length == 0)
             {
                 string myDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -22,11 +22,12 @@ namespace תורת_אמת_בוורד_3._1._3.Models
                 string myBooksFolder = Path.Combine(myDocumentsPath, "ToratEmetUserData", "MyBooks");
 
                 if (Directory.Exists(toratEmetInstall)){ CreateToratEmetShortcuts(toratEmetInstall); }
-                if (Directory.Exists(myBooksFolder)) { createShortcut(myBooksFolder, GlobalsX.booksFolder);  }
+                if (Directory.Exists(myBooksFolder)) { createShortcut(myBooksFolder, StaticGlobals.booksFolder);  }
 
+                shortcuts = Directory.GetFiles(StaticGlobals.booksFolder, "*.lnk");
                 if (shortcuts.Length == 0)
                 {
-                    MessageBox.Show("לא נמצאו ספרים במחשב אנא התקינו את ספריית תורת אמת, או הוסיפו קיצור דרך לתיקיית הספרים שלכם בתוך תיקיית \"המסמכים שלי > תורת אמת בוורד > ספרים\"");
+                    MessageBox.Show("לא נמצאו ספרים במחשב אנא התקינו את ספריית תורת אמת");
                 }
             }
         }
@@ -37,7 +38,7 @@ namespace תורת_אמת_בוורד_3._1._3.Models
             {
                 if (!Regex.IsMatch(toratEmetFolder, @"000_ACCESORIES|500_MY_BOOKS|170_GROUPS"))
                 {
-                    createShortcut(toratEmetFolder, GlobalsX.booksFolder);
+                    createShortcut(toratEmetFolder, StaticGlobals.booksFolder);
                 }
             }
         }

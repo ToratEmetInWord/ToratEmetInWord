@@ -69,14 +69,14 @@ namespace תורת_אמת_בוורד_3._1._2.ViewModels
 
         public void CheckAllTreeItems()
         {
-            foreach (var item in GlobalsX.RootItems) 
+            foreach (var item in StaticGlobals.RootItems) 
             {
                item.IsChecked = true;
             }
         }
         public void UncheckAllTreeItems() 
         {
-            foreach (var item in GlobalsX.RootItems)
+            foreach (var item in StaticGlobals.RootItems)
             {
                 item.IsChecked = false;
             }

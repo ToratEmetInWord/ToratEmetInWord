@@ -39,18 +39,18 @@ namespace TextSearchApp.SearchModels
 
         public async Task CreateIndex()
         {
-            filePaths = GlobalsX.treeItemsList.Select(item => item.Address).ToList();
+            filePaths = StaticGlobals.treeItemsList.Select(item => item.Address).ToList();
             progressBar.progressBar.Maximum = filePaths.Count;
             await Task.Run(() =>
             {
-                if (SIO.Directory.Exists(GlobalsX.indexFolder)) { DeleteIndex(); }
+                if (SIO.Directory.Exists(StaticGlobals.indexFolder)) { DeleteIndex(); }
                 processFiles();
             });
         }
 
         void processFiles()
         {
-            using (directory = FSDirectory.Open(new DirectoryInfo(GlobalsX.indexFolder)))
+            using (directory = FSDirectory.Open(new DirectoryInfo(StaticGlobals.indexFolder)))
             using (analyzer = new WhitespaceAnalyzer())
             using (writer = new IndexWriter(directory, analyzer, IndexWriter.MaxFieldLength.UNLIMITED))
             {
@@ -89,15 +89,14 @@ namespace TextSearchApp.SearchModels
                 templates.ApplyTemplates(line, filePath, null, false);
             }
 
-            string cleanedLine = Regex.Replace(line, @"[\p{Mn}\\+]*", "");
+            string cleanedLine = Regex.Replace(line, @"[\p{Mn}\\+]*", "").Replace("<", " <").Replace(">", "> ");
             
             docNumber++;
             var doc = new Document();
             doc.Add(new Field("DocNumber", docNumber.ToString(), Field.Store.YES, Field.Index.NO));
             doc.Add(new Field("FilePath", filePath, Field.Store.YES, Field.Index.NO));
             doc.Add(new Field("HeaderId", currentHeader, Field.Store.YES, Field.Index.NO));
-            doc.Add(new Field("Snippet", line, Field.Store.YES, Field.Index.NO));
-            doc.Add(new Field("CleanSnippet", cleanedLine, Field.Store.YES, Field.Index.ANALYZED));
+            doc.Add(new Field("Snippet", cleanedLine, Field.Store.YES, Field.Index.ANALYZED));
             writer.AddDocument(doc);
         }
     }

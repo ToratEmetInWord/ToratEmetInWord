@@ -57,6 +57,27 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
             }
         }
 
+        private void ContentPanel_PreviewDrop(object sender, DragEventArgs e)
+        {
+            TabItem droppedTab = e.Data.GetData(typeof(TabItem)) as TabItem;
+
+            if (droppedTab != null)
+            {
+                TabControl tabControl = FindParentOrChild.TryFindParent<TabControl>(sender as Border);
+                TabControl sourceControl = droppedTab.Parent as TabControl;
+
+                if (tabControl != null)
+                {
+                    var content = droppedTab.Content;
+                    droppedTab.Content = null;
+                    sourceControl.Items.Remove(droppedTab);
+                    tabControl.Items.Add(droppedTab);
+                    tabControl.SelectedItem = droppedTab;
+                    droppedTab.Content = content;
+                }
+            }
+        }
+
         private void TabBorder_Drop(object sender, DragEventArgs e)
         {
             if (sender is Border border)
@@ -70,6 +91,7 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
             if (droppedTab != null && destinationTab != null)
             {
                 TabControl tabControl = destinationTab.Parent as TabControl;
+                TabControl sourceControl = droppedTab.Parent as TabControl;
 
                 if (tabControl != null)
                 {
@@ -77,9 +99,12 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
 
                     if (insertionIndex != -1)
                     {
-                        tabControl.Items.Remove(droppedTab);
+                        var content = droppedTab.Content;
+                        droppedTab.Content = null;
+                        sourceControl.Items.Remove(droppedTab);
                         tabControl.Items.Insert(insertionIndex, droppedTab);
                         tabControl.SelectedIndex = insertionIndex;
+                        droppedTab.Content = content;
                     }
                 }
             }
@@ -168,7 +193,11 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
             }
             else if (tabItem.Content is WebViewControl webViewControl)
             {
-                webViewControl.webView.Dispose();
+                webViewControl.Dispose();
+            }
+            else if (tabItem.Content is WebBrowser webBrowser)
+            {
+                webBrowser.Dispose();
             }
         }
 
@@ -215,6 +244,15 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
             if (listBox.SelectedItem != null)
             {
                 listBox.ScrollIntoView(listBox.SelectedItem);
+            }
+        }
+
+        private void tabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (tabControl.Items.Count == 0)
+            {
+                TabsWindow window = FindParentOrChild.TryFindParent<TabsWindow>(this);
+                if (window != null) { try { window.Close(); } catch { } }
             }
         }
     }

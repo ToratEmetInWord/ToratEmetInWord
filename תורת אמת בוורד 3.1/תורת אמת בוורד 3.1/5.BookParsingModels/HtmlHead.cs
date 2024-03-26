@@ -72,6 +72,7 @@ box-sizing: border-box;
         window.chrome.webview.postMessage('openComboContent=' + tabName);
     }}
 
+
 {TreeViewJS()}
 {CurrentChapterJs()}
 
@@ -101,10 +102,7 @@ padding-left: 10px;
   flex-direction: column;
   height: 100%;
   max-width:0px;
-  
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+user-select: none;
 }}
 
 #treeView-SearchInput {{margin: 10px;

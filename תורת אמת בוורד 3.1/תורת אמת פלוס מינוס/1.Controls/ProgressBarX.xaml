@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="אוצר_הספרים_לוורד.Controls.ProgressBarX"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:אוצר_הספרים_לוורד.Controls"
+             mc:Ignorable="d"
+             FlowDirection="RightToLeft"
+             Height="Auto" Width="Auto">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="MessageBlock" Grid.Row="0" Margin="10"
+                   MinHeight="34">
+            כדי להשתמש בחיפוש המהיר יש ליצור אינדקס. <LineBreak/>
+                   האם ברצונך ליצור אינדקס כעת?
+        </TextBlock>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal"
+                    FlowDirection="LeftToRight"
+                    Background="#FFE6E6E6">
+            <Button x:Name="CancelButton"
+                    Content="לא"
+                    Margin="10" Padding="4,0,4,2"
+                    BorderBrush="#FFBCBCBC"
+                    MinWidth="50"
+                    Click="CancelButton_Click"/>
+            <Button x:Name="OkButton"
+                    Content="כן"
+                    Margin="10" Padding="4,0,4,2" BorderBrush="#FFBCBCBC"
+                    MinWidth="50"
+                    Click="OkButton_Click"/>
+        </StackPanel>
+        <ProgressBar x:Name="progressBar"
+                     Grid.Row="1"
+                     Height="25" MinWidth="200"
+                     Margin="10"/>
+    </Grid>
+</UserControl>

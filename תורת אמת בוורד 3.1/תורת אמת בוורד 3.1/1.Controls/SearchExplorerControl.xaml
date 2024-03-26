@@ -51,7 +51,7 @@
             </TreeView>
 
                 <!--row 1 (buttons)-->
-                <Grid  Grid.Row="1">
+                <Grid  Grid.Row="1" Visibility="Collapsed">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
                         <ColumnDefinition Width="*"/>
@@ -113,7 +113,7 @@
                 </ListBox>
 
                 <!--row 2 (buttons)-->
-                <Grid  Grid.Row="2" Grid.ColumnSpan="2">
+                <Grid  Grid.Row="2" Grid.ColumnSpan="2" Visibility="Collapsed">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
                         <ColumnDefinition Width="*"/>

@@ -8,105 +8,116 @@
              mc:Ignorable="d" 
              FlowDirection="RightToLeft"
              FontSize="14"
+             Padding="0"
              d:DesignHeight="450" d:DesignWidth="300">
     <UserControl.Resources>
         <Style TargetType="Button">
             <Setter Property="Background" Value="#FFEFEFEF"/>
             <Setter Property="BorderBrush"  Value="#FFACACAC"/>
-            <Setter Property="Padding" Value="5,0,5,2"/>
             <Setter Property="ToolTipService.InitialShowDelay" Value="0"/>
         </Style>
         <Style TargetType="ToolTip">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="ToolTip">
-                        <Border BorderBrush="#FFACACAC" BorderThickness="1">
-                        <TextBlock Text="{TemplateBinding Content}" 
-                         TextWrapping="Wrap" MaxWidth="200"
-                         Background="White"/>
+                        <Border BorderBrush="#FFACACAC" BorderThickness="1"
+                                Padding="3" Background="White">
+                            <TextBlock Text="{TemplateBinding Content}" 
+                         TextWrapping="Wrap" MaxWidth="200"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
     </UserControl.Resources>
-    
-    <TabControl x:Name="tabControl" SelectionChanged="TabControl_SelectionChanged">
-        
-        <TabItem Header="עץ ספרים">
-            <TreeView x:Name="treeView" BorderThickness="0"
-                      KeyDown="treeView_KeyDown" MouseDoubleClick="treeView_MouseDoubleClick">
-                <TreeView.Resources>
-                    
-                    <HierarchicalDataTemplate DataType="{x:Type treeSource:FolderTreeItem}" ItemsSource="{Binding Children}">
-                        <StackPanel x:Name="FolderItemPanel" Orientation="Horizontal">
-                            <Image Source="/תורת אמת בוורד 3.1;component/Resources/StandingFolderIcon.ico"
-                                 Height="18" Margin="0,0,3,0"/>
-                            <TextBlock Text="{Binding Name}" />
-                        </StackPanel>
-                    </HierarchicalDataTemplate>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
 
-                    <HierarchicalDataTemplate DataType="{x:Type treeSource:FileTreeItem}" ItemsSource="{Binding Children}">
-                        <StackPanel x:Name="FolderItemPanel" Orientation="Horizontal">
-                            <Button ToolTip="פתח" 
-                                Margin="0,0,3,0" Background="{x:Null}" BorderThickness="0"
-                                     Click="FileItemButton_Click" Tag="{Binding BindsDirectlyToSource=True}">
-                                <Image Source="/תורת אמת בוורד 3.1;component/Resources/TxtFileIcon.ico"
-                                        Height="15"/>
-                            </Button>
-                            <TextBlock Text="{Binding Name}" />
-                        </StackPanel>
-                    </HierarchicalDataTemplate>
+        <ComboBox x:Name="SearchComboBox" ItemsSource="{Binding ResultList}"
+            Width="0" Grid.Row="0" Grid.Column="0"
+                  PreviewKeyDown="SearchComboBox_PreviewKeyDown">
+            <ComboBox.Resources>
+                <DataTemplate DataType="{x:Type treeSource:FileTreeItem}">
+                    <StackPanel x:Name="FolderItemPanel" Orientation="Horizontal"
+                                PreviewMouseDown="FolderItemPanel_PreviewMouseDown"
+                                Tag="{Binding BindsDirectlyToSource=True}">
+                        <Image Source="/תורת אמת בוורד 3.1;component/Resources/TxtFileIcon.ico"
+                                   Height="15" Margin="0,0,3,0"/>
+                        <TextBlock Text="{Binding Name}" />
+                        <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type ComboBox}}, Path=Tag}"
+                                   Foreground="#FFA2A4A5"/>
+                    </StackPanel>
+                </DataTemplate>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="Tag" Value="{Binding BindsDirectlyToSource=True}"/>
+                </Style>
+            </ComboBox.Resources>
+        </ComboBox>
 
-                    <Style TargetType="TreeViewItem">
-                        <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
-                    </Style>
-                </TreeView.Resources>
-            </TreeView>
-        </TabItem>
+        <TextBox x:Name="SearchTextBox"
+ ToolTip="כדי לפתוח מיקום מדוייק בספר יש להזין את הכתובת המדוייקת על ידי הפרדה של פסיקים (לדוגמא: &quot;בראשית, יג, יד&quot;)."
+ Grid.Row="0" Grid.Column="1" 
+ Margin="3"
+ PreviewKeyDown="SearchTextBox_PreviewKeyDown"/>
 
-        <TabItem Header="איתור ספר">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="auto"/>
-                </Grid.ColumnDefinitions>
-                <TextBox x:Name="SearchTextBox"
-                         ToolTip="כדי לאתר מיקום מדוייק בספר יש להזין את הכתובת המדוייקת על ידי הפרדה של פסיקים (לדוגמא: &quot;בראשית, יג, יד&quot;)."
-                         Grid.Row="0" Grid.Column="0" 
-                         Margin="3"
-                         PreviewKeyDown="SearchTextBox_PreviewKeyDown"/>
-                <Button x:Name="SearchButton" Content="חפש"
-                        Grid.Row="0" Grid.Column="1" 
-                        Margin="3"
-                        Click="SearchButton_Click"/>
-                
-                <ListBox x:Name="SearchListBox"
-                         Grid.Row="1" Grid.ColumnSpan="2"
-                         Margin="3" 
-                         KeyDown="SearchListBox_KeyDown"
-                         MouseDoubleClick="SearchListBox_MouseDoubleClick"
-                         ItemsSource="{Binding ResultList}">
-                    <ListBox.Resources>
-                        <DataTemplate DataType="{x:Type treeSource:FileTreeItem}">
-                            <StackPanel x:Name="FolderItemPanel" Orientation="Horizontal">
-                                <Button ToolTip="פתח"  
-                                    Margin="0,0,3,0" Background="{x:Null}" BorderThickness="0"
-                                        Click="FileListItemButton_Click" Tag="{Binding BindsDirectlyToSource=True}">
-                                    <Image Source="/תורת אמת בוורד 3.1;component/Resources/TxtFileIcon.ico"
-                                            Height="15"/>
-                                </Button>
-                                <TextBlock Text="{Binding Name}"/>
-                                <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type ListBox}}, Path=Tag}"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListBox.Resources>
-                </ListBox>
-            </Grid>
-        </TabItem>
-    </TabControl>
+        <!--search combo button-->
+        <StackPanel Orientation="Horizontal"
+            Grid.Row="0" Grid.Column="2" 
+            Margin="3">
+            <ComboBox x:Name="RecentSearchesCombo"
+               Width="0"
+               SelectionChanged="RecentSearchesCombo_SelectionChanged"/>
+            <Button x:Name="SearchButton" Content="חפש"
+                    BorderThickness="1,1,0,1"
+                    Padding="5,0,2,2"
+                    Click="SearchButton_Click"/>
+            <Button x:Name="RecentSearchesButton" Content="⏷"
+             ToolTip="חיפושים אחרונים"
+             FontSize="8"
+             Padding="0,0,2,2"
+             BorderThickness="0,1,1,1"
+             Click="RecentSearchesButton_Click"/>
+        </StackPanel>
+
+        <TreeView x:Name="treeView" 
+                 Grid.Row="1" Grid.ColumnSpan="3"
+                 Margin="0,2,0,0"
+                 BorderThickness="0,0.1,0,0"
+             KeyDown="treeView_KeyDown" MouseDoubleClick="treeView_MouseDoubleClick">
+            <TreeView.Resources>
+
+                <HierarchicalDataTemplate DataType="{x:Type treeSource:FolderTreeItem}" ItemsSource="{Binding Children}">
+                    <StackPanel x:Name="FolderItemPanel" Orientation="Horizontal">
+                        <Image Source="/תורת אמת בוורד 3.1;component/Resources/StandingFolderIcon.ico"
+                        Height="18" Margin="0,0,3,0"/>
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+
+                <HierarchicalDataTemplate DataType="{x:Type treeSource:FileTreeItem}" ItemsSource="{Binding Children}">
+                    <StackPanel x:Name="FolderItemPanel" Orientation="Horizontal">
+                        <Button ToolTip="פתח" 
+                       Margin="0,0,3,0" Background="{x:Null}" BorderThickness="0"
+                            Click="FileItemButton_Click" Tag="{Binding BindsDirectlyToSource=True}">
+                            <Image Source="/תורת אמת בוורד 3.1;component/Resources/TxtFileIcon.ico"
+                               Height="15"/>
+                        </Button>
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+
+                <Style TargetType="TreeViewItem">
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                </Style>
+            </TreeView.Resources>
+        </TreeView>
+    </Grid>
 </UserControl>

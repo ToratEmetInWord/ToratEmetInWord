@@ -36,7 +36,7 @@ namespace תורת_אמת_בוורד_3._1.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        [global::System.Configuration.DefaultSettingValueAttribute("215")]
         public double OpenFileWindowLeft {
             get {
                 return ((double)(this["OpenFileWindowLeft"]));
@@ -48,7 +48,7 @@ namespace תורת_אמת_בוורד_3._1.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        [global::System.Configuration.DefaultSettingValueAttribute("215")]
         public double SearchWindowLeft {
             get {
                 return ((double)(this["SearchWindowLeft"]));
@@ -243,6 +243,52 @@ namespace תורת_אמת_בוורד_3._1.Properties {
             }
             set {
                 this["UseArmaicDictionary"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int ShemHashemDisplayOptions {
+            get {
+                return ((int)(this["ShemHashemDisplayOptions"]));
+            }
+            set {
+                this["ShemHashemDisplayOptions"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DefaultExternalFolder {
+            get {
+                return ((string)(this["DefaultExternalFolder"]));
+            }
+            set {
+                this["DefaultExternalFolder"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Collections.Specialized.StringCollection OpenFileRecentSearches {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["OpenFileRecentSearches"]));
+            }
+            set {
+                this["OpenFileRecentSearches"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Collections.Specialized.StringCollection Setting {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["Setting"]));
+            }
+            set {
+                this["Setting"] = value;
             }
         }
     }
