@@ -48,23 +48,7 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
         {
             e.Cancel = true;
             Visibility = Visibility.Collapsed;
-            StringCollection checkedTreeItems = new StringCollection();
-            checkedTreeItems.AddRange(
-                StaticGlobals.treeItemsList
-                    .Where(item => item.IsChecked == true)
-                    .Select(item => item.Address)
-                    .ToArray());
-            Properties.Settings.Default.CheckedTreeItems = checkedTreeItems;
-
-            StringCollection checkedListBoxItems = new StringCollection();
-            checkedListBoxItems.AddRange(
-                StaticGlobals.treeItemsList
-                    .Where(item => item.IsChecked2 == true)
-                    .Select(item => item.Address)
-                    .ToArray());
-            Properties.Settings.Default.CheckedListBoxItems = checkedListBoxItems;
-
-            Properties.Settings.Default.Save();
+            StaticGlobals.SaveCheckedStatus();
         }
 
         public void SetOwner()

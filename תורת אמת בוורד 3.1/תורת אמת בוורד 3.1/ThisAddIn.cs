@@ -45,6 +45,8 @@ namespace תורת_אמת_בוורד_3._1
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
         {
+            StaticGlobals.SaveCheckedStatus();
+
             if (StaticGlobals.windowList.Count > 0) 
             {
                 List<Window> list = new List<Window>();

@@ -90,6 +90,8 @@ C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 
 C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 3.1\תורת אמת בוורד 3.1\bin\Debug\System.ValueTuple.dll
 C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 3.1\תורת אמת בוורד 3.1\bin\Debug\Typography.GlyphLayout.dll
 C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 3.1\תורת אמת בוורד 3.1\bin\Debug\Typography.OpenFont.dll
+C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 3.1\תורת אמת בוורד 3.1\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 3.1\תורת אמת בוורד 3.1\bin\Debug\ICSharpCode.SharpZipLib.xml
 C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 3.1\תורת אמת בוורד 3.1\bin\Debug\Lucene.Net.pdb
 C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 3.1\תורת אמת בוורד 3.1\bin\Debug\Lucene.Net.xml
 C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 3.1\תורת אמת בוורד 3.1\bin\Debug\Microsoft.Web.WebView2.Core.xml
@@ -132,3 +134,4 @@ C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 
 C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 3.1\תורת אמת בוורד 3.1\obj\Debug\תורת אמת.C44ABE18.Up2Date
 C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 3.1\תורת אמת בוורד 3.1\obj\Debug\תורת אמת בוורד 3.1.dll
 C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 3.1\תורת אמת בוורד 3.1\obj\Debug\תורת אמת בוורד 3.1.pdb
+C:\Users\0533105132\Documents\GitHub\ToratEmetInWord\תורת אמת בוורד 3.1\תורת אמת בוורד 3.1\bin\Debug\תורת אמת בוורד 3.1.tlb

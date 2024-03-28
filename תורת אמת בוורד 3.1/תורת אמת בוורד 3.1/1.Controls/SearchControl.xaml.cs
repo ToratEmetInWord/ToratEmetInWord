@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using תורת_אמת_בוורד_3._1._2.ViewModels;
 using תורת_אמת_בוורד_3._1._3.Models;
 using תורת_אמת_בוורד_3._1._6.WebViewModels;
@@ -48,12 +37,14 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
         {
             if (e.Key == Key.Enter)
             {
+                BookExplorerTabControl.SelectedIndex = 0;
                 viewModel.Search();
                 e.Handled = true;
             }
         }
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
+            BookExplorerTabControl.SelectedIndex = 0;
             viewModel.Search();
         }
 
@@ -97,6 +88,11 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
 
         private void SearchExplorerButton_Click(object sender, RoutedEventArgs e)
         {
+            BookExplorerTabControl.SelectedIndex = 1;
+        }
+
+        private void SearchExplorerButton_PreviewMouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
             StaticGlobals.ShowSearchExplorerWindow();
         }
 
@@ -113,6 +109,11 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
             RecentSearches recentSearches = new RecentSearches();
             recentSearches.PopulateMenu(RecentSearchesCombo);
             RecentSearchesCombo.IsDropDownOpen = true; 
+        }
+
+        private void SearchAllCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            if (BookExplorerTabControl != null) { BookExplorerTabControl.SelectedIndex = 0; }
         }
     }
 }

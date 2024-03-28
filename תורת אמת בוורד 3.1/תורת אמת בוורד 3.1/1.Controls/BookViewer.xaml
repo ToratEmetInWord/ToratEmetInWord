@@ -97,16 +97,16 @@
                     Click="NextButton_Click">
                 <TextBlock Text="⎗"/>
             </Button>
-            <Button x:Name="NikkudButton" ToolTip="הצג/הסתר ניקוד"
+            <ToggleButton x:Name="NikkudButton" ToolTip="הצג/הסתר ניקוד"
                     Click="NikkudButton_Click">
                 <Image Source="/תורת אמת בוורד 3.1;component/Resources/Komatz.png" 
                        Height="6"/>
-            </Button>
-            <Button x:Name="CatillationsButton" ToolTip="הצג/הסתר טעמים"
+            </ToggleButton>
+            <ToggleButton x:Name="CatillationsButton" ToolTip="הצג/הסתר טעמים"
                     Click="CatillationsButton_Click">
                 <Image Source="/תורת אמת בוורד 3.1;component/Resources/Cantillations.png" 
                        Height="8"/>
-            </Button>
+            </ToggleButton>
             <Button x:Name="RefreshButton" ToolTip="רענן" Click="RefreshButton_Click">
                 <TextBlock Text="⟳" FontWeight="DemiBold"/>
             </Button>

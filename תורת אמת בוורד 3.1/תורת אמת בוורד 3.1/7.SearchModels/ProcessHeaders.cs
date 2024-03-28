@@ -19,7 +19,7 @@ namespace TextSearchApp
         {
             if (filePath.Contains("TORA")||filePath.Contains("NAVI")||filePath.Contains("KTUVIM"))
             {
-                line = templates.TanachTemplate(line);
+                line = templates.TanachTemplate(line, filePath);
             }
 
             if (line.StartsWith("$"))

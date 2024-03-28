@@ -12,6 +12,7 @@ using תורת_אמת_בוורד_3._1._3.Models;
 using System.Text.RegularExpressions;
 using System.Windows.Controls;
 using System.Threading.Tasks;
+using System.Linq;
 namespace תורת_אמת_בוורד_3._1
 {
     public static class StaticGlobals
@@ -36,7 +37,9 @@ namespace תורת_אמת_בוורד_3._1
             Word.Window currentWindow = Globals.ThisAddIn.Application.ActiveWindow;
             if (!taskPanesDictionary.ContainsKey(currentWindow))
             {
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                     Updater.CheckForUpdates();
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                     SetFoldersPaths();
                     TreeLoader treeLoader = new TreeLoader();
                     treeLoader.PopulateTree(null);
@@ -158,6 +161,27 @@ namespace תורת_אמת_בוורד_3._1
             StaticGlobals.openFileControl.SearchTextBox.Text = input;
             StaticGlobals.openFileControl.SearchTextBox.SelectAll();
             StaticGlobals.openFileControl.SearchTextBox.Focus();
-        }        
+        }       
+        
+        public static void SaveCheckedStatus()
+        {
+            StringCollection checkedTreeItems = new StringCollection();
+            checkedTreeItems.AddRange(
+                StaticGlobals.treeItemsList
+                    .Where(item => item.IsChecked == true)
+                    .Select(item => item.Address)
+                    .ToArray());
+            Properties.Settings.Default.CheckedTreeItems = checkedTreeItems;
+
+            StringCollection checkedListBoxItems = new StringCollection();
+            checkedListBoxItems.AddRange(
+                StaticGlobals.treeItemsList
+                    .Where(item => item.IsChecked2 == true)
+                    .Select(item => item.Address)
+                    .ToArray());
+            Properties.Settings.Default.CheckedListBoxItems = checkedListBoxItems;
+
+            Properties.Settings.Default.Save();
+        }
     }
 }

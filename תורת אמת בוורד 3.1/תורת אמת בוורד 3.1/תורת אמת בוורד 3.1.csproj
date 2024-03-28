@@ -36,7 +36,7 @@
     <PublishUrl>C:\Users\0533105132\Desktop\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.9</ApplicationVersion>
+    <ApplicationVersion>1.0.0.11</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -96,6 +96,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
     <DefineConstants>$(DefineConstants);DEBUG;TRACE</DefineConstants>
     <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
   </PropertyGroup>
   <!--
     This section defines properties that are set when the "Release" configuration is selected.
@@ -129,8 +130,8 @@
     <Reference Include="Emoji.Wpf, Version=0.3.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Emoji.Wpf.0.3.4\lib\net40\Emoji.Wpf.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
-      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.4.2.13, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.4.2\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
       <HintPath>..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
@@ -149,8 +150,8 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="Stfu, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stfu.0.1.1\lib\net40\Stfu.dll</HintPath>
+    <Reference Include="Stfu, Version=0.1.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stfu.0.1.9\lib\net40\Stfu.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -392,7 +393,6 @@
       <DependentUpon>ThisAddIn.Designer.xml</DependentUpon>
     </Compile>
     <AppDesigner Include="Properties\" />
-    <None Include="תורת אמת בוורד 3.1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="1.Controls\AramaicDictionaryControl.cs.xaml">
@@ -479,6 +479,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Todo.txt" />
+    <Content Include="toratemetinWord.ico" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -492,6 +493,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>78BE2DE921F1180717C2549FAF0A99F39A944F62</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>toratemetinWord.ico</ApplicationIcon>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -512,9 +516,9 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\JeremyAnsel.HLSL.Targets.1.0.13\build\JeremyAnsel.HLSL.Targets.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JeremyAnsel.HLSL.Targets.1.0.13\build\JeremyAnsel.HLSL.Targets.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.2420.47\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.2420.47\build\Microsoft.Web.WebView2.targets'))" />
+    <Error Condition="!Exists('..\packages\JeremyAnsel.HLSL.Targets.2.0.20\build\JeremyAnsel.HLSL.Targets.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JeremyAnsel.HLSL.Targets.2.0.20\build\JeremyAnsel.HLSL.Targets.targets'))" />
   </Target>
-  <Import Project="..\packages\JeremyAnsel.HLSL.Targets.1.0.13\build\JeremyAnsel.HLSL.Targets.targets" Condition="Exists('..\packages\JeremyAnsel.HLSL.Targets.1.0.13\build\JeremyAnsel.HLSL.Targets.targets')" />
   <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2420.47\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2420.47\build\Microsoft.Web.WebView2.targets')" />
+  <Import Project="..\packages\JeremyAnsel.HLSL.Targets.2.0.20\build\JeremyAnsel.HLSL.Targets.targets" Condition="Exists('..\packages\JeremyAnsel.HLSL.Targets.2.0.20\build\JeremyAnsel.HLSL.Targets.targets')" />
 </Project>

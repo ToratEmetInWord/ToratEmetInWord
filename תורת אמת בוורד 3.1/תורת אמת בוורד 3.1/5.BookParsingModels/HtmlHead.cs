@@ -99,6 +99,7 @@ padding-left: 10px;
 }}
 
 .treeView-container {{display: flex;
+font-size: initial;
   flex-direction: column;
   height: 100%;
   max-width:0px;

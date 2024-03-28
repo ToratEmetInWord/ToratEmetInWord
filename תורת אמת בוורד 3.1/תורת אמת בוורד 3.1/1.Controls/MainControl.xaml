@@ -49,6 +49,7 @@
                 <Style TargetType="ComboBoxItem">
                     <Setter Property="FontSize" Value="14"/>
                     <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Padding" Value="3"/>
                     <Setter Property="MaxWidth" Value="225"/>
                 </Style>
                 <Style TargetType="TextBlock">
@@ -57,12 +58,6 @@
             </WrapPanel.Resources>
 
             <ComboBox x:Name="MainMenuCombo" Width="0">
-                <ComboBox.Resources>
-                    <Style TargetType="ComboBoxItem">
-                        <Setter Property="Padding" Value="3"/>
-                        <Setter Property="FontSize" Value="14"/>
-                    </Style>
-                </ComboBox.Resources>
                 <ComboBoxItem Name="OpenExternalFile" Content="פתח קובץ שאינו בספריה"
                               ToolTip="מאפשר גם פתיחת קבצי PDF (שם לב לאפשרות החיפוש למעלה!("
                               Selected="OpenExternalFile_Selected"/>

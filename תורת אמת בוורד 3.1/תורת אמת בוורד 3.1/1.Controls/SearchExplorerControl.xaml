@@ -7,26 +7,59 @@
              xmlns:treeSource="clr-namespace:תורת_אמת_בוורד_3._1.TreeModels"
              mc:Ignorable="d" 
              FlowDirection="RightToLeft"
-             d:DesignHeight="450" d:DesignWidth="300">
+             d:DesignHeight="450" d:DesignWidth="300"
+             FontSize="14">
     <UserControl.Resources>
         <Style TargetType="Button">
             <Setter Property="Background" Value="#FFEFEFEF"/>
-            <Setter Property="BorderBrush"  Value="#FFACACAC"/>
+            <Setter Property="BorderBrush" Value="#FFACACAC"/>
+            <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Padding" Value="5,0,5,2"/>
         </Style>
     </UserControl.Resources>
-    
-    <TabControl x:Name="tabControl" Margin="0" Padding="0"
-                 FontSize="14" SelectionChanged="tabControl_SelectionChanged">
-
-        <TabItem Header="אילן ספרים" BorderThickness="0">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="#FFEFEFEF">
+            <CheckBox x:Name="CheckAllCheckBox" Margin="0,2,0,0"
+                      Checked="CheckAllCheckBox_CheckChanged" Unchecked="CheckAllCheckBox_CheckChanged">
+                <TextBlock Text="בחר הכל" Margin="0,-1,0,0"/>
+            </CheckBox>
+            <TextBlock Text=" |"/>
+            <Button x:Name="ShowTree_Button" Content="אילן ספרים"
+                    Click="ShowTree_Button_Click"/>
+            <TextBlock Text="|"/>
+            <Button x:Name="ShowSearch_button" Content="איתור ספר"
+                    Click="ShowSearch_button_Click"/>
+        </StackPanel>
+        
+        <TabControl x:Name="tabControl" Margin="0" Padding="0"
+                 FontSize="14" SelectionChanged="tabControl_SelectionChanged" 
+                 Grid.Row="1">
+            <TabControl.Resources>
+                <Style TargetType="TabControl"/>
+                <Style TargetType="TabItem">
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Padding" Value="0"/>
+                    <Setter Property="Margin" Value="0"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TabControl.Resources>
+            <TabItem Header="אילן ספרים" BorderThickness="0">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
             <TreeView x:Name="treeView" Padding="5"
-                      Grid.Row="0">
+                      Grid.Row="0" BorderThickness="0" Margin="0">
                 <TreeView.Resources>
                         <HierarchicalDataTemplate DataType="{x:Type treeSource:FolderTreeItem}" ItemsSource="{Binding Children}">
                             <CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay, BindsDirectlyToSource=True}">
@@ -90,6 +123,7 @@
                          PreviewKeyDown="SearchTextBox_KeyDown"
                          Text="{Binding SearchTerm, Mode=TwoWay, BindsDirectlyToSource=True}"/>
                 <Button x:Name="SearchButton" Content="חפש"
+                        BorderThickness="1"
                         Grid.Row="0" Grid.Column="1"
                         Margin="5"
                         Click="SearchButton_Click"/>
@@ -134,5 +168,5 @@
             </Grid>
         </TabItem>
     </TabControl>
-    
+    </Grid>
 </UserControl>

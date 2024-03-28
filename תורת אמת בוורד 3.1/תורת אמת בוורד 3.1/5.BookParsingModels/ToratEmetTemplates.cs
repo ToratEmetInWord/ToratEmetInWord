@@ -34,7 +34,7 @@ namespace תורת_אמת_בוורד_3._1._5.BookParsingModels
             }
             else if (filePath.Contains("TORA")||filePath.Contains("NAVI")||filePath.Contains("KTUVIM"))
             {
-                line = TanachTemplate(line);
+                line = TanachTemplate(line, filePath);
             }
             else if (filePath.Contains("BAVLI")&&filePath.Contains("Hav"))
             {
@@ -118,8 +118,14 @@ namespace תורת_אמת_בוורד_3._1._5.BookParsingModels
                 parser.ProcessLine(splitLine, "");
             }            
         }
-        public string TanachTemplate(string line)
+        public string TanachTemplate(string line, string filePath)
         {
+            if (filePath.Contains("\\a0")||filePath.Contains("\\b0"))
+            {
+                line = line.Replace("-", "־").Replace("background־color", "background-color").Replace("פרק־", "פרק ");
+            }
+
+
             char[] startChars = { '!', '~', '^', '@', '#' };
             if (startChars.Any(c => line.StartsWith(c.ToString())) && !line.Contains("פרשת"))
             {

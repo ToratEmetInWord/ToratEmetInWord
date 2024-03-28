@@ -17,6 +17,7 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
         {
             InitializeComponent();
             mainControl = mainControl1;
+            RightToLeft = RightToLeft.Yes;
         }
     }
 }

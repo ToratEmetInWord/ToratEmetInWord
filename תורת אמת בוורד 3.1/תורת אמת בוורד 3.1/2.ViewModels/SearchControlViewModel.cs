@@ -171,6 +171,8 @@ namespace תורת_אמת_בוורד_3._1._2.ViewModels
 
         public async void Search()
         {
+            try
+            { 
             if (string.IsNullOrEmpty(SearchString))
             {
                 MessageBox.Show("אנא הזן טקסט לחיפוש");
@@ -200,7 +202,12 @@ namespace תורת_אמת_בוורד_3._1._2.ViewModels
                 MaxProgress = 100;
                 ProgressBarVisibility = Visibility.Collapsed;
                 isBusy = false;
-            }           
+            }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         void ShowResults(string content)
@@ -217,7 +224,7 @@ namespace תורת_אמת_בוורד_3._1._2.ViewModels
                 File.WriteAllText(tempFilePath, content);
                 webView.CoreWebView2.Navigate(tempFilePath);
             }
-            if (ExpandSnippets) { WebViewCommands.ToggleSnippets(webView, true); }
+            if (ExpandSnippets) { WebViewCommands.ToggleSnippets(webView, true); }           
         }
 
         string HtmlPage(string content)

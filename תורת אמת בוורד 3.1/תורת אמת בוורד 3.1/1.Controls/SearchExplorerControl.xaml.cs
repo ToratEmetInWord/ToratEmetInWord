@@ -95,6 +95,31 @@ namespace תורת_אמת_בוורד_3._1._1.Controls
         {
             Properties.Settings.Default.SearchExplorerTabIndex = tabControl.SelectedIndex;
             Properties.Settings.Default.Save();
+            if (tabControl.SelectedIndex == 1) { SearchTextBox.Focus(); }
+        }
+
+        private void ShowSearch_button_Click(object sender, RoutedEventArgs e)
+        {
+            tabControl.SelectedIndex = 1;
+        }
+
+        private void ShowTree_Button_Click(object sender, RoutedEventArgs e)
+        {
+            tabControl.SelectedIndex = 0;
+        }
+
+        private void CheckAllCheckBox_CheckChanged(object sender, RoutedEventArgs e)
+        {
+            if (tabControl.SelectedIndex == 1) 
+            {
+                if (CheckAllCheckBox.IsChecked == true) { viewModel.CheckAllListBoxItems(SearchResultBox); }
+                else { viewModel.UncheckAllListBoxItems(SearchResultBox); }
+            }
+            else if (tabControl.SelectedIndex == 0) 
+            {
+                if (CheckAllCheckBox.IsChecked == true) { viewModel.CheckAllTreeItems(); }
+                else { viewModel.UncheckAllTreeItems(); }
+            }
         }
     }
 }

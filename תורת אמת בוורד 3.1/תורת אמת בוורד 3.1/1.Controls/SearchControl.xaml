@@ -42,7 +42,7 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <!--row 0-->
+        <!--Row 0-->
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -107,9 +107,10 @@
             <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0">
                 
                 <Button x:Name="SearchExplorerButton" Content="בחר ספרים"
-                    ToolTip="לחץ כאן כדי להגדיר היכן ברצונך לחפש"
+                    ToolTip="לחץ כאן כדי להגדיר היכן ברצונך לחפש (לחץ לחיצה ימנית כדי לפתוח בחלונית נפרדת)"
                     Margin="5" Background="#FFEDEDED"
                         Click="SearchExplorerButton_Click"
+                        PreviewMouseRightButtonDown="SearchExplorerButton_PreviewMouseRightButtonDown"
                         IsEnabled="{Binding ChooseBooksIsEnabled}"/>
                 
                 <ComboBox x:Name="RegexCharCombo" SelectedIndex="0"                      
@@ -137,7 +138,8 @@
 
             <CheckBox x:Name="SearchAllCheckBox" Margin="5"
                               Grid.Row="1" Grid.Column="0"
-                              IsChecked="{Binding SearchAll, Mode=TwoWay}">
+                              IsChecked="{Binding SearchAll, Mode=TwoWay}"
+                              Checked="SearchAllCheckBox_Checked">
                 <TextBlock Text="חפש בכל הספרים" 
                                    LineStackingStrategy="BlockLineHeight" LineHeight="16"/>
             </CheckBox>
@@ -153,8 +155,29 @@
         <!--row 2-->
         <Border Grid.Row="2" Margin="0,2,0,0"
                 BorderThickness="0,1,0,0" BorderBrush="LightGray">
-        <local:WebViewControl x:Name="webView"
-                               Margin="5"/>
+            <TabControl x:Name="BookExplorerTabControl"
+                SelectedIndex="1" BorderThickness="0" Margin="0" Padding="0">
+                <TabControl.Resources>
+                    <Style TargetType="TabControl"/>
+                    <Style TargetType="TabItem">
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Setter Property="Padding" Value="0"/>
+                        <Setter Property="Margin" Value="0"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="TabItem">
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TabControl.Resources>
+                <TabItem>
+                <local:WebViewControl x:Name="webView" Margin="5"/>
+                </TabItem>
+                <TabItem>
+                    <local:SearchExplorerControl x:Name="searchExplorer"/>
+                </TabItem>
+            </TabControl>
         </Border>
 
         <!--row 3-->
