@@ -1,7 +1,0 @@
-﻿קיצורי מקשים.
-context menu of pdf?
-shortcuts to all context menu?
-change contextmenu it tabcontrol to combobox
-bugs in seprate window 
-combobox items
-webview dispose
