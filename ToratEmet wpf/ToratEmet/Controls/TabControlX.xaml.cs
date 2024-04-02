@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Web.WebView2.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,6 +36,10 @@ namespace ToratEmet.Controls
                 if (tabItem.Content is BookViewer bookViewer)
                 {
                    bookViewer.webViewControl.Dispose();
+                }
+                else if (tabItem.Content is WebView2 webView2)
+                {
+                    webView2.Dispose();
                 }
             }
         }

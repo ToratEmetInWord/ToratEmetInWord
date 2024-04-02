@@ -13,13 +13,16 @@ namespace ToratEmet.TreeModels
 {
     public static class TreeLoader
     {
+        static bool isloaded = false;
         public static void PopulateTree(TreeView treeView)
         {
-            CreateTree();
+            if (isloaded == false) { CreateTree(); }          
+            
             if (treeView != null) { treeView.ItemsSource = StaticGlobals.RootItems; };
         }
         static void CreateTree()
         {
+            isloaded = true;
             if (StaticGlobals.RootItems == null)
             {
                 StaticGlobals.RootItems = new ObservableCollection<TreeItem>();

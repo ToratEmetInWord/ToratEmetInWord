@@ -1,4 +1,5 @@
-﻿using Microsoft.Office.Core;
+﻿using Lucene.Net.Support;
+using Microsoft.Office.Core;
 using Microsoft.Office.Interop.Word;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Web.UI.WebControls.WebParts;
 using ToratEmet.Models;
 using Office = Microsoft.Office.Core;
 using Word = Microsoft.Office.Interop.Word;
@@ -53,22 +55,19 @@ namespace ToratEmet.Initializers
         {
             TaskPaneHandler.LaunchTaskPane();
         }
+
         public void DictionaryButton_Click(IRibbonControl control)
         {
             CostumeWindowsHandler.ShowDictionaryWindow();
         }
         public void CopyToOpenBook_Click(IRibbonControl control)
         {
-            Word.Application wordApp = Globals.ThisAddIn.Application;             // Get a reference to the Word application
-            Word.Document doc = wordApp.ActiveDocument;            // Get the active document
-            string selectedText = doc.Application.Selection.Text.Trim();             // Insert  at the current selection or cursor position
+            string selectedText = Globals.ThisAddIn.Application.Selection.Text.Trim();        // Insert  at the current selection or cursor position
             StaticGlobals.CopyToFileSearch(selectedText);
         }
         public void CopyToSearch_Click(IRibbonControl control)
         {
-            Word.Application wordApp = Globals.ThisAddIn.Application;             // Get a reference to the Word application
-            Word.Document doc = wordApp.ActiveDocument;            // Get the active document
-            string selectedText = doc.Application.Selection.Text.Trim();             // Insert  at the current selection or cursor position
+            string selectedText = Globals.ThisAddIn.Application.Selection.Text.Trim();          // Insert  at the current selection or cursor position
             StaticGlobals.CopyToSearch(selectedText);
         }
         #endregion

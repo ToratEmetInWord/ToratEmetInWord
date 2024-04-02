@@ -44,6 +44,7 @@ namespace ToratEmet
 
         void SaveCheckedStatus()
         {
+            try { 
             StringCollection checkedTreeItems = new StringCollection();
             checkedTreeItems.AddRange(
                 StaticGlobals.treeItemsList
@@ -61,6 +62,8 @@ namespace ToratEmet
             Properties.Settings.Default.CheckedListBoxItems = checkedListBoxItems;
 
             Properties.Settings.Default.Save();
+            }
+            catch { }
         }
 
         #region VSTO generated code

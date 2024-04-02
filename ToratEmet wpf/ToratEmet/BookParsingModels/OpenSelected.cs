@@ -22,7 +22,6 @@ namespace ToratEmet.Models
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
                 Multiselect = false,
-                Filter = "(*.pdf;*.txt;*.html)|*.pdf;*.txt;*.html",
                 InitialDirectory = Properties.Settings.Default.DefaultExternalFolder,
             };
             if (openFileDialog.ShowDialog() == true)
@@ -41,7 +40,7 @@ namespace ToratEmet.Models
                     tabItem.Content = bookViewer;
                     bookViewer.viewModel.currentChapter = targitItem;
                 }
-                else if (extension == ".pdf")
+                else
                 {
                     WebViewControl webViewControl = new WebViewControl();
                     webViewControl.CoreWebView2InitializationCompleted += (sender, e) =>
@@ -53,16 +52,16 @@ namespace ToratEmet.Models
                     var taskPane = TaskPaneHandler.GetCurrentTaskPane();
                     taskPane.Width = Math.Max(taskPane.Width, 600);
                 }
-                else if (extension == ".html")
-                {
-                    WebViewControl webViewControl = new WebViewControl();
-                    webViewControl.CoreWebView2InitializationCompleted += (sender, e) =>
-                    {
-                        webViewControl.CoreWebView2.Navigate(filePath);
-                    };
-                    TabItem tabItem = CreateNewTab(fileName, null);
-                    tabItem.Content = webViewControl;
-                }
+                //else if (extension == ".html")
+                //{
+                //    WebViewControl webViewControl = new WebViewControl();
+                //    webViewControl.CoreWebView2InitializationCompleted += (sender, e) =>
+                //    {
+                //        webViewControl.CoreWebView2.Navigate(filePath);
+                //    };
+                //    TabItem tabItem = CreateNewTab(fileName, null);
+                //    tabItem.Content = webViewControl;
+                //}
             }
         }
         public void OpenSelectedFile(TreeItem selectedItem, string targetItemId, TabControl tabControl)
@@ -82,6 +81,18 @@ namespace ToratEmet.Models
                     bookViewer.viewModel.currentChapter = targitItem;
                     tabItem.Content = bookViewer;
                     updateRecentBooks(filePath);
+                }
+                else
+                {
+                    WebViewControl webViewControl = new WebViewControl();
+                    webViewControl.CoreWebView2InitializationCompleted += (sender, e) =>
+                    {
+                        webViewControl.CoreWebView2.Navigate(filePath);
+                    };
+                    TabItem tabItem = CreateNewTab(fileName, null);
+                    tabItem.Content = webViewControl;
+                    var taskPane = TaskPaneHandler.GetCurrentTaskPane();
+                    taskPane.Width = Math.Max(taskPane.Width, 600);
                 }
             }
         }
