@@ -1,0 +1,103 @@
+﻿private void SearcherVoid()
+        {
+            resultSum = 0;
+            try
+            {
+                string queryText = textBox1.Text.Trim(); // Get the user's query text
+                var bookNamesFilter = Properties.Settings.Default.searchBookList?.Split(',').ToHashSet();
+
+                // Create a query parser to parse the user's query
+                QueryParser queryParser = new QueryParser(Lucene.Net.Util.Version.LUCENE_30, "content", analyzer);
+                queryParser.AllowLeadingWildcard = true; // Allow leading wildcards if needed
+                
+                Query query;
+                IndexSearcher searcher = new IndexSearcher(reader);
+                TopDocs topDocs = null;
+
+                if (checkBoxOpenSearch.Checked)
+                {
+                    query = queryParser.Parse(queryText);
+                    queryParser.AllowLeadingWildcard = false;
+                    topDocs = searcher.Search(query, null, 100000); // Adjust the number of results as needed
+                }
+                else if (regexCheckBox.Checked)
+                {
+                    int previousCount = 0;
+                    string minimumSearchResults = "";
+
+                    string[] queryTerms = queryText.Split(' '); // Split the query text into individual terms
+
+                    foreach (string term in queryTerms)
+                    {
+                        query = new RegexQuery(new Term("content", term));
+                        topDocs = searcher.Search(query, null, 10000); // Adjust the number of results as needed
+                        if (topDocs.ScoreDocs.Length < previousCount || previousCount == 0)
+                        { 
+                            previousCount =  topDocs.ScoreDocs.Length;
+                            minimumSearchResults = term;
+                        }                   
+                    }
+                    query = new RegexQuery(new Term("content", minimumSearchResults));
+                    topDocs = searcher.Search(query, null, 100000);
+
+                }
+                else
+                {
+                    queryText = queryText.Replace("\"", "\\\"");
+                    query = queryParser.Parse("\"" + queryText + "\"");
+                    Sort sort = new Sort(new SortField("fileOrder", SortField.INT)); // Sort by file order as an integer
+                    topDocs = searcher.Search(query, null, 100000, sort); // Adjust the number of results as needed
+                }
+
+                // Use a StringBuilder to build the HTML content for search results
+                StringBuilder htmlBuilder = new StringBuilder(GenerateHtmlHeader());
+
+                progressBar.Maximum = topDocs.ScoreDocs.Length;
+
+                foreach (var scoreDoc in topDocs.ScoreDocs)
+                {
+                    progressBar.Value++;
+                    Lucene.Net.Documents.Document doc = searcher.Doc(scoreDoc.Doc);
+                    string filePath = System.Net.WebUtility.HtmlDecode(doc.Get("path")).Trim();
+                    string fileContent = doc.Get("content");
+                    string chapterHeading = doc.Get("chapter");
+
+                    // Use Any to check if any item in bookNamesFilter is contained in filePath
+                    bool matchingFiles = bookNamesFilter.Any(bookName => filePath.Contains(bookName));
+
+                    if (matchingFiles || searchAllCheckBox.Checked)
+                    {
+                        if (resultSum < 1000)
+                        {
+                            ProcessMatchingFile(htmlBuilder, filePath, fileContent, chapterHeading, queryText);
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                }
+
+                htmlBuilder.Append("</ol>"); // End the ordered list
+                htmlBuilder.Append("</body></html>");
+
+                // Generate a unique file name in the temp folder
+                string tempFileName = Path.Combine(Path.GetTempPath(), "SearchResults.html");
+                // Save the UTF-8 encoded HTML content to the temp file
+                //File.WriteAllText(tempFileName, htmlBuilder.ToString(), Encoding.UTF8);
+                //webBrowser1.Navigate(tempFileName);
+                webBrowser1.Navigate("about:blank");
+                webBrowser1.DocumentText = htmlBuilder.ToString();
+
+                searcher.Dispose(); // Close the searcher when done
+            }
+            catch (Exception ex)
+            {
+                // Handle search errors here
+                MessageBox.Show($"Error searching: {ex.Message}");
+            }
+            finally
+            {
+                progressBar.Value = 0;
+            }
+        }

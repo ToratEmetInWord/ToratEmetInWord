@@ -1,0 +1,335 @@
+﻿regexexplain and fix options
+
+גישה מהירה שיהיה אינדקס כדי לתת גישה מדוייקת
+improve openslectedfile
+program keyboard shortcuts
+use file system watcher
+only index text files
+regex search maybe use regex library and replace spaces with rgexsign that should solve multiple words problem.
+אולי לשנות את שיטת חיפוש בנוסח חופשי
+add open rlative books
+העתק לחיפוש
+use phrasequery for exact search, and learn about lucene wildcards
+improve option to stay in all windows so that it takes a "picture of situtaion and reloads" and also so that it doesnt load simultaniously with ne doc only after new doc is loaded
+שיפור מהירות טעינה
+לתקן את הבעיה עם העברה בין חלונות על ידי הגדרה של taskpane חדש בכל חלונית
+improve snippet logic
+check rendering of טעמים
+normalize hebrew - הסרת ניקוד
+
+add last visted files list
+use file if it exists
+use already creted boooks
+settings
+relativebooks
+test what happens with גופן
+
+
+. ראשית כל אם הבנתי נכון הלשונית כותרות אמורה לאפשר לנווט בתוך הספר אך אצלי זה לא עובד
+
+2. לבנתיים לא מצאתי באגים נוספים חוץ אם ניתן לשפר את מהירות הטענת הספרים אשר חלקם נטענים די לאט במיוחד בעת מעבר מתיבת החיפוש לפתיחת ספר
+
+3. אולי כדאי להשקיע יותר בנראות התוסף וחווית משתמש אך הדברים האלה תלויים בטעם אישי
+
+4. אולי שהתוסף יעבוד לפי לשוניות, לשונית עבור חיפוש ספר ולשונית עבור חיפוש בתוכן הספרים, כרגע שהחלונית חיפוש בתוך הספרים היא בלשונית נפרדת היא אינה נמצאת תמיד מעל לתוכנת וורד ואם עוברים לעיון בתוך הספר יש לפתוח אותה שוב בכדי לראות תוצאות נוספות.
+
+5. התצוגה של חיפוש ספר אינה נסגרת באופן אוטומטי כשעוברים לספרים אחרונים או בזמן חיפוש בתוכן הספרים ולוחצים על ספר מסויים לפתיחה
+
+6. ספרים אחרונים אולי כדאי לעשות זאת באופן של לשוניות שכל הספרים הפתוחים יהיו בלשוניות נפרדות ותתאפשר מעבר ביניהם
+
+7. הוספת קיצורי דרך למעבר בין וורד לתוכנה וחזרה וכן בבחירת מספר מילים בוורד תהיה אפשרות לקיצור מקשים לחיפוש ספר או בתוכן הספרים
+
+8. אפשרות של ניווט בתוך הספר לבחירת מילים דרך מקשים והעתקה לתוך וורד ולא רק ע"י המקלדת והחצים הם רק לגלילה
+
+9. אפשריות נוספות לשינוי בתצוגת הספר לדוגמה מרווח בין שורות בין פסקאות וכן שוליים לנוחות הקריאה
+
+[הבאג היה כמו שאמרתי, שניסיתי לפתוח חלונות אחרים של התוסף תוך כדי יצירת האינדקס, הסרתי את התקנת התוסף והתקנתי מחדש ואז יצרתי את האינדקס בלי לגעת בחלונות האחרים עד סיום יצירת האינדקס]
+
+עדכון החיפוש שיהיה אפשר לחפש גם סוגריים
+ובכלל אולי שיהיה בחיפוש עובד על שיטת נקודות דהיינו אם הכל שם יש כמות מסויימת של נקודות ואם יש כמות מסווימת אז לפתוח 
+
+
+
+
+
+private void SearchNoRegex()
+        {
+            try
+            {
+                string queryText = textBox1.Text.Trim(); // Get the user's query text
+
+                var bookNamesFilter = Properties.Settings.Default.searchBookList?.Split(',').ToHashSet();
+
+                // Create a query parser to parse the user's query
+                QueryParser queryParser = new QueryParser(Lucene.Net.Util.Version.LUCENE_30, "content", analyzer);
+                queryParser.AllowLeadingWildcard = true; // Allow leading wildcards if needed
+
+                Query query;
+
+                if (checkBoxOpenSearch.Checked) { query = queryParser.Parse(queryText); }
+                else if (regexCheckBox.Checked) { query = new RegexQuery(new Term("content", queryText)); }
+                else { query = queryParser.Parse('"' + queryText + '"'); }
+
+                // Perform the search
+                IndexSearcher searcher = new IndexSearcher(reader);
+                TopDocs topDocs;
+                if (checkBoxOpenSearch.Checked)
+                {
+                    topDocs = searcher.Search(query, null, 100000); // Adjust the number of results as needed
+                }
+                else if (regexCheckBox.Checked) 
+                {
+                    SortField sortField = new SortField("fileOrder", SortField.INT); // Sort by file order as an integer
+                    Sort sort = new Sort(sortField);
+                    topDocs = searcher.Search(query, null, 100000, sort); // Adjust the number of results as needed
+                    var regexQuery = new RegexQuery(new Term("content", queryText));
+                    topDocs = searcher.Search(regexQuery, 100000);
+                }
+                else
+                {
+                    SortField sortField = new SortField("fileOrder", SortField.INT); // Sort by file order as an integer
+                    Sort sort = new Sort(sortField);
+                    topDocs = searcher.Search(query, null, 100000, sort); // Adjust the number of results as needed
+                }
+                
+
+                // Use a StringBuilder to build the HTML content for search results
+                StringBuilder htmlBuilder = new StringBuilder(GenerateHtmlHeader());
+
+                progressBar.Maximum = topDocs.ScoreDocs.Length;
+
+                int resultSum = 0;
+                foreach (var scoreDoc in topDocs.ScoreDocs)
+                {
+                    progressBar.Value++;
+                    Lucene.Net.Documents.Document doc = searcher.Doc(scoreDoc.Doc);
+                    string filePath = System.Net.WebUtility.HtmlDecode(doc.Get("path")).Trim();
+                    string fileContent = doc.Get("content");
+                    string chpaterHeading = doc.Get("chapter");
+
+                    // Use Any to check if any item in bookNamesFilter is contained in filePath
+                    bool matchingFiles = bookNamesFilter.Any(bookName => filePath.Contains(bookName));
+
+                    if (matchingFiles || searchAllCheckBox.Checked )
+                    {
+                        resultSum++;
+                        if (resultSum < 1000)
+                        { 
+                        ProcessMatchingFile(htmlBuilder, filePath, fileContent, chpaterHeading, queryText);
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }                   
+                }
+
+                htmlBuilder.Append("</ol>"); // End the ordered list
+                htmlBuilder.Append("</body></html>");
+
+                //if (resultSum < 5000 || checkBoxOpenSearch.Checked)
+                //{
+                    // Generate a unique file name in the temp folder
+                    string tempFileName = Path.Combine(Path.GetTempPath(), "SearchResults.html");
+                    // Save the UTF-8 encoded HTML content to the temp file
+                    File.WriteAllText(tempFileName, htmlBuilder.ToString(), Encoding.UTF8);
+                    webBrowser1.Navigate("about:blank");
+                    webBrowser1.DocumentText = htmlBuilder.ToString();
+                    // Display the HTML file in the web browser
+                    //webBrowser1.Navigate(tempFileName);
+                //}
+                //else
+                //{
+                //    MessageBox.Show("נמצאו למעלה מ - 10,000 תוצאות, אנא נסו שוב."); 
+                //}
+
+
+                searcher.Dispose(); // Dispose of the searcher when done
+            }
+            catch (Exception ex)
+            {
+                //// Handle search errors here
+                //MessageBox.Show($"Error searching: {ex.Message}");
+            }
+            progressBar.Value = 0;
+        }
+
+        private string GenerateHtmlHeader()
+        {
+            StringBuilder htmlBuilder = new StringBuilder("<html><head>");
+            htmlBuilder.Append("<meta charset='UTF-8'>");
+            htmlBuilder.Append("<style>");
+            htmlBuilder.Append("body {");
+            htmlBuilder.Append("text-align: right; direction: rtl;");
+            htmlBuilder.Append("text-align: justify;");
+            htmlBuilder.Append("}");
+            htmlBuilder.Append("</style>");
+            htmlBuilder.Append("</head><body>");
+            htmlBuilder.Append("<ol>");
+            return htmlBuilder.ToString();
+        }
+
+
+        javaweb
+        document.designMode = ""on"";
+
+        document.addEventListener(""keydown"", function (e) {{
+            // Prevent the ""Delete"" key (keyCode 46) from taking any effect.
+            if (e.keyCode === 46) {{
+                e.preventDefault();
+            }}
+        }});
+        
+        document.addEventListener(""input"", function (e) {{
+            // Revert the change if a character is deleted (Backspace is pressed).
+            if (e.inputType === ""deleteContentBackward"") {{
+                document.execCommand(""undo"");
+            }}
+        }});
+
+        ב"ספרים קרובים" מופיע גם שם הקובץ הנוכחי [לא מציק מידי, אבל בכל זאת]
+הספרים מ"ספרים להורדה" של תורת אמת לא מוצגים בצורה תקינה
+כשמשנים את גודל הטקסט ההעדפות לא נשמרות להפעלה הבאה
+אגב הייתי מציע להוסיף אפשרות לחיפוש מתקדם בתוך ספר פתוח
+חיפוש רג'קס תוקע את וורד
+
+באופן כללי אני חושב שכדאי להוסיף אפשרות לזכירת ספרים מועדפים והגדרות מהפעלה להפעלה
+normalize bookname
+
+
+ //pagename = Uri.EscapeDataString(pagename);
+                            //string pageUrl = $"/{pagename}";
+                            //dataHtmls[pageUrl] = htmlContent;
+
+                            //File.WriteAllText(tempHtmlFilePath, htmlContent, Encoding.GetEncoding(1255));
+
+                            while (webBrowser1.CanGoForward)
+                            { webBrowser1.GoForward(); }
+
+                            //webBrowser1.Navigate(new Uri(tempHtmlFilePath));
+                            
+                            // Ensure that the URL is constructed correctly.
+                            string fullUrl = host + pageUrl;
+                            // Navigate to the newly created page.
+                            webBrowser1.Navigate(fullUrl);
+
+
+                            <div class=""floating-bar"" data-original-text=""{Path.GetFileNameWithoutExtension(tempHtmlFilePath)}"">
+ <div>
+{Path.GetFileNameWithoutExtension(tempHtmlFilePath)}
+  </div>
+<div class=""dropdown"">
+            <select id=""styleDropdown"" onchange=""navigateToHeader()"" title=""כותרות"">
+                <option value=""hidden"" disabled selected style=""display:none"">כותרות;</option>
+            </select>
+        </div>
+</div>
+<div style=""margin-top: 30px;"">
+<script>
+
+function populateDropdown() {{
+            var dropdown = document.getElementById(""styleDropdown"");
+            var headers = document.querySelectorAll(""h2, h3"");
+
+            for (var i = 0; i < headers.length; i++) {{
+                var option = document.createElement(""option"");
+                option.value = headers[i].textContent;
+                option.textContent = headers[i].textContent;
+
+                if (headers[i].tagName === ""H2"") {{
+                    option.className += "" styled-h2"";
+                }}
+
+                dropdown.appendChild(option);
+            }}
+        }}
+
+function navigateToHeader() {{
+            var selectedText = document.getElementById(""styleDropdown"").value;
+
+            if (selectedText === ""hidden"") {{
+                return;
+            }}
+
+            var headers = document.querySelectorAll(""h2, h3"");
+            var headerElement;
+
+            for (var i = 0; i < headers.length; i++) {{
+                if (headers[i].textContent === selectedText) {{
+                    headerElement = headers[i];
+                    break;
+                }}
+            }}
+
+            if (headerElement) {{
+                headerElement.scrollIntoView(true);
+                document.getElementById(""styleDropdown"").value = ""hidden"";
+            }}
+        }}
+
+window.onload = function() {{
+            populateDropdown();
+            updateFloatingBar();
+        }}
+
+let originalDynamicText = ""{Path.GetFileNameWithoutExtension(tempHtmlFilePath)}""; // Set this to the document name
+
+       function updateFloatingBar() {{
+    const headings = document.querySelectorAll(""h2, h3"");
+    const floatingBar = document.querySelector("".floating-bar div:first-child"");
+    let dynamicText = originalDynamicText;
+
+    for (let i = 0; i < headings.length; i++) {{
+        if (headings[i].getBoundingClientRect().top <= 0) {{
+            dynamicText = originalDynamicText + "" : "" + headings[i].textContent;
+        }}
+    }}
+
+    floatingBar.textContent = dynamicText;
+}}
+ window.onscroll = function() {{
+            updateFloatingBar();
+        }}
+
+</script>
+
+        .floating-bar {{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            color: #333;
+            padding: 0px;
+            font-size: 18px;
+            text-align: right;
+             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            display: -ms-flexbox; /* Use -ms-flexbox for IE 10 */
+            display: flex;
+            -ms-flex-pack: justify; /* Use -ms-flex-pack for IE 10 */
+            justify-content: space-between;
+height: 25px;
+        }}
+.dropdown select {{
+height: 18px; /* Adjust the height as desired */
+    font-size: 18px; /* Adjust the font size as desired */
+appearance: none;
+ -webkit-appearance: none;
+        -moz-appearance: none;
+ border: none;
+        outline: none;
+}}
+        .dropdown {{
+            width: 100px;
+            padding: 3px;
+        }}
+        .styled-h2 {{
+            font - weight: bold;
+            background-color: #F0F0F0;
+        }}
+
+        <meta http-equiv=""X-UA-Compatible"" content=""IE=edge"">
+            <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+
+חיפוש ראשי תיבות לא עובד
+החלף ריבוי סוגריים בסוגר אחד

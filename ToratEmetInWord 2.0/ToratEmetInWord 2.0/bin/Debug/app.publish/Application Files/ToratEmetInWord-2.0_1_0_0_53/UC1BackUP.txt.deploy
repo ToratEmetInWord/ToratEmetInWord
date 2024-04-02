@@ -1,0 +1,88 @@
+﻿//private void loadCloseFileList()
+//{
+//    if (webBrowser1.Url.ToString() != "about:blank")
+//    {
+//        closeBooksButton.DropDownItems.Clear();
+//        string htmlFilename = Path.GetFileNameWithoutExtension(webBrowser1.Url.ToString());
+
+//        List<string> retrievedList = listsWithHeadings.GetList(htmlFilename);
+//        foreach (string retrievedItem in retrievedList)
+//        {
+//            if (htmlFilename != retrievedItem)
+//            {
+//                ToolStripMenuItem item = new ToolStripMenuItem(retrievedItem);
+//                closeBooksButton.DropDownItems.Add(item);
+//                item.Click += (clickSender, clickEventArgs) => { openFileFromList(item.Text); };
+//            }
+//        }
+//    }
+//}
+
+//private void updateRelativeBookList(string htmlFileName)
+//{
+//    closeBooksButton.DropDownItems.Clear();
+//    List<string> retrievedList = listsWithHeadings.GetList(htmlFileName);
+//    foreach (string retrievedItem in retrievedList)
+//    {
+//        if (htmlFileName != retrievedItem)
+//        {
+//            ToolStripMenuItem item = new ToolStripMenuItem(retrievedItem);
+//            closeBooksButton.DropDownItems.Add(item);
+//            item.Click += (clickSender, clickEventArgs) => { openFileFromList(item.Text); };
+//        }
+//    }
+//}
+
+//private void SearchFormWebBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+//{
+//    if (searchForm.firstLoad == true)
+//    {
+//        searchForm.webBrowser1.Document.Body.InnerHtml = searchForm.instructionsHtml();
+//        searchForm.firstLoad = false;
+//    }
+
+//        // Remove the Click event handler from all links first
+//        foreach (HtmlElement linkElement in searchForm.webBrowser1.Document.Links)
+//        {
+//            linkElement.Click -= LinkElement_Click;
+//        }
+
+//        // Then attach the Click event handler to all links once
+//        foreach (HtmlElement linkElement in searchForm.webBrowser1.Document.Links)
+//        {
+//            linkElement.Click += LinkElement_Click;
+//        }
+//        searchForm.isLinkClicked = true;
+//}
+
+//private async void LinkElement_Click(object sender, HtmlElementEventArgs e)
+//{
+//    islinkclicked = true;
+//    // Get the clicked link element
+//    HtmlElement clickedHtmlElement = (HtmlElement)sender;
+
+//    // Check if the event type is a click event
+//    if (e.EventType == "click")
+//    {
+//        // Restore the style of the previously clicked link (if any)
+//        if (searchForm.previouslyClickedLink != null)
+//        {
+//            // Remove the highlighting (you can adjust this based on your CSS)
+//            searchForm.previouslyClickedLink.Style = "";
+//        }
+
+//        // Highlight the clicked link (you can adjust this based on your CSS)
+//        clickedHtmlElement.Style = "background-color: \"#f0f0f0\";"; // Change to the desired highlighting style
+
+//        // Store the currently clicked link for future reference
+//        searchForm.previouslyClickedLink = clickedHtmlElement;
+
+//        // Get the link's href attribute
+//        string href = clickedHtmlElement.GetAttribute("href");
+//        // Split the string using the delimiter and get the second part
+//        string[] parts = href.Split('#');
+//        href = parts[1];
+//        parts = href.Split('%');
+//        linkElementOpen(parts[0], parts[2])
+//    }
+//}

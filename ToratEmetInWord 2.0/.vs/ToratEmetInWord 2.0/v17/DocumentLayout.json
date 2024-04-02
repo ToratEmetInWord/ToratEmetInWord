@@ -1,0 +1,515 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\simplesearchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\simplesearchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\simplesearchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\simplesearchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\simplesearchform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\simplesearchform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|c:\\users\\admin\\source\\repos\\toratemetinword 2.0\\toratemetinword 2.0\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\searchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\searchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\usercontrol1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\usercontrol1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\ribbon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\openfileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\openfileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\openfileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\openfileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ToratEmetInWord 2.0||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\usercontrolfileview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\usercontrolfileview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\classupdater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\classupdater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\lucenesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\lucenesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\searchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\searchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\fileviewersearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\fileviewersearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\fileviewercontextmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\fileviewercontextmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\shortcutkeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\shortcutkeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\fileviewerheaders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\fileviewerheaders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\bookcompiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\bookcompiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\translatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\translatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\copyright.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\copyright.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\mregedbookscompiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\mregedbookscompiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\fontsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\fontsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\fileviewerexactlocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\fileviewerexactlocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\dictionaryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\dictionaryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj|solutionrelative:toratemetinword 2.0\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord-2.0.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\toratemetinword 2.0\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D45531E7-4892-4A77-9E14-4BC9A0240FEB}|ToratEmetInWord 2.0\\ToratEmetInWord-2.0.csproj|solutionrelative:toratemetinword 2.0\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SimpleSearchForm.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\SimpleSearchForm.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\SimpleSearchForm.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\SimpleSearchForm.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\SimpleSearchForm.cs",
+              "ViewState": "AQIAAFsDAAAAAAAAAAAhwHEDAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T21:07:22.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserControl1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\UserControl1.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\UserControl1.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\UserControl1.cs [Design]",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\UserControl1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T21:07:22.628Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserControl1.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\UserControl1.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\UserControl1.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\UserControl1.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\UserControl1.cs",
+              "ViewState": "AQIAADwBAAAAAAAAAAAEwEYBAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T21:07:22.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SimpleSearchForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\SimpleSearchForm.Designer.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\SimpleSearchForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\SimpleSearchForm.Designer.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\SimpleSearchForm.Designer.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAABYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T21:07:23.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SimpleSearchForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\SimpleSearchForm.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\SimpleSearchForm.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\SimpleSearchForm.cs [Design]",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\SimpleSearchForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T21:07:23.129Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserControl1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\UserControl1.Designer.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\UserControl1.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\UserControl1.Designer.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\UserControl1.Designer.cs",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAEwJ0AAABAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKvSURBVEhL7ZXPTxNREMe/225/LbVdt11AtNAUwUQDoqQcMJE9mXDiYrgYj6QmHv0DqAcPHtQDMVw4cBUOxoMkJJLUhAQlxgvVhFAtCcSUruVXS8Km3V3fPh4VXJQfUU98ksnuvpk382Z2d4bDLzx6OZ/0uhyDMdkHL8897O08n2SqE\u002BFg1yoNohuC24m38\u002BuYzRZ7Xn9Yvj/x8ZvM1MeGx503l9k9ZWWzHDZMDpPpNVyN1CjRkCdyrsZcGh4ezkxNTTGrHTweD7q6utDd3a0Fg8Hl1tZWjamq8OCMMXZPeTyxVCt4eBRKZWgVE4auX7h3I/DE4XBoRJgVwHE71eV5Hk6n80uxWHxAHjN0cQ8c7k7uq/HNS2KPJPDKu6\u002BbaKn14daVIPra/FjPZZHJ/NxfKpUwNzcHSZIQi8XU5ubmcZLFeDweTzETiu0lv3q/lPxeqgy\u002BmFVxvcmPvmsSmiRySuioVCrMipRyZQWjo6PI5/M0iKIoCIVCzwOBwLO95bK95Ex\u002BG0VNx\u002B24jN42kTqHUYGu68xiP4ZhYGNjA6lUCgsLC/2kXE9JuSJMbQ8QEw20SEBnow\u002BNZ3dODtOAaZrMwk65XMbq6iqy2aw8MzNzkYiHqewBwsij1rmGhjMmBJdJy3KQc3JShMNh1NXVUZFlmQYhzjE9Pc2siB27VhFFUcnlckokEoHX62WrdtxuN6LRKNrb29HR0UFF0zQsLi6q5AsbT6fTqmVny4A4h6qqNO0/lcX6PK0M6uvrq\u002BL3\u002B\u002Bkea\u002B8utgBWSX5XlpNgC/C3OQ1wKKcBDuX/B7D\u002BUOsnKxQKtCUfR7a2tmANJZfLxbwdMA8GBgaSxGjQ6jW7U\u002BuoWB2AtInP5ID9IyMjn6w1m4dEIqGQHq9YE2vvgDkKgiDA5/OpJIOxoaEh2uz\u002BMcAPkFkfhKsBGPMAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-04-01T21:07:22.008Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SearchForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\SearchForm.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\SearchForm.cs",
+              "ToolTip": "C:\\Users\\0533105132\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\SearchForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\0533105132\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\SearchForm.cs [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKmSURBVEhL1VVLaxNRFP6SebSTB33ElJhSKRQTunBRMbgoSDZdCS5qcZtlq9KN4rrpWlwVS5ftDxBBcFUXcdGFFC3iIhTbjY8EGtsk5p2ZzHjPSRPLDPiY4sIPzhzuN5P7ncfNufjX8NBjdnY22W63k6VSCYZh8Au3kGUZw8PDUFU1s7Ozk2GBRCKRliRpZWBgAB4PU65hWRZarRY6nc7q7u5uWiaSIo9Go1hcXGR/HuTzeWxsbCCXy/GaBagsFDltPjk5yS/cgvbxer39Ukv0CIVCyWAwmIzH4zBNE\u002BVy2bVR5KI0qFQqr4vFYrcHMzMzadGcFZ/Px\u002BrnAQVYr9cpg9W9vb00C8zNzaX9fv/K9PQ0SOQ8oM2z2Sxqtdrq9vZ2t8l0rCKRCBYWFtj/Do2KIUwX0YqFODWi8CJzQAsq\u002BF4/xubmJjeb4KoeH9\u002Be4OX6IZ4/2cezx/vsaU28Ha4EqidtlI6aiEwFMHV1BBeFLxWazNvhEKD0T3INfPsi7HO9b8dfGygXxB/IsGDoFiTFiyvJMK7firKXZXE0BW8H9\u002BAsKM33r47QrBkwOz9/oGoSLkz4cOPOxCnzZ3BkYE\u002B/Z7LqReFTHXrbhKx40NFNfMgU8OZFjr1hdHk7HAL29HtGdW43OzxrAiMqhsYGkT\u002Bs4uBdEbmDKobCg8zb4arJl6\u002BN4ubdKcw/iOH2ozjmH8Z4TbwdDgF7\u002Bj2jaNVBiWeNFpQRGte4J2Fh5GlNvB0OAXv6PdNbJsKXfFBEL/4GDklKczwWhGVaOHvoKHLaPDDqrPOvwG1PpVL9WSQ8v3ALMYP6s2hra6s77JaWlu6LG\u002BhetVqlm4g/dAuaxmL0Q9yQ6\u002BLiecoCy8vL4UajMUYCuq7zh26hKAoCgQA0TTtaW1srnNL/LYAfii9jGCGv9iAAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-04-01T21:07:23.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Ribbon.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\Ribbon.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\Ribbon.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\Ribbon.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\Ribbon.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAUwIEAAAANAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OpenFileForm.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\OpenFileForm.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\OpenFileForm.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\OpenFileForm.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\OpenFileForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgBAAAiAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANUSURBVEhLtVVJS1tRFD4vJjwccEwU5yEqap0WghOIKC7c6KaNS3\u002BACynuXJkf0HbV/gdNN\u002BrChZugi4i4EOQhaBKHiGCe80hwSM93fK8tLckLLX5wuPede\u002B797pnuo7eGYoyWiEQi/efn5/0LCwu0sbFB\u002B/v7oq\u002BqqqKOjg4aGRmh/Px8f3l5uV8WDNiNMSFeXl7U6\u002BvrMj7w/enp6cTz8zNlZ2dTSUmJrGMOna7rpCiK8/LyMsK6I5vNFsO6pQe8wc3Gn\u002Bfn57tXVlZcGRkZ5Ha75ebAwcEBhUIhur\u002B/p76\u002BPn10dDTAhFO5ublBrNvEKgnC4bDKt3fz7V13d3fU1NREra2tVFdXJ9LS0kKNjY10e3sLL1x7e3u1LKqx3Zpgd3dXhMNEeXl51N7eLrdPT08XwbytrY34xnR1dSW2waBcXmBJwImlaDRKHCYqKioiu/3vtDkcDllLS0sj9pQuLi6MlRQIsrKyKDMzk\u002BLxOCFEnHRj5RegQ4hgA1vsMWFJUFxcLBWD26FSzs7OJKGoHAhIocPNYQNbeGPCkgBJbW5uJqfTKXlYXV0lTdPo5uZGBHPoMIcN7CEmLPuA3dV5\u002BMYJ/VBRUdG/vb1Nx8fHVFhYKOsnJydCXF1djfD4Wb5zqKKyyEi5k2dnZyc44R\u002BXl5fLuDdUhAd4enqSmA8ODlJOTs5XrqQvqqoeTU5OptZoJpjAxSHoLigo\u002BPTw8FCLpIIEFYZmg2dMoLMnASadmp6ellpVent7Z\u002BAiNlihpqbGOTw87OFR47xo/DR4OPYukOzs7NDh4SHO0bu6unylpaW\u002BoaEhv9LZ2RlHJUCsgB7A28M94fX5fHMc6zkmeYcyjcVitLS0ROvr6zQwMABvvGNjYzM2NBK7bByRHAgJvOUcGJpXoAk57tTQ0CCdjsry\u002B18fVTuSBCXECjgYG/8kAMxOr6yspM3NTekZQMoUh4\u002BPj4siGZBMbAYBhwZVEuIw/SwUhI//CdIT3HjCYNloicAxP3p8fJzim3tMYbWH8yFzvsAc7P6ZoL6\u002BPsbPdZBDopnC3xpXmba4uKixp//nQap4cwKF/05x/JF\u002Bf6ASASW6traG0bu1tTVjqJNC6enpiaOLkXkroNHwV\u002BNn2RsIBFIgIPoBPmqx3iuFM2sAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-04-01T21:07:23.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ToratEmetInWord 2.0",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\ToratEmetInWord 2.0.csproj",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKoSURBVEhL1ZVBTxpREMf/7rKsuLBUKIIKpBqjkqoXE0WMF\u002B8mHkz05lVt/Azar6Cp4NGP4cUYT5ro0XBAqbWKCooN7IKAQH0jqPXZpqH14G\u002BTndndyfx3583bwZunjp3m5\u002Bcd\u002BXzeoWkacrkcPagVWZZhNpthNBoTy8vLCRKYnZ2dKxaLc\u002Bl0GneWAmtFFEVYLBZmV4LB4AoJTE9PLyqKsuDz\u002BXBnKbBWdF1HOBxm9vPa2tqigd3MZDJQVRWBQAAul4sCa\u002BXi4gKRSIRyMgQ6vyL0BU8pl8vQCzoOk4c4186RuklBEAQ0m5vhsXrgNDuxH99H9DqK0fZRHF0fPfiN9Y2VLI9wAix5LB3DbmwXxz\u002BOkcqlYBAM6HZ0QxRE3NzeYCO6ge2TbTgVJ3ZOdh78HmdPJcsjnEA0GcVebA9XmSv0t/Sjz9UHsU6EUTTiMnOJ1d1VhONhaAUNS9tL0PP6gz/VO4Vh\u002B3Al0z3cGpymTxFJRtDW2Aafwwev1UulcSgOKs\u002BQZ4ieKZKCAfcA5z\u002BHE0hmkkhoCXTaO9GqtkKouw9h1ipb4Xf775MalRf953ACpXIJt6VbSlhNXiWux6kUbA1\u002B5z\u002BHE7DIFljrrThIHuAsfYZy5SiWirQOA618Wf5UIm6RWZ2977zUprIoU4uyQxIkyAYZ475x\u002BoM1fG\u002BgRWVdVPXdqps22lM4ga73XZRs69sWNr9uYv1gna5ZC7Ku6rB1UM8PugfRpDT94r8EVyJVVtFua6duGfkwgoAnAL/HT8L2BjvtCbah2Nuykj31X4ITYAlsJhsJjHWNYbJ3EhMfJ\u002Bi6xdICSZQqkX8HJ/C/efXfNQnMzMx8YgOHTbR/HTis66oDJxQKfSEBNjKz2WwTEygUChRYK5Ik0cg0mUxxNjIrt98swE\u002BDLxSadXGgjAAAAABJRU5ErkJggg==",
+              "WhenOpened": "2023-11-19T00:58:29.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OpenFileForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\OpenFileForm.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\OpenFileForm.cs",
+              "ToolTip": "C:\\Users\\0533105132\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\OpenFileForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\0533105132\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\OpenFileForm.cs [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANUSURBVEhLtVVJS1tRFD4vJjwccEwU5yEqap0WghOIKC7c6KaNS3\u002BACynuXJkf0HbV/gdNN\u002BrChZugi4i4EOQhaBKHiGCe80hwSM93fK8tLckLLX5wuPede\u002B797pnuo7eGYoyWiEQi/efn5/0LCwu0sbFB\u002B/v7oq\u002BqqqKOjg4aGRmh/Px8f3l5uV8WDNiNMSFeXl7U6\u002BvrMj7w/enp6cTz8zNlZ2dTSUmJrGMOna7rpCiK8/LyMsK6I5vNFsO6pQe8wc3Gn\u002Bfn57tXVlZcGRkZ5Ha75ebAwcEBhUIhur\u002B/p76\u002BPn10dDTAhFO5ublBrNvEKgnC4bDKt3fz7V13d3fU1NREra2tVFdXJ9LS0kKNjY10e3sLL1x7e3u1LKqx3Zpgd3dXhMNEeXl51N7eLrdPT08XwbytrY34xnR1dSW2waBcXmBJwImlaDRKHCYqKioiu/3vtDkcDllLS0sj9pQuLi6MlRQIsrKyKDMzk\u002BLxOCFEnHRj5RegQ4hgA1vsMWFJUFxcLBWD26FSzs7OJKGoHAhIocPNYQNbeGPCkgBJbW5uJqfTKXlYXV0lTdPo5uZGBHPoMIcN7CEmLPuA3dV5\u002BMYJ/VBRUdG/vb1Nx8fHVFhYKOsnJydCXF1djfD4Wb5zqKKyyEi5k2dnZyc44R\u002BXl5fLuDdUhAd4enqSmA8ODlJOTs5XrqQvqqoeTU5OptZoJpjAxSHoLigo\u002BPTw8FCLpIIEFYZmg2dMoLMnASadmp6ellpVent7Z\u002BAiNlihpqbGOTw87OFR47xo/DR4OPYukOzs7NDh4SHO0bu6unylpaW\u002BoaEhv9LZ2RlHJUCsgB7A28M94fX5fHMc6zkmeYcyjcVitLS0ROvr6zQwMABvvGNjYzM2NBK7bByRHAgJvOUcGJpXoAk57tTQ0CCdjsry\u002B18fVTuSBCXECjgYG/8kAMxOr6yspM3NTekZQMoUh4\u002BPj4siGZBMbAYBhwZVEuIw/SwUhI//CdIT3HjCYNloicAxP3p8fJzim3tMYbWH8yFzvsAc7P6ZoL6\u002BPsbPdZBDopnC3xpXmba4uKixp//nQap4cwKF/05x/JF\u002Bf6ASASW6traG0bu1tTVjqJNC6enpiaOLkXkroNHwV\u002BNn2RsIBFIgIPoBPmqx3iuFM2sAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-04-01T21:07:23.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserControlFileView.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\UserControlFileView.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\UserControlFileView.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\UserControlFileView.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\UserControlFileView.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClassUpdater.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\ClassUpdater.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\ClassUpdater.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\ClassUpdater.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\ClassUpdater.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwD8AAAARAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LuceneSearch.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\LuceneSearch.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\LuceneSearch.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\LuceneSearch.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\LuceneSearch.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAAAIAAAAAJAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SearchForm.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\SearchForm.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\SearchForm.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\SearchForm.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\SearchForm.cs",
+              "ViewState": "AQIAANAAAAAAAAAAAAAMwNoAAAAVAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKmSURBVEhL1VVLaxNRFP6SebSTB33ElJhSKRQTunBRMbgoSDZdCS5qcZtlq9KN4rrpWlwVS5ftDxBBcFUXcdGFFC3iIhTbjY8EGtsk5p2ZzHjPSRPLDPiY4sIPzhzuN5P7ncfNufjX8NBjdnY22W63k6VSCYZh8Au3kGUZw8PDUFU1s7Ozk2GBRCKRliRpZWBgAB4PU65hWRZarRY6nc7q7u5uWiaSIo9Go1hcXGR/HuTzeWxsbCCXy/GaBagsFDltPjk5yS/cgvbxer39Ukv0CIVCyWAwmIzH4zBNE\u002BVy2bVR5KI0qFQqr4vFYrcHMzMzadGcFZ/Px\u002BrnAQVYr9cpg9W9vb00C8zNzaX9fv/K9PQ0SOQ8oM2z2Sxqtdrq9vZ2t8l0rCKRCBYWFtj/Do2KIUwX0YqFODWi8CJzQAsq\u002BF4/xubmJjeb4KoeH9\u002Be4OX6IZ4/2cezx/vsaU28Ha4EqidtlI6aiEwFMHV1BBeFLxWazNvhEKD0T3INfPsi7HO9b8dfGygXxB/IsGDoFiTFiyvJMK7firKXZXE0BW8H9\u002BAsKM33r47QrBkwOz9/oGoSLkz4cOPOxCnzZ3BkYE\u002B/Z7LqReFTHXrbhKx40NFNfMgU8OZFjr1hdHk7HAL29HtGdW43OzxrAiMqhsYGkT\u002Bs4uBdEbmDKobCg8zb4arJl6\u002BN4ubdKcw/iOH2ozjmH8Z4TbwdDgF7\u002Bj2jaNVBiWeNFpQRGte4J2Fh5GlNvB0OAXv6PdNbJsKXfFBEL/4GDklKczwWhGVaOHvoKHLaPDDqrPOvwG1PpVL9WSQ8v3ALMYP6s2hra6s77JaWlu6LG\u002BhetVqlm4g/dAuaxmL0Q9yQ6\u002BLiecoCy8vL4UajMUYCuq7zh26hKAoCgQA0TTtaW1srnNL/LYAfii9jGCGv9iAAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-04-01T21:07:23.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FileViewerSearch.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\FileViewerSearch.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\FileViewerSearch.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\FileViewerSearch.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\FileViewerSearch.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAwAoAAAABAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FileViewerContextMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\FileViewerContextMenu.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\FileViewerContextMenu.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\FileViewerContextMenu.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\FileViewerContextMenu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ShortCutKeys.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\ShortCutKeys.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\ShortCutKeys.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\ShortCutKeys.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\ShortCutKeys.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ThisAddIn.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\ThisAddIn.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\ThisAddIn.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\ThisAddIn.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\ThisAddIn.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMOSURBVEhLtVZLTxNRFP6gQ2mhj7S0QMujQcRHa4jGKIkajS7UpYmRKBu3/gV/gH/CuNbEuDCu1EQXLAyRDREhmMZU3oVCH9PXzHSm9ZzbYtBpHQP4Jbdz5syd891z5jzaBgvIshyVJOklibG6xhKLhmFMut3uBb75RUCGgjab7R6JvXVNHUatFlAUfVKtVIMltYJCSUNJ0VFWdeRJ5qvDLuHyeBheVye/0pJAnLRYrsTyZQ1VowbdqEKtGJCLmljZvIJUtiyu2YLakFX0eB14/HACkX4Pm/o7waf5jdj03BpkMrCbU5AhY9VqDQYtJuRlELlRrcs6yWz4yaMrGAl72dRvBO38sx9r23l8XkhiLp7C0vIuEhs5LCdloU/uFrFDp2ZS9ohDpZGHTFSrNQz8ARNBjk6\u002BuiUjlSkJA4eFieCoYSKwd9gw1OfB1O0YLkRD8HkcuH8zijvXTuDMaBDOTknoH5DOT8\u002BsYCLosLUj1OPC1K0YLo0PYiDoFvLdG6cwEQsjFHDh6rlhQer3OBtvtYaJgPM6V1QoU6ro9XdjbMgv8pxPe3okgOvnIxgd9DV2W8NEUKV0UDVDZAqHIxLyirBxEQ1TOh4f8oms\u002BbaShqJZJ0HTj1whA9uURXxyzm02KEnt6COPwkEX8kUVX7\u002BnhLdWaEqg60SQLoqwxI4FkVjP0H0JLqddkDD4Oe\u002BzQlMCrtK9Cu6k8HChbe4UoOkGhcohqpo9ZE\u002Bt0NwDKv80tYmiUhG9KLGRxUoyJ9qHw26jb6QfzgMu/9WtHNJymeJcEfHmtrGVKaJCRmXqohyyA3vABCsUlnczCTx/uyBax5f4Nl59WMLT13OYmV8X4aq1akD70CJE9Sz6OPsDL94vkicK4qsZvJmO4xkRzC5uNnZaoynBUcJEwAXFvSjo60KXQ2poDw4TAfeei9F\u002BnB0L4mTELwptmAgHqMD6e7oR8Drhczvg6baLSucql6h/tbWY7qaJVqCRyXN3b4JxmuYLGvUntT4mMzQmC4qYG3X530fm/x36rbDnGYkH\u002BNsC/ARrJvcsdi7OlgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-04-01T21:07:23.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BookCompiler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\BookCompiler.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\BookCompiler.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\BookCompiler.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\BookCompiler.cs",
+              "ViewState": "AQIAADMBAAAAAAAAAAAmwD4BAABLAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FileViewerHeaders.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\FileViewerHeaders.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\FileViewerHeaders.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\FileViewerHeaders.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\FileViewerHeaders.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TranslatorClass.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\TranslatorClass.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\TranslatorClass.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\TranslatorClass.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\TranslatorClass.cs",
+              "ViewState": "AQIAALkcAAAAAAAAAAAEwMAcAABcAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Copyright.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\Copyright.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\Copyright.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\Copyright.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\Copyright.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\Properties\\Settings.settings",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\Properties\\Settings.settings",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR6SURBVEhLtVXHTmRXEC2gocm5GwRNbMCAySIjNCxgNRJCgxArVogNXiDzBbNhib0yC0sIeTvmA/DC0CMhkhE55yhCk3MTfU6Z7pE1GtkbSnp97\u002BtXt8KpU3XlrcXtdf2mtLW1mQwGQ93IyIh5bGxM/8vPz5e8vDy7r6/vp5aWFrv\u002B\u002BQ35ykFnZ6fp/v7etLKyIoWFheLl5WWdmZn5aXFxMWlpaUl1UlJSJC0tbTU1NbX18fFxBc4lKSmJuvbGxsZ/OTS8ri5xc3Ore3l5aeYeq8TExBgHBwexxDBq1bHb7XJ\u002Bfm6Ji4trRyAOpy7OdmDLxyWuDBg5ocCBupOTkwp3d3cJCQkRDw8PGR8fl6ysLCktLVXdgYEBmZqaktzcXHl6epLT01N5fn6mvi0hIaEbKp\u002Bcmbjzh0JYbm5umqFcsbGxIcBX9vf31RgjRvoSERGhD/f8D5nJwcGB\u002BPn5Cc/wrMPhaL69vTW/mv0CETGnIE3JzMyUyspKOtWDfBITEyUwMFB1uC8rKxNEK4BJHVKur69lbW1NUBd9p7gcsKCU2dlZjQqRSHh4uB6\u002BvLzUg7u7u6rDb2FhYZKcnKxOj4\u002BPFSZml56ernA5RSEiFWHICnYYPT09XVFfXFxoDYgz3wkXn83NTTXCb3TOdz6oIZ0aAa\u002BVNmlbM2BxEfmPZAupeHV1pQeYMo3v7OxokXNycqguExMTsrCwoHs6YQY8wz7BakFW7Qj0Z3zu8KASqv/\u002B7OzsQ3BwsCEqKkrAb/Jcjo6ONPKMjAzibsPzGw5/fnh4YFDx6A0JCAhQXUJGSEFXA\u002BAM3d7eHp2bm7NpBqOjo2IymZTnxJBYEltizuiys7MlOjr6s9Vq/Uj91dXVjwimwmazadMVFRWpE9Zufn5eent75fDwkKpfaPpWohlwthiNRuU2i0jmkIpOthBzQPiOkVMf9XpH6AgJdYaHh5VlpDXhI7tiY2NlfX1dtAYNDQ3fQ/k7NIgfcDNMTk6qE39/fwEUepiYo6EqwJoKFDieUMTHxwtZR0OEhYxCPR0Wi2UTkP4J\u002BUsdVFdXbyDiufLy8mIohRJL4sriMhIeZEH7\u002BvpkaGhI39lgJSUlEhkZqZRloxYUFEhNTc2mj49PK6bCHz09PTfqgJva2loPzKAPMG4mn4uLi3UW3d3dafHIFkbMocfMqOMkA\u002BHlWOF4wf/7gOnXpqamDdpWBxREZAJr6sB9c1BQkLKD3CY8e3t7ypKqqipdEZ3Slz1C404HzAyrHX3zOzLVYecaFZznFI4KzH/ds/1piA3n5DuFTvv7\u002B7X4hCo0NFSmp6c1Q1BZR7dTXDRFUXlDdXDkUpFGzWazjmiyhQwhVHy4Z9/wG2tAXZ7hWW9v7w7U4J8mgHx1o3V1df3AkcuRwaIhM2N3d7cF94ORDilsIsDjqK\u002Bv31leXnawUTlZaRz3wC\u002Bq9CouiJzCexZFspEZTHVra8sKeNpBzSRSkcL6YJzsYBy0Qm\u002BVl9MrLK7InfK/L31EaWakFDYmsrOjuP956b\u002BxiPwNR4iEsdmyb4wAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-04-01T21:07:23.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MregedBooksCompiler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\MregedBooksCompiler.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\MregedBooksCompiler.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\MregedBooksCompiler.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\MregedBooksCompiler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DictionaryForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\DictionaryForm.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\DictionaryForm.cs",
+              "ToolTip": "C:\\Users\\0533105132\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\DictionaryForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\0533105132\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\DictionaryForm.cs [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKmSURBVEhL1VVLaxNRFP6SebSTB33ElJhSKRQTunBRMbgoSDZdCS5qcZtlq9KN4rrpWlwVS5ftDxBBcFUXcdGFFC3iIhTbjY8EGtsk5p2ZzHjPSRPLDPiY4sIPzhzuN5P7ncfNufjX8NBjdnY22W63k6VSCYZh8Au3kGUZw8PDUFU1s7Ozk2GBRCKRliRpZWBgAB4PU65hWRZarRY6nc7q7u5uWiaSIo9Go1hcXGR/HuTzeWxsbCCXy/GaBagsFDltPjk5yS/cgvbxer39Ukv0CIVCyWAwmIzH4zBNE\u002BVy2bVR5KI0qFQqr4vFYrcHMzMzadGcFZ/Px\u002BrnAQVYr9cpg9W9vb00C8zNzaX9fv/K9PQ0SOQ8oM2z2Sxqtdrq9vZ2t8l0rCKRCBYWFtj/Do2KIUwX0YqFODWi8CJzQAsq\u002BF4/xubmJjeb4KoeH9\u002Be4OX6IZ4/2cezx/vsaU28Ha4EqidtlI6aiEwFMHV1BBeFLxWazNvhEKD0T3INfPsi7HO9b8dfGygXxB/IsGDoFiTFiyvJMK7firKXZXE0BW8H9\u002BAsKM33r47QrBkwOz9/oGoSLkz4cOPOxCnzZ3BkYE\u002B/Z7LqReFTHXrbhKx40NFNfMgU8OZFjr1hdHk7HAL29HtGdW43OzxrAiMqhsYGkT\u002Bs4uBdEbmDKobCg8zb4arJl6\u002BN4ubdKcw/iOH2ozjmH8Z4TbwdDgF7\u002Bj2jaNVBiWeNFpQRGte4J2Fh5GlNvB0OAXv6PdNbJsKXfFBEL/4GDklKczwWhGVaOHvoKHLaPDDqrPOvwG1PpVL9WSQ8v3ALMYP6s2hra6s77JaWlu6LG\u002BhetVqlm4g/dAuaxmL0Q9yQ6\u002BLiecoCy8vL4UajMUYCuq7zh26hKAoCgQA0TTtaW1srnNL/LYAfii9jGCGv9iAAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-04-01T21:07:23.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FileViewerExactLocation.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\FileViewerExactLocation.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\FileViewerExactLocation.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\FileViewerExactLocation.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\FileViewerExactLocation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FontSettings.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\FontSettings.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\FontSettings.cs",
+              "ToolTip": "C:\\Users\\0533105132\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\FontSettings.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\0533105132\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\FontSettings.cs [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKmSURBVEhL1VVLaxNRFP6SebSTB33ElJhSKRQTunBRMbgoSDZdCS5qcZtlq9KN4rrpWlwVS5ftDxBBcFUXcdGFFC3iIhTbjY8EGtsk5p2ZzHjPSRPLDPiY4sIPzhzuN5P7ncfNufjX8NBjdnY22W63k6VSCYZh8Au3kGUZw8PDUFU1s7Ozk2GBRCKRliRpZWBgAB4PU65hWRZarRY6nc7q7u5uWiaSIo9Go1hcXGR/HuTzeWxsbCCXy/GaBagsFDltPjk5yS/cgvbxer39Ukv0CIVCyWAwmIzH4zBNE\u002BVy2bVR5KI0qFQqr4vFYrcHMzMzadGcFZ/Px\u002BrnAQVYr9cpg9W9vb00C8zNzaX9fv/K9PQ0SOQ8oM2z2Sxqtdrq9vZ2t8l0rCKRCBYWFtj/Do2KIUwX0YqFODWi8CJzQAsq\u002BF4/xubmJjeb4KoeH9\u002Be4OX6IZ4/2cezx/vsaU28Ha4EqidtlI6aiEwFMHV1BBeFLxWazNvhEKD0T3INfPsi7HO9b8dfGygXxB/IsGDoFiTFiyvJMK7firKXZXE0BW8H9\u002BAsKM33r47QrBkwOz9/oGoSLkz4cOPOxCnzZ3BkYE\u002B/Z7LqReFTHXrbhKx40NFNfMgU8OZFjr1hdHk7HAL29HtGdW43OzxrAiMqhsYGkT\u002Bs4uBdEbmDKobCg8zb4arJl6\u002BN4ubdKcw/iOH2ozjmH8Z4TbwdDgF7\u002Bj2jaNVBiWeNFpQRGte4J2Fh5GlNvB0OAXv6PdNbJsKXfFBEL/4GDklKczwWhGVaOHvoKHLaPDDqrPOvwG1PpVL9WSQ8v3ALMYP6s2hra6s77JaWlu6LG\u002BhetVqlm4g/dAuaxmL0Q9yQ6\u002BLiecoCy8vL4UajMUYCuq7zh26hKAoCgQA0TTtaW1srnNL/LYAfii9jGCGv9iAAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-04-01T21:07:23.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\Properties\\Resources.Designer.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAAwFEAAAAIAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKvSURBVEhL7ZXPTxNREMe/225/LbVdt11AtNAUwUQDoqQcMJE9mXDiYrgYj6QmHv0DqAcPHtQDMVw4cBUOxoMkJJLUhAQlxgvVhFAtCcSUruVXS8Km3V3fPh4VXJQfUU98ksnuvpk382Z2d4bDLzx6OZ/0uhyDMdkHL8897O08n2SqE\u002BFg1yoNohuC24m38\u002BuYzRZ7Xn9Yvj/x8ZvM1MeGx503l9k9ZWWzHDZMDpPpNVyN1CjRkCdyrsZcGh4ezkxNTTGrHTweD7q6utDd3a0Fg8Hl1tZWjamq8OCMMXZPeTyxVCt4eBRKZWgVE4auX7h3I/DE4XBoRJgVwHE71eV5Hk6n80uxWHxAHjN0cQ8c7k7uq/HNS2KPJPDKu6\u002BbaKn14daVIPra/FjPZZHJ/NxfKpUwNzcHSZIQi8XU5ubmcZLFeDweTzETiu0lv3q/lPxeqgy\u002BmFVxvcmPvmsSmiRySuioVCrMipRyZQWjo6PI5/M0iKIoCIVCzwOBwLO95bK95Ex\u002BG0VNx\u002B24jN42kTqHUYGu68xiP4ZhYGNjA6lUCgsLC/2kXE9JuSJMbQ8QEw20SEBnow\u002BNZ3dODtOAaZrMwk65XMbq6iqy2aw8MzNzkYiHqewBwsij1rmGhjMmBJdJy3KQc3JShMNh1NXVUZFlmQYhzjE9Pc2siB27VhFFUcnlckokEoHX62WrdtxuN6LRKNrb29HR0UFF0zQsLi6q5AsbT6fTqmVny4A4h6qqNO0/lcX6PK0M6uvrq\u002BL3\u002B\u002Bkea\u002B8utgBWSX5XlpNgC/C3OQ1wKKcBDuX/B7D\u002BUOsnKxQKtCUfR7a2tmANJZfLxbwdMA8GBgaSxGjQ6jW7U\u002BuoWB2AtInP5ID9IyMjn6w1m4dEIqGQHq9YE2vvgDkKgiDA5/OpJIOxoaEh2uz\u002BMcAPkFkfhKsBGPMAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-04-01T21:07:23.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\Properties\\Resources.resx",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\Properties\\Resources.resx",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALbSURBVEhLvZXPTlpBFMY/EUQR/BORGEMQkq6qiWKiJoYEfADFTbt2Y0xY9gXaF2i64yHoQmHj0poYGuPKxDZsWLgQoxeMCib\u002Bt\u002BcbLreAU2hN6i\u002BZDHNn7nxzv3PmgP9Nh9lrWVtbiz0\u002BPsYqlQru7\u002B/Np1VsNhvsdjvm5\u002BcxNzdnyDg1PT1tmNMWLQVWV1c/yYsfHQ4HOjoalz48PODq6goTExOYnJzMd3V1fejr6/veLGI3ey08\u002BdDQEJaWllRfT7FYRCaTQS6Xw/n5uT8ajX6Wr/0iU8nqiio2s9dCW3hybj4yMtLQvF4vOjs71SGOj4\u002Bd\u002B/v7b3Z3d33mqxYtBVpB/yns8/nQ09ODg4MDZLNZc/Y3LxYYGBjA8vIyVlZWEI/H4Xa7nyUCsWIQiUSGJXDv5JN9/GySz\u002Bejl5eXSKVSkACqJgFVFvX29iqbCG2kXRIDNa7HEri9vR2WLiGbjNcH9ObmBuKt8rq7u1uNJVMQCoWgy65mLIGzszO1mBmzuLhoPq3y9PSEdDqNzc1NrK\u002Bvo1wuQ9ISo6OjcDqd5io9VgzkC3B3d6dsCAaDDW1sbEx5zvmTkxPs7e1ha2tLCbVDG2RuVCgUcHh4qHqO\u002B/v7EQgE4Pf7cXp6ip2dHWVbO7QXzTAMJJNJHB0dKRsSiQQWFhYQDofVPO2SvFfWtUP7BS6XCzMzM4jFYqpnxtCimmX8/TebE60AN2Bus/HUFxcXDXYR5nypVFIxYdmgIC9fM1qLamxvb2NjY8McwbKLUJRzHo9Hbc4k4WVrpqUAs4c21WCgaRe5vr42JEZf5ZnBk3Nzqbzf1GQdWgHawEAPDg5aAtyc1tWQNYbc9KS0H\u002BYjLW2zqAbrDmPyr7TNolqjXS/BEuDVZ21hcWMAp6amGgRoFzOJjWt0GaPDqlSzs7NvpUuJyDjFWsGMkfZTfr6XstEyBpaArlz/CWaMNENKdEpKxrM/\u002BlcE\u002BAUktkfVv2nOdgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-04-01T21:07:23.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "ToratEmetInWord 2.0\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmetInWord 2.0\\ToratEmetInWord 2.0\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "ToratEmetInWord 2.0\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAlAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPBSURBVEhL7VRNbBNXEJ798a6x4rUwsRNCUqTaB2REEUgVFVWlVVUJ9cKB4q24VeoBIQ5FcEAQVWoOvaWuOCSHgoTKCW1yqFREG4sEIyVyiQKoCikQ1mkcWybOgmNvnJ\u002B1vfs6s4QcUCu11yqftfu8u9/MvDff9x5s4/8PbnOE2dlZuSbXuqfyU/Lo81EwFg2oN\u002BogSRLEw3EazeEvh03ilqxSZKGyELn8y2XA0bydvG2FoqHua1PX5OvZ6zYoUDS\u002BMmzi8nQjUHKRiSnGmA4MdBBB50RO5zhO53le93G\u002B5CYV/K4/iVxdcAUdWpCk5AIIKdEVdfycYhXW85q5uYLpwrT6wnpx8v7Cfc2sm5G6XYeQPwSSKIHIi96FzL7TH50eoORpI518WHio3jHuwPLacmZPaM\u002BM\u002Bq6qPTWfRh4UH5g8xw8hfyj3dS6DkQAv6y/Vylrl7Pif49Amt8HBzoP2oe5DxWhb1OaQWbSKsNHcMANuQHF451ipVto/kZ\u002BAFXsFXObuL1vlnru5u8pqcxWwAwrj2DGM\u002BwNTZwQqEP0kqs5X5lWaOc4EThw4kQ9IgfOtVusHbNdQtVEd4nhu8vDew2Z9o/5be6BdSXQk3p8pz1CRH0\u002B9d2rwzIdnPnBcJ/xk6Ukek5/nBG6kMlZZ81bwuPQYJJ8EXUoXBHyBTGewcxhnklUUxRP1DT7HH8J4VXtlOswBWZABNTLPfXzOwInYE/MT9Gzj/5zRa3ixnsjUguX1Zdit7Ib15vq9YDA48HZyAjmtXC3HCtVCe7FaBNvBXIy1X8lciT0zn8nYZnqWkRqLfxuPUIxXoOW2wHVdQLe8FvQf8MYtY8aY1n\u002BvH9AYgG3Rbv5\u002BM3Xx54s96dk05elmwL4jd1GMVwDF9MQtr5RhrjJHr/4WKLDFAz/SFeqaObr3qBeDjpnpCHaMqDHViu2KUYss1CDNeEYio9sR\u002B6L7gHpKy6YlX/rpUuLIO0cg3BaGRqMB\u002BXqeNp2JGlHbBs2qyeHmiz4qPYLaRm341he3fsXiPVezV\u002BP4Loez/z7XlzO2ChxPHIel1SW4MXWDWqSh9VRqF8/wEvByeZBAGqTkxJd5WXccJ0Pf0V1LqJdlWuYFcEHG5DYX5grEI3gbLfs8qy6uLJ7M5rNadb0aaTpN2BnYCX7RDz7B5204dEZf76e933hR/wFbZ9Ho9GiMCSw1uTAZH58bByyIORmEdoQgEU2QfQf7P\u002Bsf2KT/a2ydRbZsF9FNF3DZGjkDNaFWaVyL03Dpmm\u002BHj86ZbWzjbQD8BfQkxxdaIgF3AAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-04-01T21:07:23.181Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
