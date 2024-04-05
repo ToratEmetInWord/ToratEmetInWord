@@ -164,7 +164,7 @@ namespace ToratEmet.ViewModels
                     MessageBox.Show("אין אפשרות להציג עוד - הקובץ גדול מדאי");
                 }
             }
-            
+
             if (!string.IsNullOrEmpty(targetChapter.Id)) { AdressBlockText = currentChapter.Id; }
             else { AdressBlockText = currentBook.Title; }
 

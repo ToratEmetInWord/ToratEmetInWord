@@ -6,6 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
+using ToratEmet.Models;
 using ToratEmet.WebViewModels;
 
 namespace ToratEmet.Controls
@@ -15,7 +18,7 @@ namespace ToratEmet.Controls
         public WebViewControl()
         {
             Loaded += WebViewControl_Loaded;
-            Properties.Settings.Default.PropertyChanged += Default_PropertyChanged; ; 
+            Properties.Settings.Default.PropertyChanged += Default_PropertyChanged;
         }
 
         private void Default_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)

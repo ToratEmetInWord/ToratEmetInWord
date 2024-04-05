@@ -137,7 +137,7 @@ namespace ToratEmet.BookParsingModels
 .Replace("פרשת ויחי" ,"פרשת ויחי" +"\r\n" +"~ המשך פרק מז")
 .Replace("פרשת וארא" ,"פרשת וארא" +"\r\n" +"~ המשך פרק ו")
 .Replace("פרשת בשלח" ,"פרשת בשלח" +"\r\n" +"~ המשך פרק יג")
-.Replace("פרשת כי" ,"פרשת כי" +"\r\n" +"תשא ~ המשך פרק ל")
+.Replace("פרשת כי תשא" ,"פרשת כי תשא" +"\r\n" +"~ המשך פרק ל")
 .Replace("פרשת פקודי" ,"פרשת פקודי" +"\r\n" +"~ המשך פרק לח")
 .Replace("פרשת בחקתי" ,"פרשת בחקתי" +"\r\n" +"~ המשך פרק כו")
 .Replace("פרשת נשא" ,"פרשת נשא" +"\r\n" +"~ המשך פרק ד")
@@ -148,7 +148,7 @@ namespace ToratEmet.BookParsingModels
 .Replace("פרשת עקב" ,"פרשת עקב" +"\r\n" +"~ המשך פרק ז")
 .Replace("פרשת ראה" ,"פרשת ראה" +"\r\n" +"~ המשך פרק יא")
 .Replace("פרשת שופטים" ,"פרשת שופטים" +"\r\n" +"~ המשך פרק טז")
-.Replace("פרשת כי" ,"פרשת כי" +"\r\n" +"תצא ~ המשך פרק כא")
+.Replace("פרשת כי תצא" ,"פרשת כי תצא" +"\r\n" +"~ המשך פרק כא")
 .Replace("פרשת נצבים" ,"פרשת נצבים" +"\r\n" +"~ המשך פרק כט")
 ;
             }
@@ -214,6 +214,7 @@ namespace ToratEmet.BookParsingModels
             line = squareBraketsRegex2.Replace(line, "</b>");
 
             line = line
+                .Replace("??x", "")
                 .Replace("//", "")
                 .Replace("((", "<small>")
                 .Replace("))", "</small>")
@@ -229,8 +230,8 @@ namespace ToratEmet.BookParsingModels
                 .Replace("SE", ")")
                 .Replace("<span style=\"color:2266ff\">", "<span class=\"note2\">");
 
-            line = curlyBrackets.Replace(line, "{");
-            line = curlyBrackets2.Replace(line, "}");
+            line = curlyBrackets.Replace(line, "<small>(");
+            line = curlyBrackets2.Replace(line, ")</small>");
 
             return line;
         }
@@ -309,6 +310,7 @@ namespace ToratEmet.BookParsingModels
                 text = text.Replace(@"+\+\\+", "֝");
                 text = text.Replace(@"\\+\++", "֬");
                 text = text.Replace(@"\\+\++", "֬");
+                text = text.Replace(@"+++\\+", "֟");
             }
             return text;
         }
@@ -575,8 +577,7 @@ namespace ToratEmet.BookParsingModels
         }
         string SiddurTemplate(string line)
         {
-            line = line.Replace("{{{{", @"<div style=""padding:15; margin:30; border-width: 2px;
-            border-style:solid; border-color: lightgray; backgroundcolor: RGB(244,244,244);"">")
+            line = line.Replace("{{{{", @"<div style=""padding:15; margin:30; border-width: 2px;border-style:solid; border-color: lightgray; padding:5px; background-color: RGB(244,244,244);"">")
                 .Replace("}}}}", "</div>")
                 .Replace("[[{", "<small style=\"color: darkgray;\">")
                 .Replace("}]]", "</small>")
@@ -584,7 +585,6 @@ namespace ToratEmet.BookParsingModels
                 .Replace("}}", "</small>")
                 .Replace("{", "<small style=\"color: darkgray;\">")
                 .Replace("}", "</small>");
-            line = GeneralTemplate(line);
             return line;
         }
         string HaggadaTemplate(string line)
@@ -600,7 +600,7 @@ namespace ToratEmet.BookParsingModels
                 .Replace("]]]]", "</b>")
                 .Replace("[[[", "<b><big>")
                 .Replace("]]]", "</big></b>");
-            line = GeneralTemplate(line);
+            
             return line;
         }
     }

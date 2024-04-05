@@ -120,5 +120,13 @@ namespace ToratEmet.Controls
             }
         }
 
+        private void SearchTextBox_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            var txtControl = sender as TextBox;
+            txtControl.Dispatcher.BeginInvoke(new Action(() =>
+            {
+                txtControl.SelectAll();
+            }));
+        }
     }
 }

@@ -144,7 +144,8 @@
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
                 <TextBox x:Name="SearchTextBox" Grid.Column="0"
-                     KeyDown="SearchTextBox_KeyDown"/>
+                     KeyDown="SearchTextBox_KeyDown"
+                         GotKeyboardFocus="SearchTextBox_GotKeyboardFocus"/>
                 <StackPanel Orientation="Horizontal" Grid.Column="1"
                             Margin="5,0,5,0">
                     <Button x:Name="SearchNextButton" Height="18" Width="20"

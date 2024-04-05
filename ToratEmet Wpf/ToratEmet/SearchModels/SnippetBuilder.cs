@@ -21,7 +21,7 @@ namespace ToratEmet.Models
                 endIndex = Math.Min(inputLength, i + chunkSize);
                 startIndex = Math.Max(i - overlapIndex, 0);
 
-                while (endIndex < inputLength && input[endIndex + 1] != ' ') { endIndex++; }//ensures that endindex soes not cut off words in the middle            
+                while (endIndex < inputLength - 1 && input[endIndex + 1] != ' ') { endIndex++; }//ensures that endindex soes not cut off words in the middle            
                 snippetLength = endIndex - startIndex;
 
                 while (startIndex > 0 && snippetLength < chunkSize) { startIndex--; }//ensures symmetrical chunks

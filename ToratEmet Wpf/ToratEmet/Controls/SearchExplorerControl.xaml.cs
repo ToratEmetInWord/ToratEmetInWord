@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,6 +40,7 @@ namespace ToratEmet.Controls
 
         private void SearchExplorerControl_Loaded(object sender, RoutedEventArgs e)
         {
+            StringCollection strings = Properties.Settings.Default.CheckedTreeItems;
             foreach (var item in StaticGlobals.treeItemsList)
             {
                 if (Properties.Settings.Default.CheckedTreeItems != null &&
@@ -130,6 +132,15 @@ namespace ToratEmet.Controls
         {
             if (searchControl == null) { searchControl = FindParentOrChild.TryFindParent<SearchControl>(this); }
             if (searchControl != null) { searchControl.BookExplorerTabControl.SelectedIndex = 0; }
+        }
+
+        private void SearchTextBox_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            var txtControl = sender as TextBox;
+            txtControl.Dispatcher.BeginInvoke(new Action(() =>
+            {
+                txtControl.SelectAll();
+            }));
         }
     }
 }

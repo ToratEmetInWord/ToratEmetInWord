@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using ToratEmet.Controls.ViewModels;
@@ -20,10 +21,12 @@ namespace ToratEmet.Controls
             viewModel = new OpenFileControlViewModel();
             DataContext = viewModel;
             TreeLoader.PopulateTree(treeView);
-            
-            SearchTextBox.Text = Properties.Settings.Default.OpenFileControlLastSearch;
             SearchTextBox.SelectAll();
-            Loaded += (sender, e) => { SearchTextBox.Focus(); };
+            SearchTextBox.Text = Properties.Settings.Default.OpenFileControlLastSearch;          
+            Loaded += (sender, e) => 
+            {                   
+                SearchTextBox.Focus(); 
+            };
         }
 
         private void treeView_KeyDown(object sender, KeyEventArgs e)
@@ -72,11 +75,11 @@ namespace ToratEmet.Controls
             if (SearchComboBox.HasItems) { SearchComboBox.IsDropDownOpen = true; SearchComboBox.Focus(); }
         }
 
-        private void FolderItemPanel_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        private void ItemPanel_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
             if (sender is StackPanel panel && panel.Tag is FileTreeItem fileTreeItem)
             {
-                viewModel.OpenSelectedFile(fileTreeItem, fileTreeItem.Name + SearchComboBox.Tag);
+                viewModel.OpenSelectedFile(fileTreeItem, SearchComboBox.Tag.ToString());
             }
         }
 
@@ -98,7 +101,7 @@ namespace ToratEmet.Controls
             {
                 if (e.OriginalSource is ComboBoxItem comboBoxItem && comboBoxItem.Tag is FileTreeItem fileTreeItem)
                 {
-                    viewModel.OpenSelectedFile(fileTreeItem, fileTreeItem.Name + SearchComboBox.Tag);
+                    viewModel.OpenSelectedFile(fileTreeItem, SearchComboBox.Tag.ToString());
                 }
             }
 
@@ -119,9 +122,13 @@ namespace ToratEmet.Controls
             SearchTextBox.CaretIndex = SearchTextBox.Text.Length;
         }
 
-        private void FolderItemPanel_PreviewMouseDown_1(object sender, MouseButtonEventArgs e)
+        private void SearchTextBox_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-
+            var txtControl = sender as TextBox;
+            txtControl.Dispatcher.BeginInvoke(new Action(() =>
+            {
+                txtControl.SelectAll();
+            }));
         }
     }
 }

@@ -49,7 +49,7 @@
             <ComboBox.Resources>
                 <DataTemplate DataType="{x:Type treeSource:FileTreeItem}">
                     <StackPanel x:Name="FolderItemPanel" Orientation="Horizontal"
-                                PreviewMouseDown="FolderItemPanel_PreviewMouseDown"
+                                PreviewMouseDown="ItemPanel_PreviewMouseDown"
                                 Tag="{Binding BindsDirectlyToSource=True}">
                         <emoji:TextBlock Text="🗎" Margin="0,0,3,0"/>
                         <TextBlock Text="{Binding Name}" />
@@ -59,6 +59,8 @@
                 </DataTemplate>
                 <Style TargetType="ComboBoxItem">
                     <Setter Property="Tag" Value="{Binding BindsDirectlyToSource=True}"/>
+                    <Setter Property="MaxWidth" Value="300"/>
+                    <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=Content}"/>
                 </Style>
             </ComboBox.Resources>
         </ComboBox>
@@ -67,7 +69,8 @@
  ToolTip="כדי לפתוח מיקום מדוייק בספר יש להזין את הכתובת המדוייקת על ידי הפרדה של פסיקים (לדוגמא: &quot;בראשית, יג, יד&quot;)."
  Grid.Row="0" Grid.Column="1" 
  Margin="3"
- PreviewKeyDown="SearchTextBox_PreviewKeyDown"/>
+ PreviewKeyDown="SearchTextBox_PreviewKeyDown"
+ GotKeyboardFocus="SearchTextBox_GotKeyboardFocus"/>
 
         <!--search combo button-->
         <StackPanel Orientation="Horizontal"
@@ -75,7 +78,8 @@
             Margin="3">
             <ComboBox x:Name="RecentSearchesCombo"
                Width="0"
-               SelectionChanged="RecentSearchesCombo_SelectionChanged"/>
+               SelectionChanged="RecentSearchesCombo_SelectionChanged">
+            </ComboBox>
             <Button x:Name="SearchButton" Content="חפש"
                     BorderThickness="1,1,0,1"
                     Padding="5,0,2,2"

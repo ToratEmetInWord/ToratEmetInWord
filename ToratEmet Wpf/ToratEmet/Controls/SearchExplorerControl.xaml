@@ -34,7 +34,7 @@
             <Button x:Name="ShowSearch_button" Content="איתור ספר"
                     Click="ShowSearch_button_Click"/>
             <TextBlock Text="|"/>
-            <Button x:Name="ShowSearchResults_button" Content="תוצאות חיפוש"
+            <Button x:Name="ShowSearchResults_button" Content="תוצאות" ToolTip="תוצאות חיפוש"
                     Click="ShowSearchResults_button_Click"/>
         </StackPanel>
 
@@ -67,7 +67,7 @@
                             <HierarchicalDataTemplate DataType="{x:Type treeSource:FolderTreeItem}" ItemsSource="{Binding Children}">
                                 <CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay, BindsDirectlyToSource=True}">
                                     <StackPanel Orientation="Horizontal">
-                                        <Image Source="/תורת אמת בוורד 3.1;component/Resources/FolderIcon.png" 
+                                        <Image Source="/ToratEmet;component/Resources/StandingFolderIcon.ico" 
                                        Height="15" Margin="0,0,3,0"/>
                                         <TextBlock Text="{Binding Name}" FontSize="14"/>
                                     </StackPanel>
@@ -124,6 +124,7 @@
                          Grid.Row="0" Grid.Column="0"
                          Margin="5"
                          PreviewKeyDown="SearchTextBox_KeyDown"
+                         GotKeyboardFocus="SearchTextBox_GotKeyboardFocus"
                          Text="{Binding SearchTerm, Mode=TwoWay, BindsDirectlyToSource=True}"/>
                     <Button x:Name="SearchButton" Content="חפש"
                         BorderThickness="1"

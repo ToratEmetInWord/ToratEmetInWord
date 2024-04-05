@@ -161,6 +161,9 @@ namespace ToratEmet.Controls
             viewModel.ShowCopyRight(tabControlX.tabControl);
         }
 
-       
+        private void Instructions_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.ShowInstructions();
+        }
     }
 }

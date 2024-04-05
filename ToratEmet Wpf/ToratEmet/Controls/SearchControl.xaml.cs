@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using ToratEmet.Models;
 using ToratEmet.Properties;
 using ToratEmet.ViewModels;
@@ -45,19 +35,36 @@ namespace ToratEmet.Controls
             SearchTextBox.Focus();
         }
 
-        private void SearchTextBox_KeyDown(object sender, KeyEventArgs e)
+        private async void SearchTextBox_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter)
+            if (e.Key == Key.Enter && SearchButton.Content.ToString() == "חפש")
             {
+                SearchButton.Content = "עצור";
                 BookExplorerTabControl.SelectedIndex = 0;
-                viewModel.Search();
+                await viewModel.Search();
+                Dispatcher.Invoke((Action)(() => SearchButton.Content = "חפש"));
                 e.Handled = true;
             }
         }
-        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        private async void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            BookExplorerTabControl.SelectedIndex = 0;
-            viewModel.Search();
+            Button button = sender as Button;
+            if (button.Content.ToString() == "חפש")
+            {
+                button.Content = "עצור";
+                BookExplorerTabControl.SelectedIndex = 0;
+                await viewModel.Search();
+                Dispatcher.Invoke((Action)(() => SearchButton.Content = "חפש"));
+            }
+            else if (button.Content.ToString() == "עצור")
+            {
+                if (viewModel.searchMethod.cancellationTokenSource != null)
+                {
+                    viewModel.searchMethod.cancellationTokenSource.Cancel();
+                    Dispatcher.Invoke((Action)(() => SearchButton.Content = "חפש"));
+                    viewModel.searchMethod.cancellationTokenSource.Dispose();
+                }
+            }
         }
 
         private void SearchTypeCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -126,6 +133,15 @@ namespace ToratEmet.Controls
         private void SearchAllCheckBox_Checked(object sender, RoutedEventArgs e)
         {
             if (BookExplorerTabControl != null) { BookExplorerTabControl.SelectedIndex = 0; }
+        }
+
+        private void SearchTextBox_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            var txtControl = sender as TextBox;
+            txtControl.Dispatcher.BeginInvoke(new Action(() =>
+            {
+                txtControl.SelectAll();
+            }));
         }
     }
 }

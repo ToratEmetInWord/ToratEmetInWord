@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using ToratEmet.Extensions;
 using ToratEmet.Models;
@@ -22,23 +23,29 @@ namespace ToratEmet
         }
         public async Task SearchAsync(string searchPattern)
         {
-            resultsDictionary = new Dictionary<string, List<string>>();
-            if (ignoreTags) 
-            {
-                searchPattern = searchPattern.ModifyRegexPattern();
-            }
+            cancellationTokenSource = new CancellationTokenSource();
+            
+                var token = cancellationTokenSource.Token;
+                resultsDictionary = new Dictionary<string, List<string>>();
+                if (ignoreTags)
+                {
+                    searchPattern = searchPattern.ModifyRegexPattern();
+                }
 
-            List<Task> searchTasks = new List<Task>();
-            foreach (string filePath in filesList)
-            {
-                resultsDictionary.Add(filePath, new List<string>());
-                searchTasks.Add(Task.Run(() => { processFile(filePath, searchPattern); }));
-            }
-            await Task.WhenAll(searchTasks);
+                List<Task> searchTasks = new List<Task>();
+                foreach (string filePath in filesList)
+                {
+                    resultsDictionary.Add(filePath, new List<string>());
+                    searchTasks.Add(Task.Run(() => { processFile(filePath, searchPattern, token); }));
+                }
+                await Task.WhenAll(searchTasks);
+            
             
         }
-        void processFile(string filePath, string searchPattern)
+        void processFile(string filePath, string searchPattern, CancellationToken token)
         {
+            if (token.IsCancellationRequested) { return; }
+
             ProcessHeaders processHeaders = new ProcessHeaders();
             string currentHeader = "";
             viewModel.UpdateProgressBar(1);

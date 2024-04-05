@@ -53,3 +53,4 @@ C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\ToratEmet.csproj.CoreC
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\ToratEmet.csproj.Up2Date
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\ToratEmet.dll
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\ToratEmet.pdb
+C:\Users\Admin\source\repos\ToratEmet\ToratEmet\bin\Debug\Resources\ToratEmetInstructions.pdf

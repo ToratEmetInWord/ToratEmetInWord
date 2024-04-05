@@ -7,6 +7,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using ToratEmet.Initializers;
 using ToratEmet.Models;
 
 namespace ToratEmet.TreeModels
@@ -14,11 +15,15 @@ namespace ToratEmet.TreeModels
     public static class TreeLoader
     {
         static bool isloaded = false;
-        public static void PopulateTree(TreeView treeView)
+        public static async void PopulateTree(TreeView treeView)
         {
             if (isloaded == false) { CreateTree(); }          
             
-            if (treeView != null) { treeView.ItemsSource = StaticGlobals.RootItems; };
+            if (treeView != null) 
+            {
+                await Initializer.WaitForInitializationAsync();
+                treeView.ItemsSource = StaticGlobals.RootItems; 
+            };
         }
         static void CreateTree()
         {

@@ -35,7 +35,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <WrapPanel Grid.Row="0">
+        <WrapPanel Grid.Row="0" Background="WhiteSmoke">
             <WrapPanel.Resources>
                 <Style TargetType="ComboBox">
                     <Style.Resources>
@@ -51,7 +51,8 @@
                     <Setter Property="MaxWidth" Value="250"/>
                 </Style>
                 <Style TargetType="Button">
-                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="Background" Value="WhiteSmoke"/>
+                    
                     <Setter Property="BorderThickness" Value="0"/>
                     <Setter Property="Width" Value="28"/>
                     <Setter Property="Height" Value="28"/>
@@ -62,7 +63,7 @@
             </WrapPanel.Resources>
 
             <Grid x:Name="MainMenuGrid">
-                <ComboBox Name="MainMenuComboBox" SelectionChanged="MainMenuComboBox_SelectionChanged">
+                <ComboBox Name="MainMenuComboBox" SelectionChanged="MainMenuComboBox_SelectionChanged" MaxDropDownHeight="280">
                     <ComboBoxItem Name="OpenExternalFile" Content="פתח קובץ שאינו בספריה"
                               ToolTip="מאפשר גם פתיחת קבצי PDF - שים לב לאפשרות החיפוש המובנית"
                               Selected="OpenExternalFile_Selected"/>
@@ -72,8 +73,8 @@
                               Selected="ShowFilesFolder_Selected"/>
                     <ComboBoxItem Name="ChangeFolderLocation" Content="בחר מיקום אחר עבור קבצי התוסף"
                               Selected="ChangeFolderLocation_Selected"/>
-                    <!--<ComboBoxItem Name="ChangeToratEmetLocation" Content="בחר מיקום אחר עבור התקנת תורת אמת"
-                                  Selected="ChangeToratEmetLocation_Selected"/>-->
+                    <ComboBoxItem Name="ChangeToratEmetLocation" Content="בחר מיקום אחר עבור התקנת תורת אמת"
+                                  Selected="ChangeToratEmetLocation_Selected"/>
                     <ComboBoxItem Name="CreateNewIndex" Content="צור אינדקס חדש"
                               Selected="CreateNewIndex_Selected"/>
                     <ComboBoxItem Name="DeleteIndex" Content="מחק אינדקס"
@@ -86,14 +87,14 @@
                               Selected="AboutButton_Selected"/>
                 </ComboBox>
                 <Button x:Name="MainMenuButton" Click="MainMenuButton_Click">
-                    <emoji:TextBlock Text="☰" ToolTip="תפריט ראשי"/>
+                    <TextBlock Text="☰" ToolTip="תפריט ראשי" LineHeight="22"/>
                 </Button>
             </Grid>
             <Button x:Name="OpenFileButton"
+                    ToolTip="פתח ספר (לחץ לחיצה ימנית לפתיחת התפריט בחלונית נפרדת)"
                     Click="OpenFileButton_Click"
                     PreviewMouseRightButtonDown="OpenFileButton_PreviewMouseRightButtonDown">
-                <emoji:TextBlock Text="📁" ToolTip="פתח ספר (לחץ לחיצה ימנית לפתיחת התפריט בחלונית נפרדת)"
-                                 Margin="0,0,0,2"/>
+                <TextBlock Text="📁" FontSize="16" LineHeight="19"/>
             </Button>
             <Grid x:Name="RecentBooksGrid">
                 <ComboBox x:Name="RecentBooksComboBox">
@@ -110,13 +111,13 @@
                 </ComboBox>
                 <Button x:Name="RecentBooksButton" ToolTip="ספרים אחרונים"
                         Click="RecentBooksButton_Click">
-                <TextBlock Text="⟲" FontSize="20" LineHeight="20"/>
+                <TextBlock Text="⟲" FontSize="22" LineHeight="23"/>
             </Button>
             </Grid>
             <Button x:Name="SearchButton" ToolTip="חיפוש (לחץ לחיצה ימנת לפתיחת החיפוש בחלונית נפרדת)"
                     Click="SearchButton_Click"
                     PreviewMouseRightButtonDown="SearchButton_PreviewMouseRightButtonDown">
-                <emoji:TextBlock Text="🔍" FontSize="12" Margin="0,0,0,1"/>
+                <TextBlock Text="🔍" FontSize="12" LineHeight="16"/>
             </Button>
             
             <!--fonts-->
@@ -143,29 +144,34 @@
             <Button x:Name="IncreaseFontSizeButton" ToolTip="הגדל גופן" 
                     Click="IncreaseFontSizeButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="🗛"/>
-                    <TextBlock Text="▴" LineHeight="14" Margin="-5,0,0,0"
+                    <TextBlock Text="🗛" LineHeight="20"/>
+                    <TextBlock Text="▴" LineHeight="17" Margin="-5,0,0,0"
                                        Foreground="DarkBlue"/>
                 </StackPanel>
             </Button>
             <Button x:Name="DecreaseFontSizeButton" ToolTip="הקטן גופן"
                     Click="DecreaseFontSizeButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="🗚" FontSize="12"/>
-                    <TextBlock Text="▾" LineHeight="14" Margin="-5,0,0,0"
+                    <TextBlock Text="🗚" FontSize="12" LineHeight="20"/>
+                    <TextBlock Text="▾" LineHeight="17" Margin="-5,0,0,0"
                                        Foreground="DarkBlue"/>
                 </StackPanel>
             </Button>
             <Button x:Name="DictionaryButton" ToolTip="מילון ארמי עברי וראשי תיבות"
                     Click="DictionaryButton_Click">
-                <Image Source="/ToratEmet;component/Resources/Dictionary.png" 
-                       Height="18" Margin="0,2,0,0"/>
+                <TextBlock Text="📖" FontSize="15" LineHeight="19"/>
 
             </Button>
             <Button x:Name="CopyRightButton" ToolTip="זכויות יוצרים"
                     Click="CopyRightButton_Click">
-                <emoji:TextBlock Text="©" FontSize="12"/>
+                <TextBlock Text="©" FontSize="19" LineHeight="24"/>
             </Button>
+
+            <Button x:Name="Instructions" ToolTip="הוראות"
+                    Click="Instructions_Click">
+                <TextBlock Text="ⓘ" FontSize="19" LineHeight="24"/>
+            </Button>
+            
 
         </WrapPanel>
 

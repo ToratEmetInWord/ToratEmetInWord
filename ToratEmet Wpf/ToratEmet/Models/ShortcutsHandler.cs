@@ -1,13 +1,5 @@
-﻿using IWshRuntimeLibrary;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System.IO;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows;
-using ToratEmet.Models;
 
 namespace ToratEmet.Models
 {
@@ -16,8 +8,10 @@ namespace ToratEmet.Models
         public static void CreateShortcuts()
         {
             string[] shortcuts = Directory.GetFileSystemEntries(ApplicationFolders.BooksFolder);
-            if (shortcuts.Length == 0)
+            if (shortcuts.Length == 0||Properties.Settings.Default.ResetShotcuts == true)
             {
+                Properties.Settings.Default.ResetShotcuts = false;
+                Properties.Settings.Default.Save();
                 if (Directory.Exists(ApplicationFolders.ToratEmetInstallBooks)) { CreateToratEmetShortcuts(ApplicationFolders.ToratEmetInstallBooks); }
                 if (Directory.Exists(ApplicationFolders.ToratEmetMyBooks)) { CreateShortcut(ApplicationFolders.ToratEmetMyBooks, ApplicationFolders.BooksFolder); }
             }

@@ -24,7 +24,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="HtmlFontSize" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)">100</Value>
     </Setting>
     <Setting Name="RecentBooks" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)" />
@@ -61,6 +61,12 @@
     </Setting>
     <Setting Name="FontSettingsTrigger" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DockPosition" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ResetShotcuts" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

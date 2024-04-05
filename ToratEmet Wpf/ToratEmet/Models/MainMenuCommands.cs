@@ -77,7 +77,7 @@ namespace ToratEmet.Models
 
         public static void AboutButton()
         {
-            try { System.Diagnostics.Process.Start("https://mitmachim.top/post/704012"); }
+            try { System.Diagnostics.Process.Start("https://mitmachim.top/post/770291"); }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
     }

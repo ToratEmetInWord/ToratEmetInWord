@@ -10,14 +10,22 @@ namespace ToratEmet.Initializers
 {
     public static class Initializer
     {
+        private static Task initializationTask;
+
         public static void Execute()
         {
-            Task.Run(() =>
+            initializationTask = Task.Run(() =>
             {
                 ApplicationFolders.IntializeFolders();
                 ShortcutsHandler.CreateShortcuts();
                 TreeLoader.PopulateTree(null);
             });
+        }
+
+        public static async Task WaitForInitializationAsync()
+        {
+            if (initializationTask != null)
+                await initializationTask;
         }
     }
 }

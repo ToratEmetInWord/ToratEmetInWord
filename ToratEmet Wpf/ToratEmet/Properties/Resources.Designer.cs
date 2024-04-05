@@ -63,6 +63,16 @@ namespace ToratEmet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1f50d {
+            get {
+                object obj = ResourceManager.GetObject("_1f50d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cantillations {
             get {
                 object obj = ResourceManager.GetObject("Cantillations", resourceCulture);

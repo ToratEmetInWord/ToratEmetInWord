@@ -81,6 +81,13 @@ function sendBookLink(item) {{
     window.chrome.webview.postMessage('bookLink=' + item.innerHTML);
 }}
 
+function setBookLinkTitle(item) {{
+  if (!item.title) {{
+    window.chrome.webview.postMessage('setBookLinkTitle=' + item.innerHTML);
+  }}
+}}
+
+
 {TreeViewJS()}
 {CurrentChapterJs()}
 

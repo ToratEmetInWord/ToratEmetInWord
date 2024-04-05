@@ -10,6 +10,7 @@ using ToratEmet;
 using ToratEmet.SearchModels;
 using ToratEmet.Extensions;
 using ToratEmet.Models;
+using System.Threading;
 
 namespace ToratEmet
 {
@@ -19,6 +20,7 @@ namespace ToratEmet
         public List<string> filesList = new List<string>();
         public Dictionary<string, List<string>> resultsDictionary;
         public string[] startChars = { "!", "~", "^", "@", "<h", "<H" }; //public string[] startChars = { "!", "~", "^", "@", "הקדמה", "<h", "<H", "שער", "פתיחה" };       
+        public CancellationTokenSource cancellationTokenSource { get; set; }
 
         public SearchMethods(SearchControlViewModel viewmodel)
         {

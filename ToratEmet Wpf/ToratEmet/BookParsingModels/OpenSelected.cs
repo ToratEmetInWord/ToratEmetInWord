@@ -138,16 +138,11 @@ namespace ToratEmet.Models
             itemList.Remove(sourceTreeItem);
             return new ObservableCollection<object>(itemList.Select(item => item.DeepCopyFileTreeItem()).ToList());
         }
-        ChapterItem GetTargetItem(string targetItemId, BookItem BookItem)
+        ChapterItem GetTargetItem(string targetItemId, BookItem bookItem)
         {
             ChapterItem targetItem = null;
-            if (!string.IsNullOrEmpty(targetItemId))
-            {
-                targetItem = BookItem.AllChapters.FirstOrDefault(chapter => chapter.Id.EndsWith(targetItemId));
-                if (targetItem == null) { targetItem = FIndTargetItem.SearchForItem(BookItem.RootItem, targetItemId); }
-                if (targetItem == null) { targetItem = FIndTargetItem.JaccardSearch(BookItem, targetItemId); }
-            }
-            if (targetItem == null) { targetItem = BookItem.RootItem; }
+            if (!string.IsNullOrEmpty(targetItemId)){  targetItem = FindTargetItem.Find(bookItem, targetItemId);}
+            if (targetItem == null) { targetItem = bookItem.RootItem; }
             return targetItem;
         }
         TabItem CreateNewTab(string fileName, TabControl tabControl)

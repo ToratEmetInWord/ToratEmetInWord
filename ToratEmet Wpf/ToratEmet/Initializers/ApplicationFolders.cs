@@ -33,12 +33,12 @@ namespace ToratEmet.Models
         {
             string myDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             MainFolder = Path.Combine(myDocumentsPath, "תורת אמת בוורד");
-            if (string.IsNullOrEmpty(Properties.Settings.Default.MainFolder))
+            if (string.IsNullOrEmpty(Properties.Settings.Default.MainFolder.ToString()))
             {
                 Properties.Settings.Default.MainFolder = MainFolder;
                 Properties.Settings.Default.Save();
             }         
-            MainFolder = Properties.Settings.Default.MainFolder;
+            MainFolder = Properties.Settings.Default.MainFolder.ToString();
             if (!Directory.Exists(MainFolder)) {Directory.CreateDirectory(MainFolder); }
         }
 
@@ -65,20 +65,6 @@ namespace ToratEmet.Models
                     Properties.Settings.Default.ToratEmetParentFolder = myDocumentsPath;
                     Properties.Settings.Default.Save();
                 }
-                else
-                {
-                    MessageBoxResult result = MessageBox.Show("לא נמצאה התקנה של תורת אמת במחשב - האם ברצונך להגדיר את מיקום ההתקנה באופן ידני?", "בחירת תיקייה", MessageBoxButton.YesNo, MessageBoxImage.Question);
-                    if (result == MessageBoxResult.Yes)
-                    {
-                        string pickedFolder = FolderPickerLauncher.Pick_A_Folder("בחר את תיקיית ההתקנה של תורת אמת");
-                        if (!string.IsNullOrEmpty(ToratEmetInstall))
-                        {
-                            ToratEmetInstall = pickedFolder;
-                            Properties.Settings.Default.ToratEmetParentFolder = Path.GetDirectoryName(ToratEmetInstall);
-                            Properties.Settings.Default.Save();
-                        }
-                    }
-                }
             }
         }
 
@@ -97,14 +83,15 @@ namespace ToratEmet.Models
         public static void SetNewMainFolder()
         {
             string originalFolder = Properties.Settings.Default.MainFolder;
-            string newFolderPath = FolderPickerLauncher.Pick_A_Folder("בחר מיקום חדש עבור תיקיית התוסף");
-            newFolderPath = Path.Combine(newFolderPath, "תורת אמת בוורד");
+            string newFolderPath = FolderPickerLauncher.Pick_A_Folder("בחר מיקום חדש עבור תיקיית התוסף");           
             if (!string.IsNullOrEmpty(newFolderPath))
             {
+                newFolderPath = Path.Combine(newFolderPath, "תורת אמת בוורד");
                 try { 
                 Directory.Move(originalFolder, newFolderPath);
                 }
                 catch (Exception ex) { MessageBox.Show(ex.Message); }
+
                 Properties.Settings.Default.MainFolder = newFolderPath;
                 Settings.Default.Save();
                 MessageBox.Show("המיקום שונה בהצלחה יש להתחיל את וורד מחדש");              
@@ -114,13 +101,21 @@ namespace ToratEmet.Models
         public static void SetNewToratEmetInstallFolder()
         {
             string result = FolderPickerLauncher.Pick_A_Folder("בחר את תיקיית תורת אמת במחשב");
+            DirectoryInfo directory = new DirectoryInfo(result);
+            if (result.EndsWith("ToratEmetInstall")) { result = directory.Parent.FullName; }
             if (!string.IsNullOrEmpty(ToratEmetInstall))
             {
-                Properties.Settings.Default.ToratEmetParentFolder = Path.GetDirectoryName(ToratEmetInstall);
+                Properties.Settings.Default.ToratEmetParentFolder = result;
                 Settings.Default.Save();
-                SetToratEmetInstallFolder();
-                SetToratEmetUserDataFolder();
+                string newPath = Path.Combine(Properties.Settings.Default.ToratEmetParentFolder, "ToratEmetInstall");
+                if (Directory.Exists(newPath)) 
+                {
+                    MessageBox.Show("המיקום שונה בהצלחה! אנא התחילו את וורד מחדש");
+                    Properties.Settings.Default.ResetShotcuts = true;
+                    Properties.Settings.Default.Save();
+                }
             }
+
         }
     }
 }

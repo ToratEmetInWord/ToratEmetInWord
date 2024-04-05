@@ -172,7 +172,7 @@ namespace ToratEmet.WebViewModels
                 .Replace("\\\"", "\"")
                 .Replace("\n\n", "\n")
                 .Replace("\'\'", "\"")
-                .Replace("\\\"", "\"");
+                .Replace("\\\"", "\"");          
             return selectedText;
         }
 

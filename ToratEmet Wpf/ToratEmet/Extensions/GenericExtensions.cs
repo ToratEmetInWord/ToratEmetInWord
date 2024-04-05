@@ -53,5 +53,10 @@ namespace ToratEmet
             }
             return input;
         }
+
+        public static string RemoveAllParenthesis(this string input)
+        {
+            return Regex.Replace(input, @"[\{\}\(\)\[\]<>]+", "");
+        }
     }
 }

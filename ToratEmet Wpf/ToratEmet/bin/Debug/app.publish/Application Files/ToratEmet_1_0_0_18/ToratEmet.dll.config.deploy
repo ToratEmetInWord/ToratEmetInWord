@@ -26,7 +26,7 @@
                 <value />
             </setting>
             <setting name="HtmlFontSize" serializeAs="String">
-                <value>0</value>
+                <value>100</value>
             </setting>
             <setting name="ShemHashemDisplayOptions" serializeAs="String">
                 <value>0</value>
@@ -51,6 +51,12 @@
             </setting>
             <setting name="FontSettingsTrigger" serializeAs="String">
                 <value />
+            </setting>
+            <setting name="DockPosition" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="ResetShotcuts" serializeAs="String">
+                <value>False</value>
             </setting>
         </ToratEmet.Properties.Settings>
     </userSettings>

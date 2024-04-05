@@ -1,4 +1,5 @@
 ﻿using Microsoft.Office.Tools;
+using Microsoft.Office.Tools.Word;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,21 @@ namespace ToratEmet.Initializers
                 taskPane = Globals.ThisAddIn.CustomTaskPanes.Add(hostControl, "תורת אמת");
                 taskPane.Width = 500;
                 taskPane.VisibleChanged += TaskPane_VisibleChanged;
+                
+                if (Enum.TryParse(Properties.Settings.Default.DockPosition, out Microsoft.Office.Core.MsoCTPDockPosition savedDockPosition))
+                {
+                    taskPane.DockPosition = savedDockPosition;
+                }
+                else
+                {
+                    taskPane.DockPosition = Microsoft.Office.Core.MsoCTPDockPosition.msoCTPDockPositionRight;
+                }
+
+                taskPane.DockPositionChanged += (sender, e) =>
+                {
+                    Properties.Settings.Default.DockPosition = taskPane.DockPosition.ToString();
+                    Properties.Settings.Default.Save();
+                };
             }
 
             taskPane.Visible = true;

@@ -112,7 +112,7 @@ namespace ToratEmet.Models
             HostWindow hostWindow = new HostWindow
             {
                 Width = 315,
-                Height = 400,
+                Height = 425,
                 Left = Properties.Settings.Default.SearchWindowLeft,
                 Title = "חיפוש",
                 Content = StaticGlobals.SearchControl,

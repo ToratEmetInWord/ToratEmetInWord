@@ -170,7 +170,7 @@ namespace ToratEmet.ViewModels
             else if (searchType == "חיפוש מהיר") { searchMethod = new LuceneSearch(this); RegexComboisEnabled = false; }
         }
 
-        public async void Search()
+        public async Task Search()
         {
             try
             {
@@ -217,8 +217,11 @@ namespace ToratEmet.ViewModels
                 // If navigating to content fails, create a temporary file and navigate to it
                 string tempFilePath = Path.Combine(Path.GetTempPath(), "temp.html");
                 File.WriteAllText(tempFilePath, content);
-                webView.CoreWebView2.Navigate(tempFilePath);
-            }
+                webView.Dispatcher.Invoke((Action)(() =>
+                {
+                    webView.CoreWebView2.Navigate(tempFilePath);
+                }));               
+           }
             if (ExpandSnippets) { WebViewCommands.ToggleSnippets(webView, true); }
         }
 

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using ToratEmet.Initializers;
 using ToratEmet.Models;
+using ToratEmet.Properties;
 using ToratEmet.WebViewModels;
 
 namespace ToratEmet.Controls.ViewModels
@@ -59,6 +61,13 @@ namespace ToratEmet.Controls.ViewModels
             TabItem tabItem = new TabItem { Header = "זכויות יוצרים", Content = webBrowser };
             tabControl.Items.Add(tabItem);
             tabControl.SelectedItem = tabItem;
+        }
+
+        public void ShowInstructions()
+        {
+            string appPath = AppDomain.CurrentDomain.BaseDirectory;
+            string fullPath = Path.Combine(appPath, "Resources", "ToratEmetInstructions.pdf");
+            System.Diagnostics.Process.Start(fullPath);
         }
     }
 }

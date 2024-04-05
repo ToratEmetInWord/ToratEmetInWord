@@ -60,7 +60,7 @@ namespace ToratEmet.Extensions
             {
                 foreach (Match match in matches)
                 {
-                    string markedValue = $"<span class=\"booklinks\" onclick=\"sendBookLink(this)\">{match.Value}</span>";
+                    string markedValue = $"<span class=\"booklinks\" onclick=\"sendBookLink(this)\" onmouseover=\"setBookLinkTitle(this)\">{match.Value}</span>";
                     input = input.Replace(match.Value, markedValue);
                 }
             }
@@ -75,11 +75,16 @@ namespace ToratEmet.Extensions
 
         public static string FixBookLink(this string input)
         {
-            input = Regex.Replace(input, @" (\S*?)-", ", $1, ");
-            input = Regex.Replace(input, @" (\S*?['""]+\S*?)", ", $1");
-            input = Regex.Replace(input, @"' ", ", ");
+            input = input.Replace("' ", ", "); // link format = '
+            input = Regex.Replace(input, @" *(\S*?)-", ", $1, "); //link format = בראשית א-יד replace to בראשית, א, יד
+            input = Regex.Replace(input, @" *(\S*?['""]+\S*) ", ", $1,"); //linkformat = בראשית א' or בראשית י"ד  replace to 
+            
 
-            input = input
+            input = input.Trim(',')
+                        .Replace("\'", "")
+                        .Replace("\"", "")
+                        .Replace(".", "")
+                        .Replace(":", " ב")
                 .Replace("ב\"ק", "בבא קמא")
                  .Replace("ב\"מ", "בבא מציעא")
                   .Replace("ב\"ב", "בבא בתרא")
@@ -90,11 +95,8 @@ namespace ToratEmet.Extensions
                      .Replace("שמו\"ר", "שמות רבה")
                       .Replace("ויקר\"ר", "ויקרא רבה")
                        .Replace("במ\"ר", "במדבר רבה")
-                        .Replace("דב\"ר", "דברים רבה")
-                        .Replace("\"", "")
-                        .Replace(".", "")
-                        .Replace(":", " ב")
-                        .Replace("\'", "");
+                        .Replace("דב\"ר", "דברים רבה")                       
+                       ;
 
             return input;
         }

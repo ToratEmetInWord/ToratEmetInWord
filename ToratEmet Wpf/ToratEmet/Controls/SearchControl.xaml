@@ -52,7 +52,8 @@
             <TextBox x:Name="SearchTextBox" Margin="5,5,0,5"
                  Grid.Column="0"
                  KeyDown="SearchTextBox_KeyDown"
-                 Text="{Binding SearchString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                 Text="{Binding SearchString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                 GotKeyboardFocus="SearchTextBox_GotKeyboardFocus"/>
 
             <StackPanel Orientation="Horizontal"
                         Grid.Column="1"

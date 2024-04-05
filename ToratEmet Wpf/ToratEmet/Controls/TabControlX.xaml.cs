@@ -33,14 +33,7 @@ namespace ToratEmet.Controls
         {
             foreach (TabItem tabItem in tabControl.Items)
             {
-                if (tabItem.Content is BookViewer bookViewer)
-                {
-                   bookViewer.webViewControl.Dispose();
-                }
-                else if (tabItem.Content is WebView2 webView2)
-                {
-                    webView2.Dispose();
-                }
+                DiposeTabContent(tabItem);
             }
         }
 
@@ -211,9 +204,21 @@ namespace ToratEmet.Controls
             }
         }
 
-        void DiposeTabContent(TabItem tabItem)
+        public void DiposeTabContent(TabItem tabItem)
         {
-            
+            if (tabItem.Content is BookViewer bookViewer)
+            {
+                bookViewer.webViewControl.Dispose();
+            }
+            else if (tabItem.Content is WebViewControl webViewControl) 
+            {
+                webViewControl.Dispose();
+            }
+            else if (tabItem.Content is SearchControl searchControl)
+            {
+                searchControl.webView.Dispose();
+                StaticGlobals.SearchControl = null;
+            }
         }
 
         private void TabMenuItem_Click(object sender, RoutedEventArgs e)         // Event handler for context menu item click
@@ -263,12 +268,43 @@ namespace ToratEmet.Controls
         }
 
         private void tabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
+        {           
             if (tabControl.Items.Count == 0)
             {
                 Window window = FindParentOrChild.TryFindParent<Window>(this);
                 if (window != null) { try { window.Close(); } catch { } }
             }
+        }
+
+        private void UserControl_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.X && Keyboard.Modifiers == ModifierKeys.Control) 
+            {
+                CloseAllTabs();
+            }
+            else if (e.Key == Key.W && Keyboard.Modifiers == ModifierKeys.Control)
+            {
+                TabItem tabItem = tabControl.SelectedItem as TabItem;
+                if (tabItem != null) 
+                {
+                    int tabIndex = tabControl.SelectedIndex;
+                    DiposeTabContent(tabItem);
+                    tabControl.Items.Remove(tabItem);
+                    if (tabControl.Items.Count > 1) { tabControl.SelectedIndex = tabIndex - 1; }
+                    else if (tabControl.SelectedIndex > 0) { tabControl.SelectedIndex = 1; }
+                }
+            }
+        }
+
+        private void TabItem_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (sender is TabItem tabItem)
+            {
+                if (tabItem.Content is WebViewControl webview) { webview.CoreWebView2.Resume(); }
+                else if (tabItem.Content is BookViewer bookViewer && bookViewer.webViewControl != null && bookViewer.webViewControl.CoreWebView2 != null)
+                { bookViewer.webViewControl.CoreWebView2.Resume(); }
+                e.Handled = true;
+            }           
         }
     }
 }

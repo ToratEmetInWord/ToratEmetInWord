@@ -11,65 +11,83 @@ using ToratEmet.Extensions;
 
 namespace ToratEmet.Models
 {
-    public static class FIndTargetItem
+    public static class FindTargetItem
     {
-        public static ChapterItem SearchForItem(ChapterItem rootItem, string Id)
+        public static ChapterItem Find(BookItem bookItem, string targetId)
         {
-            Id.NormalizedDafString();
-            string[] splitIds = Id.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
-            return RecursiveApplier(rootItem, splitIds, 1, false);
-        }
-        static ChapterItem RecursiveApplier(ChapterItem currentChapter, string[] splitId, int searchPart, bool chapterFound)
-        {
-            if (currentChapter == null || searchPart >= splitId.Length) { return currentChapter; } //stop loop if nothing left to search
+            targetId = targetId.NormalizeIdString();
+            //ChapterItem targetItem = bookItem.AllChapters.FirstOrDefault(chapter => chapter.Id.NormalizeIdString().EndsWith(targetId));
+            string[] splitIds = targetId.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+            
+            ChapterItem targetItem = searchNextLevel(new ObservableCollection<ChapterItem> { bookItem.RootItem }, splitIds, 0);
 
-            string idToFind = splitId[searchPart].Trim(); //define current searchTerm
-            ChapterItem foundItem = SearchChildren(currentChapter.Children, idToFind);
-            if (foundItem != null)
+            if (targetItem == null)
             {
-                ChapterItem nextLevelItem = RecursiveApplier(foundItem, splitId, searchPart + 1, true);
-                if (nextLevelItem != null) return nextLevelItem;
-                else { return foundItem; }
-            }
-            else if (!chapterFound)
-            {
-                foreach (var currentChild in currentChapter.Children)
+                foreach (var item in bookItem.AllChapters)
                 {
-                    foundItem = RecursiveApplier(currentChild as ChapterItem, splitId, searchPart, false);
-                    if (foundItem != null) { return foundItem; }
+                    string id = item.Id.NormalizeIdString();
+                    if (id.EndsWith(targetId)) { targetItem = item; break; }
                 }
+            }
+            if (targetItem == null) { targetItem = JaccardSearch(bookItem, targetId); }
+            return targetItem;
+        }
+
+        static ChapterItem searchNextLevel(ObservableCollection<ChapterItem> currentLevelCollection, string[] splitId, int searchPart)
+        {
+            string idToFind = splitId[searchPart].Trim();
+
+            ObservableCollection<ChapterItem> nextLevelCollection = new ObservableCollection<ChapterItem>(
+                currentLevelCollection.SelectMany(collectionItem => collectionItem.Children)
+            );
+
+            if (nextLevelCollection.Any())
+            {
+                ChapterItem foundItem = SearchChildren(nextLevelCollection, idToFind);
+                if (foundItem != null) { return RecursiveApplier(foundItem, splitId, searchPart + 1); }
+                else { return searchNextLevel(nextLevelCollection, splitId, searchPart); }
             }
             return null;
         }
 
-        static ChapterItem SearchChildren(ObservableCollection<ChapterItem> chapterchildren, string idToFind)
+        static ChapterItem RecursiveApplier(ChapterItem currentChapter, string[] splitId, int searchPart)
         {
-            foreach(var chapterchild in chapterchildren)
-            {
-                if (chapterchild is ChapterItem chapter)
-                {
-                    if (chapter.Id.NormalizedDafString().EndsWith(" " + idToFind) || chapter.Id.NormalizedDafString().EndsWith(" " + idToFind + " א"))
-                    {
-                        return chapter;
-                    }
-                }
-            }
-           return null;
+            if (currentChapter == null || searchPart >= splitId.Length) { return currentChapter;}
+
+            string idToFind = splitId[searchPart].Trim();
+
+            ChapterItem foundItem = SearchChildren(currentChapter.Children, idToFind);
+            return foundItem != null ? RecursiveApplier(foundItem, splitId, searchPart + 1) : null;
+        }       
+
+        static ChapterItem SearchChildren(ObservableCollection<ChapterItem> chapterChildren, string idToFind)
+        {
+            return chapterChildren
+                .FirstOrDefault(chapter =>
+                    chapter.Id.NormalizeIdString().EndsWith($" {idToFind}") ||
+                    chapter.Id.NormalizeIdString().EndsWith($" {idToFind} א"));
         }
 
-        static string NormalizedDafString(this string input)
+
+        static string NormalizeIdString(this string input)
         {
             string normalizedString = input
                 .Replace(".", " א")
                 .Replace(":", " ב")
                 .Replace("-", " ");
-            normalizedString = Regex.Replace(normalizedString, @"\s{2,}", " ").Trim();
+            normalizedString = normalizedString.RemoveChapterChar();
+            normalizedString = Regex.Replace(normalizedString, @" {2,}", " ").Trim();
             return normalizedString;
+        }
+
+        static string RemoveChapterChar(this string input)
+        {
+            return Regex.Replace(input, @"פרק|פסוק|משנה|דף|הלכה|סימן|סעיף|תשובה|רמז|פרשה|מזמור|חלק|מדרש|פי?סקה|אות|כלל|פרשת|המשך|עמוד", "");
         }
 
         public static ChapterItem JaccardSearch(BookItem bookItem, string targetId)
         {
-            string[] splitTargetId = targetId.CleanHeaders().Replace(",", " ").ChapterCharRemover().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] splitTargetId = targetId.CleanHeaders().Replace(",", " ").NormalizeIdString().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
             // Variable to keep track of the best match and its score
             ChapterItem bestMatch = null;
@@ -78,7 +96,7 @@ namespace ToratEmet.Models
             foreach (var chapterItem in bookItem.AllChapters)
             {
                 string chapterId = chapterItem.Id.RemoveTextTillFirstChar(',');
-                string[] chapterItemIds = chapterId.CleanHeaders().Replace(",", " ").ChapterCharRemover().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                string[] chapterItemIds = chapterId.CleanHeaders().Replace(",", " ").NormalizeIdString().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
                 // Calculate Jaccard similarity score
                 double intersectionCount = splitTargetId.Intersect(chapterItemIds).Count();
@@ -97,10 +115,7 @@ namespace ToratEmet.Models
             return bestMatch;
         }
 
-        static string ChapterCharRemover(this string input)
-        {
-            return Regex.Replace(input,@"פרק|פסוק|משנה|דף|הלכה|סימן|סעיף|תשובה|רמז|פרשה|מזמור|חלק|מדרש|פי?סקה|אות|כלל|פרשת","");
-        }
+        
 
     }
 }

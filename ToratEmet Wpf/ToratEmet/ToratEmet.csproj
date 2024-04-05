@@ -36,7 +36,7 @@
     <PublishUrl>C:\Users\Admin\Desktop\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.4</ApplicationVersion>
+    <ApplicationVersion>1.0.0.19</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -254,7 +254,7 @@
     <Compile Include="BookParsingModels\BookItem.cs" />
     <Compile Include="BookParsingModels\BookParser.cs" />
     <Compile Include="BookParsingModels\ChapterTreeLoader.cs" />
-    <Compile Include="BookParsingModels\FIndTargetItem.cs" />
+    <Compile Include="BookParsingModels\FindTargetItem.cs" />
     <Compile Include="BookParsingModels\HtmlHead.cs" />
     <Compile Include="BookParsingModels\Navigate_To_Header.cs" />
     <Compile Include="BookParsingModels\OpenSelected.cs" />
@@ -374,6 +374,12 @@
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Resource Include="Resources\1f50d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Resources\ToratEmetInstructions.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="ThisAddIn.Designer.xml">
       <DependentUpon>ThisAddIn.cs</DependentUpon>
     </None>

@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using ToratEmet.Extensions;
@@ -30,10 +31,7 @@ namespace ToratEmet.SearchModels
             searcher.Dispose();
             directory.Dispose();
         }
-        public LuceneSearch(SearchControlViewModel viewModel) : base(viewModel)
-        {
-
-        }
+        public LuceneSearch(SearchControlViewModel viewModel) : base(viewModel) {}
 
         public async Task ExecuteSearch(string searchterm)
         {
@@ -73,36 +71,42 @@ namespace ToratEmet.SearchModels
 
         void processResults()
         {
-            viewModel.MaxProgress = topDocs.ScoreDocs.Length;
-            string searchPattern = searchTerm.ModifyRegexPattern();
-            List<string> resultList = new List<string>();
-            foreach (ScoreDoc scoreDoc in topDocs.ScoreDocs)
-            {
-                viewModel.UpdateProgressBar(1);
-                Document resultDoc = searcher.Doc(scoreDoc.Doc);
-                string filePath = resultDoc.Get("FilePath");
-                string content = resultDoc.Get("Snippet");
-                string header = resultDoc.Get("HeaderId");
-
-                if (filesList.Contains(filePath))
+            cancellationTokenSource = new CancellationTokenSource();
+            
+                var token = cancellationTokenSource.Token;
+                viewModel.MaxProgress = topDocs.ScoreDocs.Length;
+                string searchPattern = searchTerm.ModifyRegexPattern();
+                List<string> resultList = new List<string>();
+                foreach (ScoreDoc scoreDoc in topDocs.ScoreDocs)
                 {
-                    List<string> snippetList = SnippetBuilder.SplitStringIntoSnippets(content, 400, searchPattern.Length + 10);
-                    for (int i = 0; i < snippetList.Count; i++)
+                    if (token.IsCancellationRequested) { break; }
+                    viewModel.UpdateProgressBar(1);
+                    Document resultDoc = searcher.Doc(scoreDoc.Doc);
+                    string filePath = resultDoc.Get("FilePath");
+                    string content = resultDoc.Get("Snippet");
+                    string header = resultDoc.Get("HeaderId");
+
+                    if (filesList.Contains(filePath))
                     {
-                        MatchCollection matches = Regex.Matches(snippetList[i], searchPattern);
-                        if (matches.Count > 0)
+                        content = Regex.Replace(content, @"<.*?>", "");
+                        List<string> snippetList = SnippetBuilder.SplitStringIntoSnippets(content, 400, searchPattern.Length + 10);
+                        for (int i = 0; i < snippetList.Count; i++)
                         {
-                            foreach (Match match in matches)
+                            MatchCollection matches = Regex.Matches(snippetList[i], searchPattern);
+                            if (matches.Count > 0)
                             {
-                                string markedValue = $"<span style=\"color:magenta\">{match.Value}</span>";
-                                snippetList[i] = snippetList[i].Replace(match.Value, markedValue);
+                                foreach (Match match in matches)
+                                {
+                                    string markedValue = $"<span style=\"color:magenta\">{match.Value}</span>";
+                                    snippetList[i] = snippetList[i].Replace(match.Value, markedValue);
+                                }
+                                resultList.Add(ResultItem(filePath, snippetList[i], header));
                             }
-                            resultList.Add(ResultItem(filePath, snippetList[i], header));
                         }
-                    }                   
+                    }
                 }
-            }
-            resultsDictionary.Add("", resultList);
+                resultsDictionary.Add("", resultList);
+            
         }
     }
 }

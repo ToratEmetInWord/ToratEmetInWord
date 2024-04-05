@@ -19,37 +19,15 @@ namespace ToratEmet.Models
         ToratEmetTemplates templates;
         Stack<ChapterItem> itemStack = new Stack<ChapterItem>();
         BookItem newBook;
-        Regex chapterHederRegex = new Regex(@"פרק |פסוק |משנה |דף |הלכה |סימן |סעיף |תשובה |רמז |פרשה |מזמור |חלק |מדרש |פי?סקה |אות |כלל ", RegexOptions.Compiled);
-
-        public BookParser()
-        {
-        }
 
         public ChapterItem GetTargetItem(string filePath, string targetId)
         {
             string fileName = filePath.GetCleanFileName();            
             Parse(filePath, fileName);
-
+            
             targetId = Regex.Replace(targetId, @"^.*?, ", "");
-            ChapterItem targetItem = newBook.AllChapters.FirstOrDefault(chapteritem => matchChapters(chapteritem.Id, targetId));
-            if (targetItem == null) // Calculate Jaccard similarity score
-            {
-                targetItem = FIndTargetItem.JaccardSearch(newBook, targetId);
-            }
+            ChapterItem targetItem = FindTargetItem.Find(newBook, targetId);
             return targetItem;
-        }
-
-        bool matchChapters(string chpaterId, string targetId)
-        {
-            if (chpaterId.EndsWith(targetId) ||
-                chapterMatchRplacements(chpaterId).EndsWith(chapterMatchRplacements(targetId)))
-            { return true; }
-            else { return false; }
-        }
-
-        string chapterMatchRplacements(string input)
-        {
-            return chapterHederRegex.Replace(input, "");
         }
 
         public BookItem Parse(string filePath, string fileName)
