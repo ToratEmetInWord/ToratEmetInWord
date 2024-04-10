@@ -198,25 +198,34 @@ namespace ToratEmet.Controls
 
         public async void DiposeTabContent(TabItem tabItem)
         {
-            if (tabItem.Content is BookViewer bookViewer)
+            try
             {
-                string script = "document.getElementById('contentBox').scrollTop";
-                string scrollTopString = await bookViewer.webViewControl.CoreWebView2.ExecuteScriptAsync(script);
-                double scrollValue = double.Parse(scrollTopString);
-
-                bookViewer.webViewControl.Dispose();
-                var viewModel = bookViewer.viewModel;
-                RecentBooks.UpdateListWhileClosingBook(viewModel.currentBook.FilePath, viewModel.currentChapter.Id, scrollValue);
+                if (tabItem.Content is BookViewer bookViewer)
+                {
+                    MainControl mainControl = FindParentOrChild.TryFindParent<MainControl>(bookViewer);
+                    if (mainControl != null && mainControl.SaveSession.IsChecked == true) 
+                    {
+                        string script = "document.getElementById('contentBox').scrollTop";
+                        string scrollTopString = await bookViewer.webViewControl.CoreWebView2.ExecuteScriptAsync(script);
+                        double scrollValue = double.Parse(scrollTopString);
+                        var viewModel = bookViewer.viewModel;
+                        RecentBooks.UpdateListWhileClosingBook(viewModel.currentBook.FilePath, viewModel.currentChapter.Id, scrollValue);                       
+                        Properties.Settings.Default.IsOpenLastSessionEnabled = true;
+                        Properties.Settings.Default.Save();
+                    }
+                    bookViewer.webViewControl.Dispose();
+                }
+                else if (tabItem.Content is WebViewControl webViewControl)
+                {
+                    webViewControl.Dispose();
+                }
+                else if (tabItem.Content is SearchControl searchControl)
+                {
+                    searchControl.webView.Dispose();
+                    StaticGlobals.SearchControl = null;
+                }
             }
-            else if (tabItem.Content is WebViewControl webViewControl) 
-            {
-                webViewControl.Dispose();
-            }
-            else if (tabItem.Content is SearchControl searchControl)
-            {
-                searchControl.webView.Dispose();
-                StaticGlobals.SearchControl = null;
-            }
+            catch { }
         }
 
         private void TabMenuItem_Click(object sender, RoutedEventArgs e)         // Event handler for context menu item click

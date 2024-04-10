@@ -48,10 +48,11 @@ namespace ToratEmet.Controls.ViewModels
         public void OpenRecentBook(TreeItem treeItem)
         {
             OpenSelected openSelected = new OpenSelected();
-            if (treeItem.RecentChapter != null) 
+            if (treeItem.RecentChapter != null)
             {
                 if (treeItem.RecentChapter[0] == treeItem.Name) { treeItem.RecentChapter[0] = ""; }
-                openSelected.OpenSelectedFile(treeItem, treeItem.RecentChapter[0], treeItem.RecentChapter[1], null); }
+                openSelected.OpenSelectedFile(treeItem, treeItem.RecentChapter[0], treeItem.RecentChapter[1], null);
+            }
             else { openSelected.OpenSelectedFile(treeItem, "", "", null); }
         }
 

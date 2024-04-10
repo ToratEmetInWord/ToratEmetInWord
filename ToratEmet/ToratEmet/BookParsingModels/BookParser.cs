@@ -11,6 +11,7 @@ using ToratEmet.Extensions;
 using ToratEmet.BookParsingModels;
 
 using ToratEmet.Properties;
+using Microsoft.Office.Interop.Word;
 
 namespace ToratEmet.Models
 {
@@ -22,9 +23,9 @@ namespace ToratEmet.Models
 
         public ChapterItem GetTargetItem(string filePath, string targetId)
         {
-            string fileName = filePath.GetCleanFileName();            
+            string fileName = filePath.GetCleanFileName();
             Parse(filePath, fileName);
-            
+
             targetId = Regex.Replace(targetId, @"^.*?, ", "");
             ChapterItem targetItem = FindTargetItem.Find(newBook, targetId);
             return targetItem;
@@ -43,14 +44,14 @@ namespace ToratEmet.Models
 
             StringBuilder stb = new StringBuilder();
             using (StreamReader str = StreamReaderX.Reader(filePath))
-            {                
+            {
                 List<string> startChars = new List<string> { "!", "~", "^", "@", "הקדמה", "<h", "<H", "שער", "פתיחה" };
                 while (!str.EndOfStream)
                 {
                     line = str.ReadLine();
                     if (startChars.Any(c => line.StartsWith(c)))
                     {
-                        ProcessLine(line, filePath);
+                        ProcessLine(line, filePath, fileName);
                         break;
                     }
                     else if (!startHasBeenFound)
@@ -58,13 +59,13 @@ namespace ToratEmet.Models
                         if (bookinfoRegex.IsMatch(line))
                         {
                             Match match = bookinfoRegex.Match(line);
-                            line = "© " + match.Value.Replace("&", ""); 
+                            line = "© " + match.Value.Replace("&", "");
                         }
                         stb.AppendLine(line);
-                        if (line.StartsWith(@"\\")){ continue; }
-                        else if (line.StartsWith("$ ") || line.StartsWith("# ") || string.IsNullOrEmpty(line)) 
+                        if (line.StartsWith(@"\\")) { continue; }
+                        else if (line.StartsWith("$ ") || line.StartsWith("# ") || string.IsNullOrEmpty(line))
                         {
-                            startHasBeenFound = true; 
+                            startHasBeenFound = true;
                             newBook.Info = stb.ToString();
                             stb.Clear();
                         }
@@ -72,11 +73,11 @@ namespace ToratEmet.Models
                     else
                     {
                         if (line.StartsWith("$")) { newBook.Info = newBook.Info + line; }
-                        else if (startChars.Any(c => line.StartsWith(c.ToString()))||line.StartsWith("# "))
+                        else if (startChars.Any(c => line.StartsWith(c.ToString())) || line.StartsWith("# "))
                         {
                             newBook.Info = newBook.Info + "\r\n" + stb.ToString();
                             stb.Clear();
-                            ProcessLine(line, filePath);
+                            ProcessLine(line, filePath, fileName);
                             break;
                         }
                         else
@@ -90,14 +91,14 @@ namespace ToratEmet.Models
                 {
                     string content = stb.ToString();
                     content = content.Replace("\n", "<p>");
-                    ProcessLine(content, filePath);
+                    ProcessLine(content, filePath, fileName);
                 }
 
 
                 while (!str.EndOfStream)
                 {
                     line = str.ReadLine();
-                    ProcessLine(line, filePath);
+                    ProcessLine(line, filePath, fileName);
                 }
             }
             removeEmptyChapters();
@@ -121,9 +122,15 @@ namespace ToratEmet.Models
             }
         }
 
-        public void ProcessLine(string line, string filePath)
+        public void ProcessLine(string line, string filePath, string fileName)
         {
             if (string.IsNullOrEmpty(line)) { }
+            else if (line.StartsWith("<h")|| line.StartsWith("<H"))
+            {   
+                if (line.StartsWith("<h1>" + fileName)){ return; }
+                string level = Regex.Match(line, @"<h(\d+)").Groups[1].Value;
+                AddIdItem(line.FixUnclosedHeaderTags() + "<p dir=\"rtl\">", int.Parse(level), Regex.Replace(line, @"<[^>]+>", ""));
+            }
             else if (filePath.Contains("ToratEmetInstall"))
             {
                templates.ApplyTemplates(line, filePath, this, true);

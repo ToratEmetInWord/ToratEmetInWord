@@ -36,7 +36,7 @@
     <PublishUrl>C:\Users\Admin\Desktop\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.20</ApplicationVersion>
+    <ApplicationVersion>1.0.0.26</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -126,9 +126,6 @@
   -->
   <ItemGroup>
     <Reference Include="Accessibility" />
-    <Reference Include="Emoji.Wpf, Version=0.3.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Emoji.Wpf.0.3.4\lib\net40\Emoji.Wpf.dll</HintPath>
-    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
@@ -195,12 +192,6 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Typography.GlyphLayout, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Emoji.Wpf.0.3.4\lib\net40\Typography.GlyphLayout.dll</HintPath>
-    </Reference>
-    <Reference Include="Typography.OpenFont, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Emoji.Wpf.0.3.4\lib\net40\Typography.OpenFont.dll</HintPath>
-    </Reference>
     <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
@@ -329,11 +320,13 @@
     <Compile Include="Extensions\PrivateExtensions.cs" />
     <Compile Include="Extensions\SearchExtensions.cs" />
     <Compile Include="Initializers\CostumeWindowsHandler.cs" />
+    <Compile Include="Models\DetectFileType.cs" />
     <Compile Include="Ribbon1.cs" />
     <Compile Include="Models\CopyRight.cs" />
     <Compile Include="Models\MoveTabToNewWindow.cs" />
     <Compile Include="Models\ProgressBarDelegate.cs" />
     <Compile Include="Models\RecentBooks.cs" />
+    <Compile Include="SearchModels\LuceneSearch.cs" />
     <Compile Include="SearchModels\SnippetBuilder.cs" />
     <Compile Include="Models\StreamReaderX.cs" />
     <Compile Include="Models\WordWIndowOwner.cs" />
@@ -343,7 +336,7 @@
     <Compile Include="SearchModels\FreeFormSearch.cs" />
     <Compile Include="SearchModels\LuceneIndexer.cs" />
     <Compile Include="SearchModels\LuceneIntializer.cs" />
-    <Compile Include="SearchModels\LuceneSearch.cs" />
+    <Compile Include="SearchModels\LuceneWildCardSearch.cs" />
     <Compile Include="SearchModels\ProcessHeaders.cs" />
     <Compile Include="SearchModels\RecentSearches.cs" />
     <Compile Include="SearchModels\RegexSearch.cs" />

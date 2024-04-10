@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ToratEmet.Controls"
-             xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
+             
              xmlns:treeSource="clr-namespace:ToratEmet.TreeModels"
              mc:Ignorable="d" 
              FlowDirection="RightToLeft"
@@ -66,7 +66,7 @@
                             <StackPanel x:Name="FileItemPanel" Orientation="Horizontal" 
              ToolTip="לחץ לפתיחת הספר, או סמן v לתצוגה משולבת"
              Tag="{Binding BindsDirectlyToSource=True}">
-                                <emoji:TextBlock x:Name="FileItemButton" Text="🗎" 
+                                <TextBlock x:Name="FileItemButton" Text="🗎" 
                             Margin="0,0,3,0" Background="{x:Null}"
                             Tag="{Binding BindsDirectlyToSource=True}"
                             MouseDown="ReltiveBooks_FileItemButton_MouseDown"

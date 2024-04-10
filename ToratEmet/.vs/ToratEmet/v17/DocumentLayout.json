@@ -3,23 +3,152 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|c:\\users\\admin\\source\\repos\\toratemet\\toratemet\\controls\\openfilecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\openfilecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\controls\\bookviewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\bookviewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\controls\\openfilecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\openfilecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\controls\\openfilecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\openfilecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ToratEmet||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|c:\\users\\admin\\source\\repos\\toratemet\\toratemet\\controls\\maincontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\treemodels\\treeloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\treemodels\\treeloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\controls\\tabcontrolx.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\tabcontrolx.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\initializers\\updater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\initializers\\updater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\viewmodels\\maincontrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\viewmodels\\maincontrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\controls\\maincontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\maincontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\mainmenucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\mainmenucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\initializers\\taskpanehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\initializers\\taskpanehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\initializers\\intializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\initializers\\intializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\initializers\\costumewindowshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\initializers\\costumewindowshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\bookparsingmodels\\bookexport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\bookparsingmodels\\bookexport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\bookparsingmodels\\openselected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\bookparsingmodels\\openselected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\bookparsingmodels\\toratemettemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\bookparsingmodels\\toratemettemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\lucenewildcardsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\lucenewildcardsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\viewmodels\\searchcontrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\viewmodels\\searchcontrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\searchmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\searchmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\lucenesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\lucenesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\681f67946b75ad9c7a48016db9caa6239a6bd180b616b157833a0c4e06c28b5f\\SearchControlViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\distancesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\distancesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\distancecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\distancecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\0fab57be76c63cf6513421e9689fa3eddc84c3f52724ec934d6f5c60c7e3d953\\CoreWebView2Controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\recentbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\recentbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\controls\\maincontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\maincontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|c:\\users\\admin\\source\\repos\\toratemet\\toratemet\\webviewmodels\\webviewpdfcontextmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\bookparsingmodels\\bookparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\bookparsingmodels\\bookparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\extensions\\privateextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\extensions\\privateextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\detectfiletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\detectfiletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\treemodels\\treeitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\treemodels\\treeitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\movetabtonewwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\movetabtonewwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\translatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\translatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\ribbon1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\ribbon1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\levenshtein.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\levenshtein.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\webviewmodels\\webviewpdfcontextmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\webviewmodels\\webviewpdfcontextmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,18 +160,6 @@
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\webviewmodels\\webviewcontextmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\movetabtonewwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\movetabtonewwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\bookparsingmodels\\openselected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\bookparsingmodels\\openselected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|c:\\users\\admin\\source\\repos\\toratemet\\toratemet\\controls\\tabcontrolx.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\tabcontrolx.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\controls\\tabcontrolx.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\tabcontrolx.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -51,28 +168,8 @@
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\webviewmodels\\webviewcommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\recentbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\recentbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\viewmodels\\bookviewerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\viewmodels\\bookviewerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\controls\\bookviewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\bookviewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|c:\\users\\admin\\source\\repos\\toratemet\\toratemet\\viewmodels\\maincontrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\viewmodels\\maincontrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\bookparsingmodels\\bookexport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\bookparsingmodels\\bookexport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\bookparsingmodels\\htmlhead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +180,6 @@
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\webviewmodels\\webviewmessagehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\treemodels\\treeitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\treemodels\\treeitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\shortcutshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\shortcutshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -95,7 +188,7 @@
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\recentsearches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|c:\\users\\admin\\source\\repos\\toratemet\\toratemet\\controls\\webviewcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\controls\\webviewcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\webviewcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -103,50 +196,12 @@
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\searchcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\viewmodels\\searchcontrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\viewmodels\\searchcontrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\regexsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\regexsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\searchmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\searchmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|c:\\users\\admin\\source\\repos\\toratemet\\toratemet\\searchmodels\\lucenesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\lucenesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\luceneindexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\luceneindexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\0fab57be76c63cf6513421e9689fa3eddc84c3f52724ec934d6f5c60c7e3d953\\CoreWebView2Controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ToratEmet||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\initializers\\taskpanehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\initializers\\taskpanehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\translatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\translatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\initializers\\intializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\initializers\\intializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\initializers\\updater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\initializers\\updater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\treemodels\\treeloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\treemodels\\treeloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\controls\\searchcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -157,35 +212,12 @@
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\initializers\\applicationfolders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\681f67946b75ad9c7a48016db9caa6239a6bd180b616b157833a0c4e06c28b5f\\SearchControlViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\bookparsingmodels\\toratemettemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\bookparsingmodels\\toratemettemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\snippetbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\snippetbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\controls\\searchexplorercontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\controls\\searchexplorercontrol.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\mainmenucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\mainmenucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\initializers\\costumewindowshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\initializers\\costumewindowshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\initializers\\staticglobals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -197,14 +229,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\c0f8febf35715bb9b1c26222906a01a9d42307226f7e605fd0b2d77b9ed7dd4e\\OpenFileControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\bookparsingmodels\\bookparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\bookparsingmodels\\bookparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\extensions\\privateextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\extensions\\privateextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\bookparsingmodels\\findtargetitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -221,10 +245,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\freeformsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\freeformsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\distancesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\distancesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\containssearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -251,20 +271,12 @@
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\viewmodels\\searchexplorercontrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\levenshtein.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\levenshtein.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\findparentorchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\findparentorchild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\ribbon1.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\ribbon1.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\ribbon1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\ribbon1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\textfile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -281,10 +293,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\models\\progressbardelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\models\\progressbardelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\distancecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|solutionrelative:toratemet\\searchmodels\\distancecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|C:\\Users\\Admin\\source\\repos\\ToratEmet\\toratemet\\searchmodels\\processheaders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -405,9 +413,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\ToratEmetRibbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ToratEmet\\Initializers\\ToratEmetRibbon.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE084557-5EA4-48D9-8171-E50218C44B9C}|ToratEmet\\ToratEmet.csproj|c:\\users\\admin\\source\\repos\\toratemet\\toratemet\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|f8d6553f-f752-4dbf-acb6-f291b744a792"
     }
   ],
   "DocumentGroupContainers": [
@@ -417,24 +422,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ToratEmet",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ToratEmet.csproj",
+              "RelativeDocumentMoniker": "ToratEmet\\ToratEmet.csproj",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ToratEmet.csproj",
+              "RelativeToolTip": "ToratEmet\\ToratEmet.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-02T13:18:42.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "ToratEmet\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Properties\\Resources.resx",
+              "RelativeToolTip": "ToratEmet\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-30T18:58:35.908Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "WebViewContextMenu.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\WebViewModels\\WebViewContextMenu.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\WebViewModels\\WebViewContextMenu.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\WebViewModels\\WebViewContextMenu.cs",
-              "RelativeToolTip": "ToratEmet\\WebViewModels\\WebViewContextMenu.cs",
-              "ViewState": "AQIAANMAAAAAAAAAAADwv9gAAAA3AAAA",
+              "Title": "ThisAddIn.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ThisAddIn.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\ThisAddIn.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ThisAddIn.cs",
+              "RelativeToolTip": "ToratEmet\\ThisAddIn.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAuwCQAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T08:08:02.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T17:52:50.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OpenFileControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\OpenFileControl.xaml.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\OpenFileControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\OpenFileControl.xaml.cs",
+              "RelativeToolTip": "ToratEmet\\Controls\\OpenFileControl.xaml.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAcwIkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T06:43:30.688Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BookViewer.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\BookViewer.xaml",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\BookViewer.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\BookViewer.xaml",
+              "RelativeToolTip": "ToratEmet\\Controls\\BookViewer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-31T17:20:20.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "OpenFileControl.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\OpenFileControl.xaml",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\OpenFileControl.xaml",
@@ -446,45 +495,114 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
+              "Title": "MainControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\MainControl.xaml.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\MainControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\MainControl.xaml.cs",
+              "RelativeToolTip": "ToratEmet\\Controls\\MainControl.xaml.cs",
+              "ViewState": "AQIAAKcAAAAAAAAAAAAmwK8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T23:06:45.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TreeLoader.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TreeModels\\TreeLoader.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\TreeModels\\TreeLoader.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TreeModels\\TreeLoader.cs",
+              "RelativeToolTip": "ToratEmet\\TreeModels\\TreeLoader.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAYwGMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T19:51:34.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TabControlX.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\TabControlX.xaml.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\TabControlX.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\TabControlX.xaml.cs",
+              "RelativeToolTip": "ToratEmet\\Controls\\TabControlX.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA+wBwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T23:08:03.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainControlViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\MainControlViewModel.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\ViewModels\\MainControlViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\MainControlViewModel.cs",
+              "RelativeToolTip": "ToratEmet\\ViewModels\\MainControlViewModel.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAtwE4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T23:07:04.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RecentBooks.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\RecentBooks.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Models\\RecentBooks.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\RecentBooks.cs",
+              "RelativeToolTip": "ToratEmet\\Models\\RecentBooks.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAowGcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T23:25:15.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "MainControl.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\MainControl.xaml",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\MainControl.xaml",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\MainControl.xaml",
               "RelativeToolTip": "ToratEmet\\Controls\\MainControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-01T06:25:49.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T06:25:49.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\MainControl.xaml.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\MainControl.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\MainControl.xaml.cs",
-              "RelativeToolTip": "ToratEmet\\Controls\\MainControl.xaml.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAtwGYAAAANAAAA",
+              "DocumentIndex": 30,
+              "Title": "PrivateExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Extensions\\PrivateExtensions.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Extensions\\PrivateExtensions.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Extensions\\PrivateExtensions.cs",
+              "RelativeToolTip": "ToratEmet\\Extensions\\PrivateExtensions.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAApwGUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T23:06:45.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T06:08:57.53Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OpenFileControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\OpenFileControl.xaml.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\OpenFileControl.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\OpenFileControl.xaml.cs",
-              "RelativeToolTip": "ToratEmet\\Controls\\OpenFileControl.xaml.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAuwIAAAAANAAAA",
+              "DocumentIndex": 29,
+              "Title": "BookParser.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\BookParser.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\BookParser.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\BookParser.cs",
+              "RelativeToolTip": "ToratEmet\\BookParsingModels\\BookParser.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAkwIAAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T06:43:30.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T15:30:14.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
+              "Title": "MainMenuCommands.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\MainMenuCommands.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Models\\MainMenuCommands.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\MainMenuCommands.cs",
+              "RelativeToolTip": "ToratEmet\\Models\\MainMenuCommands.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAuwCYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T19:07:37.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "WebViewPdfContextMenu.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\WebViewModels\\WebViewPdfContextMenu.cs",
               "RelativeDocumentMoniker": "ToratEmet\\WebViewModels\\WebViewPdfContextMenu.cs",
@@ -492,76 +610,34 @@
               "RelativeToolTip": "ToratEmet\\WebViewModels\\WebViewPdfContextMenu.cs",
               "ViewState": "AQIAAE0AAAAAAAAAAAAtwFYAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T23:40:53.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T23:40:53.839Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 38,
               "Title": "BookViewer.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\BookViewer.xaml.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\BookViewer.xaml.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\BookViewer.xaml.cs",
               "RelativeToolTip": "ToratEmet\\Controls\\BookViewer.xaml.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAlwG8AAAAzAAAA",
+              "ViewState": "AQIAAGgAAAAAAAAAAIA5wG8AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T06:10:26.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T06:10:26.737Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MoveTabToNewWindow.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\MoveTabToNewWindow.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Models\\MoveTabToNewWindow.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\MoveTabToNewWindow.cs",
-              "RelativeToolTip": "ToratEmet\\Models\\MoveTabToNewWindow.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwB8AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:28:52.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OpenSelected.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\OpenSelected.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\OpenSelected.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\OpenSelected.cs",
-              "RelativeToolTip": "ToratEmet\\BookParsingModels\\OpenSelected.cs",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAiwJYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:29:36.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TabControlX.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\TabControlX.xaml.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\TabControlX.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\TabControlX.xaml.cs",
-              "RelativeToolTip": "ToratEmet\\Controls\\TabControlX.xaml.cs",
-              "ViewState": "AQIAAMAAAAAAAAAAAAAwwMgAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T23:08:03.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 40,
               "Title": "TabControlX.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\TabControlX.xaml",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\TabControlX.xaml",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\TabControlX.xaml",
               "RelativeToolTip": "ToratEmet\\Controls\\TabControlX.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-01T08:53:02.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T08:53:02.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 41,
               "Title": "WebViewCommands.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\WebViewModels\\WebViewCommands.cs",
               "RelativeDocumentMoniker": "ToratEmet\\WebViewModels\\WebViewCommands.cs",
@@ -569,75 +645,71 @@
               "RelativeToolTip": "ToratEmet\\WebViewModels\\WebViewCommands.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAowPwAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:56:32.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T10:56:32.698Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Settings.settings",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Properties\\Settings.settings",
-              "RelativeDocumentMoniker": "ToratEmet\\Properties\\Settings.settings",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Properties\\Settings.settings",
-              "RelativeToolTip": "ToratEmet\\Properties\\Settings.settings",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
-              "WhenOpened": "2024-03-30T18:58:34.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RecentBooks.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\RecentBooks.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Models\\RecentBooks.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\RecentBooks.cs",
-              "RelativeToolTip": "ToratEmet\\Models\\RecentBooks.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAkwCcAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T23:25:15.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 42,
               "Title": "BookViewerViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\BookViewerViewModel.cs",
               "RelativeDocumentMoniker": "ToratEmet\\ViewModels\\BookViewerViewModel.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\BookViewerViewModel.cs",
               "RelativeToolTip": "ToratEmet\\ViewModels\\BookViewerViewModel.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAApwB0AAAAkAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAB0AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T06:16:42.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T06:16:42.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Updater.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\Updater.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Initializers\\Updater.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\Updater.cs",
+              "RelativeToolTip": "ToratEmet\\Initializers\\Updater.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwBAAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T08:56:20.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TaskPaneHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\TaskPaneHandler.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Initializers\\TaskPaneHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\TaskPaneHandler.cs",
+              "RelativeToolTip": "ToratEmet\\Initializers\\TaskPaneHandler.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T10:15:43.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Intializer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\Intializer.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Initializers\\Intializer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\Intializer.cs",
+              "RelativeToolTip": "ToratEmet\\Initializers\\Intializer.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAApwBUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T18:59:35.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CostumeWindowsHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\CostumeWindowsHandler.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Initializers\\CostumeWindowsHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\CostumeWindowsHandler.cs",
+              "RelativeToolTip": "ToratEmet\\Initializers\\CostumeWindowsHandler.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAtwBkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T10:13:11.02Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "BookViewer.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\BookViewer.xaml",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\BookViewer.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\BookViewer.xaml",
-              "RelativeToolTip": "ToratEmet\\Controls\\BookViewer.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-31T17:20:20.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MainControlViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\MainControlViewModel.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\ViewModels\\MainControlViewModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\MainControlViewModel.cs",
-              "RelativeToolTip": "ToratEmet\\ViewModels\\MainControlViewModel.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAApwDMAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T23:07:04.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "BookExport.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\BookExport.cs",
               "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\BookExport.cs",
@@ -645,747 +717,71 @@
               "RelativeToolTip": "ToratEmet\\BookParsingModels\\BookExport.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAApwA4AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T15:31:09.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T15:31:09.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "HtmlHead.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\HtmlHead.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\HtmlHead.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\HtmlHead.cs",
-              "RelativeToolTip": "ToratEmet\\BookParsingModels\\HtmlHead.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAApwD8AAAAMAAAA",
+              "DocumentIndex": 16,
+              "Title": "OpenSelected.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\OpenSelected.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\OpenSelected.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\OpenSelected.cs",
+              "RelativeToolTip": "ToratEmet\\BookParsingModels\\OpenSelected.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAADAAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T11:46:45.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-31T17:29:36.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "WebViewMessageHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\WebViewModels\\WebViewMessageHandler.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\WebViewModels\\WebViewMessageHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\WebViewModels\\WebViewMessageHandler.cs",
-              "RelativeToolTip": "ToratEmet\\WebViewModels\\WebViewMessageHandler.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAuwBcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T18:24:40.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TreeItem.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TreeModels\\TreeItem.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\TreeModels\\TreeItem.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TreeModels\\TreeItem.cs",
-              "RelativeToolTip": "ToratEmet\\TreeModels\\TreeItem.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAApwEgAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T19:51:23.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ShortcutsHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\ShortcutsHandler.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Models\\ShortcutsHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\ShortcutsHandler.cs",
-              "RelativeToolTip": "ToratEmet\\Models\\ShortcutsHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T19:07:43.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "RecentSearches.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\RecentSearches.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\RecentSearches.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\RecentSearches.cs",
-              "RelativeToolTip": "ToratEmet\\SearchModels\\RecentSearches.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA0AAABcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T22:02:46.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "WebViewControl.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\WebViewControl.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\WebViewControl.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\WebViewControl.cs",
-              "RelativeToolTip": "ToratEmet\\Controls\\WebViewControl.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAxwCUAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:34:12.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "SearchControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchControl.xaml.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\SearchControl.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchControl.xaml.cs",
-              "RelativeToolTip": "ToratEmet\\Controls\\SearchControl.xaml.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwBwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:39:16.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "SearchControlViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\SearchControlViewModel.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\ViewModels\\SearchControlViewModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\SearchControlViewModel.cs",
-              "RelativeToolTip": "ToratEmet\\ViewModels\\SearchControlViewModel.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAAAlwIwAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:39:10.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "RegexSearch.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\RegexSearch.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\RegexSearch.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\RegexSearch.cs",
-              "RelativeToolTip": "ToratEmet\\SearchModels\\RegexSearch.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwB8AAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T22:04:53.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "SearchMethods.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\SearchMethods.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\SearchMethods.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\SearchMethods.cs",
-              "RelativeToolTip": "ToratEmet\\SearchModels\\SearchMethods.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAjwCUAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T22:00:14.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "LuceneIndexer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\LuceneIndexer.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\LuceneIndexer.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\LuceneIndexer.cs",
-              "RelativeToolTip": "ToratEmet\\SearchModels\\LuceneIndexer.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAADwv2AAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T01:11:59.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "LuceneSearch.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\LuceneSearch.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\LuceneSearch.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\LuceneSearch.cs",
-              "RelativeToolTip": "ToratEmet\\SearchModels\\LuceneSearch.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAASwEwAAABTAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T22:05:17.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CoreWebView2Controller.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\0fab57be76c63cf6513421e9689fa3eddc84c3f52724ec934d6f5c60c7e3d953\\CoreWebView2Controller.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0fab57be76c63cf6513421e9689fa3eddc84c3f52724ec934d6f5c60c7e3d953\\CoreWebView2Controller.cs",
-              "ToolTip": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\0fab57be76c63cf6513421e9689fa3eddc84c3f52724ec934d6f5c60c7e3d953\\CoreWebView2Controller.cs",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0fab57be76c63cf6513421e9689fa3eddc84c3f52724ec934d6f5c60c7e3d953\\CoreWebView2Controller.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAEwDkAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T07:06:33.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ToratEmet",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ToratEmet.csproj",
-              "RelativeDocumentMoniker": "ToratEmet\\ToratEmet.csproj",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ToratEmet.csproj",
-              "RelativeToolTip": "ToratEmet\\ToratEmet.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-02T13:18:42.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "TaskPaneHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\TaskPaneHandler.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Initializers\\TaskPaneHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\TaskPaneHandler.cs",
-              "RelativeToolTip": "ToratEmet\\Initializers\\TaskPaneHandler.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAArwBAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:15:43.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "TranslatorClass.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\TranslatorClass.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Models\\TranslatorClass.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\TranslatorClass.cs",
-              "RelativeToolTip": "ToratEmet\\Models\\TranslatorClass.cs",
-              "ViewState": "AQIAAD0BAAAAAAAAAAAvwEUBAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T11:42:12.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Intializer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\Intializer.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Initializers\\Intializer.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\Intializer.cs",
-              "RelativeToolTip": "ToratEmet\\Initializers\\Intializer.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBAAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T18:59:35.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Updater.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\Updater.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Initializers\\Updater.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\Updater.cs",
-              "RelativeToolTip": "ToratEmet\\Initializers\\Updater.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAvwA0AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T08:56:20.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "TreeLoader.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TreeModels\\TreeLoader.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\TreeModels\\TreeLoader.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TreeModels\\TreeLoader.cs",
-              "RelativeToolTip": "ToratEmet\\TreeModels\\TreeLoader.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAcwBcAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T19:51:34.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "SearchControl.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchControl.xaml",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\SearchControl.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchControl.xaml",
-              "RelativeToolTip": "ToratEmet\\Controls\\SearchControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-07T00:49:44.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "ApplicationFolders.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\ApplicationFolders.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Initializers\\ApplicationFolders.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\ApplicationFolders.cs",
-              "RelativeToolTip": "ToratEmet\\Initializers\\ApplicationFolders.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAswFMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T19:07:04.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "SearchControlViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\681f67946b75ad9c7a48016db9caa6239a6bd180b616b157833a0c4e06c28b5f\\SearchControlViewModel.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\681f67946b75ad9c7a48016db9caa6239a6bd180b616b157833a0c4e06c28b5f\\SearchControlViewModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\681f67946b75ad9c7a48016db9caa6239a6bd180b616b157833a0c4e06c28b5f\\SearchControlViewModel.cs",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\681f67946b75ad9c7a48016db9caa6239a6bd180b616b157833a0c4e06c28b5f\\SearchControlViewModel.cs",
-              "ViewState": "AQIAABEBAAAAAAAAAADwvwwBAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T01:51:59.97Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "ToratEmet\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Properties\\Resources.resx",
-              "RelativeToolTip": "ToratEmet\\Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-03-30T18:58:35.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "SnippetBuilder.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\SnippetBuilder.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\SnippetBuilder.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\SnippetBuilder.cs",
-              "RelativeToolTip": "ToratEmet\\SearchModels\\SnippetBuilder.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAABRwB0AAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T21:11:54.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "ThisAddIn.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ThisAddIn.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\ThisAddIn.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ThisAddIn.cs",
-              "RelativeToolTip": "ToratEmet\\ThisAddIn.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAABRwC4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T17:52:50.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 17,
               "Title": "ToratEmetTemplates.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\ToratEmetTemplates.cs",
               "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\ToratEmetTemplates.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\ToratEmetTemplates.cs",
               "RelativeToolTip": "ToratEmet\\BookParsingModels\\ToratEmetTemplates.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAADgvxIAAAAkAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T15:20:20.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T15:20:20.734Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "SearchExplorerControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchExplorerControl.xaml.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\SearchExplorerControl.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchExplorerControl.xaml.cs",
-              "RelativeToolTip": "ToratEmet\\Controls\\SearchExplorerControl.xaml.cs",
-              "ViewState": "AQIAAIEAAAAAAAAAAAArwIgAAAAhAAAA",
+              "DocumentIndex": 18,
+              "Title": "LuceneWildCardSearch.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\LuceneWildCardSearch.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\LuceneWildCardSearch.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\LuceneWildCardSearch.cs",
+              "RelativeToolTip": "ToratEmet\\SearchModels\\LuceneWildCardSearch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T06:04:25.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-31T22:05:17.003Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "MainMenuCommands.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\MainMenuCommands.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Models\\MainMenuCommands.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\MainMenuCommands.cs",
-              "RelativeToolTip": "ToratEmet\\Models\\MainMenuCommands.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAUwCYAAAAqAAAA",
+              "DocumentIndex": 19,
+              "Title": "SearchControlViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\SearchControlViewModel.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\ViewModels\\SearchControlViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\SearchControlViewModel.cs",
+              "RelativeToolTip": "ToratEmet\\ViewModels\\SearchControlViewModel.cs",
+              "ViewState": "AQIAAKAAAAAAAAAAAAApwKgAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T19:07:37.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-31T17:39:10.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "CostumeWindowsHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\CostumeWindowsHandler.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Initializers\\CostumeWindowsHandler.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\CostumeWindowsHandler.cs",
-              "RelativeToolTip": "ToratEmet\\Initializers\\CostumeWindowsHandler.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAowAMAAAAeAAAA",
+              "DocumentIndex": 20,
+              "Title": "SearchMethods.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\SearchMethods.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\SearchMethods.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\SearchMethods.cs",
+              "RelativeToolTip": "ToratEmet\\SearchModels\\SearchMethods.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAlwBIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:13:11.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-31T22:00:14.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "StaticGlobals.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\StaticGlobals.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Initializers\\StaticGlobals.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\StaticGlobals.cs",
-              "RelativeToolTip": "ToratEmet\\Initializers\\StaticGlobals.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAuwC4AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T19:00:25.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "SearchExplorerControl.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchExplorerControl.xaml",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\SearchExplorerControl.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchExplorerControl.xaml",
-              "RelativeToolTip": "ToratEmet\\Controls\\SearchExplorerControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-31T21:58:11.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "OpenFileControl.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\c0f8febf35715bb9b1c26222906a01a9d42307226f7e605fd0b2d77b9ed7dd4e\\OpenFileControl.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c0f8febf35715bb9b1c26222906a01a9d42307226f7e605fd0b2d77b9ed7dd4e\\OpenFileControl.cs",
-              "ToolTip": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\c0f8febf35715bb9b1c26222906a01a9d42307226f7e605fd0b2d77b9ed7dd4e\\OpenFileControl.cs",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c0f8febf35715bb9b1c26222906a01a9d42307226f7e605fd0b2d77b9ed7dd4e\\OpenFileControl.cs",
-              "ViewState": "AQIAAJYAAAAAAAAAAAAWwJ8AAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T23:35:17.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "BookParser.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\BookParser.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\BookParser.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\BookParser.cs",
-              "RelativeToolTip": "ToratEmet\\BookParsingModels\\BookParser.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAwwHsAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T15:30:14.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "PrivateExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Extensions\\PrivateExtensions.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Extensions\\PrivateExtensions.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Extensions\\PrivateExtensions.cs",
-              "RelativeToolTip": "ToratEmet\\Extensions\\PrivateExtensions.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAwwDcAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T06:08:57.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "FindTargetItem.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\FindTargetItem.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\FindTargetItem.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\FindTargetItem.cs",
-              "RelativeToolTip": "ToratEmet\\BookParsingModels\\FindTargetItem.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAADwvw0AAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T15:30:17.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "OpenFileControlViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\OpenFileControlViewModel.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\ViewModels\\OpenFileControlViewModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\OpenFileControlViewModel.cs",
-              "RelativeToolTip": "ToratEmet\\ViewModels\\OpenFileControlViewModel.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAWwEEAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T13:23:35.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "GenericExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Extensions\\GenericExtensions.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Extensions\\GenericExtensions.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Extensions\\GenericExtensions.cs",
-              "RelativeToolTip": "ToratEmet\\Extensions\\GenericExtensions.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAWwA8AAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T21:01:17.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "FreeFormSearch.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\FreeFormSearch.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\FreeFormSearch.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\FreeFormSearch.cs",
-              "RelativeToolTip": "ToratEmet\\SearchModels\\FreeFormSearch.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAWwBoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T22:05:06.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "DistanceSearch.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\DistanceSearch.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\DistanceSearch.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\DistanceSearch.cs",
-              "RelativeToolTip": "ToratEmet\\SearchModels\\DistanceSearch.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAuwCIAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T22:04:39.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "ContainsSearch.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\ContainsSearch.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\ContainsSearch.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\ContainsSearch.cs",
-              "RelativeToolTip": "ToratEmet\\SearchModels\\ContainsSearch.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T21:59:18.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "OptionsWindow.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\OptionsWindow.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\OptionsWindow.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\OptionsWindow.cs",
-              "RelativeToolTip": "ToratEmet\\Controls\\OptionsWindow.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T16:13:00.522Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "HostWindow.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\HostWindow.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\HostWindow.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\HostWindow.cs",
-              "RelativeToolTip": "ToratEmet\\Controls\\HostWindow.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAawB4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T16:30:02.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "ProgressBarX.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\ProgressBarX.xaml.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\ProgressBarX.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\ProgressBarX.xaml.cs",
-              "RelativeToolTip": "ToratEmet\\Controls\\ProgressBarX.xaml.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAkwAQAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T01:17:47.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "ProgressBarX.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\ProgressBarX.xaml",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\ProgressBarX.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\ProgressBarX.xaml",
-              "RelativeToolTip": "ToratEmet\\Controls\\ProgressBarX.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-01T01:16:31.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "SearchExplorerControlViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\SearchExplorerControlViewModel.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\ViewModels\\SearchExplorerControlViewModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\SearchExplorerControlViewModel.cs",
-              "RelativeToolTip": "ToratEmet\\ViewModels\\SearchExplorerControlViewModel.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAiwC8AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T21:58:33.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "Levenshtein.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\Levenshtein.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Models\\Levenshtein.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\Levenshtein.cs",
-              "RelativeToolTip": "ToratEmet\\Models\\Levenshtein.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T00:26:11.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "Ribbon1.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Ribbon1.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Ribbon1.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Ribbon1.cs",
-              "RelativeToolTip": "ToratEmet\\Ribbon1.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAABRwAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T11:28:35.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "ExternalFiles.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\ExternalFiles.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Models\\ExternalFiles.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\ExternalFiles.cs",
-              "RelativeToolTip": "ToratEmet\\Models\\ExternalFiles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBZwAUAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T19:08:20.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "FindParentOrChild.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\FindParentOrChild.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Models\\FindParentOrChild.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\FindParentOrChild.cs",
-              "RelativeToolTip": "ToratEmet\\Models\\FindParentOrChild.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAWwAoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T19:38:27.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 79,
-              "Title": "AramaicDictionaryControl.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\AramaicDictionaryControl.xaml",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\AramaicDictionaryControl.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\AramaicDictionaryControl.xaml",
-              "RelativeToolTip": "ToratEmet\\Controls\\AramaicDictionaryControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-01T10:05:52.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 80,
-              "Title": "AramaicDictionaryWindow.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\AramaicDictionaryWindow.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\AramaicDictionaryWindow.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\AramaicDictionaryWindow.cs",
-              "RelativeToolTip": "ToratEmet\\Controls\\AramaicDictionaryWindow.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwBsAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:11:01.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 82,
-              "Title": "AramaicDictionaryViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\AramaicDictionaryViewModel.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\ViewModels\\AramaicDictionaryViewModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\AramaicDictionaryViewModel.cs",
-              "RelativeToolTip": "ToratEmet\\ViewModels\\AramaicDictionaryViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBoAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:07:43.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 81,
-              "Title": "AramaicDictionaryControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\AramaicDictionaryControl.xaml.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Controls\\AramaicDictionaryControl.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\AramaicDictionaryControl.xaml.cs",
-              "RelativeToolTip": "ToratEmet\\Controls\\AramaicDictionaryControl.xaml.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAD4vxIAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:07:17.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 83,
-              "Title": "WordWIndowOwner.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\WordWIndowOwner.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\Models\\WordWIndowOwner.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\WordWIndowOwner.cs",
-              "RelativeToolTip": "ToratEmet\\Models\\WordWIndowOwner.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:02:29.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "TextFile1.txt",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TextFile1.txt",
-              "RelativeDocumentMoniker": "ToratEmet\\TextFile1.txt",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TextFile1.txt",
-              "RelativeToolTip": "ToratEmet\\TextFile1.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-03-30T19:45:03.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "ProcessHeaders.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\ProcessHeaders.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\ProcessHeaders.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\ProcessHeaders.cs",
-              "RelativeToolTip": "ToratEmet\\SearchModels\\ProcessHeaders.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAACBjwBEAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T01:11:47.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "Ribbon1.xml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Ribbon1.xml",
-              "RelativeDocumentMoniker": "ToratEmet\\Ribbon1.xml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Ribbon1.xml",
-              "RelativeToolTip": "ToratEmet\\Ribbon1.xml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2024-04-02T11:29:45.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 71,
               "Title": "ToratEmetRibbon.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\ToratEmetRibbon.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Initializers\\ToratEmetRibbon.cs",
@@ -1396,7 +792,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 57,
+              "Title": "OpenFileControl.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\c0f8febf35715bb9b1c26222906a01a9d42307226f7e605fd0b2d77b9ed7dd4e\\OpenFileControl.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c0f8febf35715bb9b1c26222906a01a9d42307226f7e605fd0b2d77b9ed7dd4e\\OpenFileControl.cs",
+              "ToolTip": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\c0f8febf35715bb9b1c26222906a01a9d42307226f7e605fd0b2d77b9ed7dd4e\\OpenFileControl.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c0f8febf35715bb9b1c26222906a01a9d42307226f7e605fd0b2d77b9ed7dd4e\\OpenFileControl.cs",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAWwJ8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T23:35:17.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SearchControlViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\681f67946b75ad9c7a48016db9caa6239a6bd180b616b157833a0c4e06c28b5f\\SearchControlViewModel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\681f67946b75ad9c7a48016db9caa6239a6bd180b616b157833a0c4e06c28b5f\\SearchControlViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\681f67946b75ad9c7a48016db9caa6239a6bd180b616b157833a0c4e06c28b5f\\SearchControlViewModel.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\681f67946b75ad9c7a48016db9caa6239a6bd180b616b157833a0c4e06c28b5f\\SearchControlViewModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvwwBAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T01:51:59.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LuceneSearch.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\LuceneSearch.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\LuceneSearch.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\LuceneSearch.cs",
+              "RelativeToolTip": "ToratEmet\\SearchModels\\LuceneSearch.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAGEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T19:55:07.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CoreWebView2Controller.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\0fab57be76c63cf6513421e9689fa3eddc84c3f52724ec934d6f5c60c7e3d953\\CoreWebView2Controller.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0fab57be76c63cf6513421e9689fa3eddc84c3f52724ec934d6f5c60c7e3d953\\CoreWebView2Controller.cs",
+              "ToolTip": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\0fab57be76c63cf6513421e9689fa3eddc84c3f52724ec934d6f5c60c7e3d953\\CoreWebView2Controller.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0fab57be76c63cf6513421e9689fa3eddc84c3f52724ec934d6f5c60c7e3d953\\CoreWebView2Controller.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAADwvzkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T07:06:33.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
               "Title": "ToratEmetRibbon.xml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\ToratEmetRibbon.xml",
               "RelativeDocumentMoniker": "ToratEmet\\Initializers\\ToratEmetRibbon.xml",
@@ -1407,7 +851,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 91,
               "Title": "MainControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\Controls\\MainControl.xaml.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\Controls\\MainControl.xaml.cs",
@@ -1418,7 +862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 90,
               "Title": "HostWindow.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\Controls\\HostWindow.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\Controls\\HostWindow.cs",
@@ -1429,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 87,
               "Title": "MainControlViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\ViewModels\\MainControlViewModel.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\ViewModels\\MainControlViewModel.cs",
@@ -1440,7 +884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 92,
               "Title": "MainControl.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\Controls\\MainControl.xaml",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\Controls\\MainControl.xaml",
@@ -1451,7 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 93,
               "Title": "OpenFileControl.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\Controls\\OpenFileControl.xaml",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\Controls\\OpenFileControl.xaml",
@@ -1462,7 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 94,
               "Title": "OpenFileControlViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\ViewModels\\OpenFileControlViewModel.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\ViewModels\\OpenFileControlViewModel.cs",
@@ -1473,7 +917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 95,
               "Title": "OpenFileControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\Controls\\OpenFileControl.xaml.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\Controls\\OpenFileControl.xaml.cs",
@@ -1484,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 96,
               "Title": "TabControlX.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\Controls\\TabControlX.xaml",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\Controls\\TabControlX.xaml",
@@ -1495,7 +939,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 97,
               "Title": "TabControlX.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\Controls\\TabControlX.xaml.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\Controls\\TabControlX.xaml.cs",
@@ -1506,7 +950,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 98,
               "Title": "HostControl.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\Controls\\HostControl.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\Controls\\HostControl.cs",
@@ -1517,7 +961,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 99,
               "Title": "TaskPaneLauncher.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\TaskPaneLauncher.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Initializers\\TaskPaneLauncher.cs",
@@ -1528,7 +972,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 100,
               "Title": "WebViewControl.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\Controls\\WebViewControl.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\Controls\\WebViewControl.cs",
@@ -1539,7 +983,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 101,
               "Title": "HostControl.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\Controls\\HostControl.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\Controls\\HostControl.cs",
@@ -1547,12 +991,11 @@
               "RelativeToolTip": "ToratEmet\\Controls\\Controls\\HostControl.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T18:50:57.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T18:50:57.303Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 102,
               "Title": "HostControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\Controls\\HostControl.Designer.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\Controls\\HostControl.Designer.cs",
@@ -1563,7 +1006,530 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 23,
+              "Title": "DistanceSearch.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\DistanceSearch.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\DistanceSearch.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\DistanceSearch.cs",
+              "RelativeToolTip": "ToratEmet\\SearchModels\\DistanceSearch.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAAD0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T22:04:39.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DistanceCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\DistanceCalculator.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\DistanceCalculator.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\DistanceCalculator.cs",
+              "RelativeToolTip": "ToratEmet\\SearchModels\\DistanceCalculator.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T06:30:36.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "ToratEmet\\Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Properties\\Settings.settings",
+              "RelativeToolTip": "ToratEmet\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2024-03-30T18:58:34.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DetectFileType.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\DetectFileType.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Models\\DetectFileType.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\DetectFileType.cs",
+              "RelativeToolTip": "ToratEmet\\Models\\DetectFileType.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAApwAsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T17:33:48.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "TreeItem.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TreeModels\\TreeItem.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\TreeModels\\TreeItem.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TreeModels\\TreeItem.cs",
+              "RelativeToolTip": "ToratEmet\\TreeModels\\TreeItem.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAtwAwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T19:51:23.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MoveTabToNewWindow.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\MoveTabToNewWindow.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Models\\MoveTabToNewWindow.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\MoveTabToNewWindow.cs",
+              "RelativeToolTip": "ToratEmet\\Models\\MoveTabToNewWindow.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T17:28:52.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "TranslatorClass.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\TranslatorClass.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Models\\TranslatorClass.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\TranslatorClass.cs",
+              "RelativeToolTip": "ToratEmet\\Models\\TranslatorClass.cs",
+              "ViewState": "AQIAAD0BAAAAAAAAAAAvwEUBAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T11:42:12.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Levenshtein.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\Levenshtein.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Models\\Levenshtein.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\Levenshtein.cs",
+              "RelativeToolTip": "ToratEmet\\Models\\Levenshtein.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T00:26:11.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Ribbon1.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Ribbon1.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Ribbon1.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Ribbon1.cs",
+              "RelativeToolTip": "ToratEmet\\Ribbon1.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T11:28:35.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "WebViewContextMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\WebViewModels\\WebViewContextMenu.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\WebViewModels\\WebViewContextMenu.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\WebViewModels\\WebViewContextMenu.cs",
+              "RelativeToolTip": "ToratEmet\\WebViewModels\\WebViewContextMenu.cs",
+              "ViewState": "AQIAANMAAAAAAAAAAADwv9gAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T08:08:02.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "HtmlHead.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\HtmlHead.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\HtmlHead.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\HtmlHead.cs",
+              "RelativeToolTip": "ToratEmet\\BookParsingModels\\HtmlHead.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAApwD8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T11:46:45.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "WebViewMessageHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\WebViewModels\\WebViewMessageHandler.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\WebViewModels\\WebViewMessageHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\WebViewModels\\WebViewMessageHandler.cs",
+              "RelativeToolTip": "ToratEmet\\WebViewModels\\WebViewMessageHandler.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAuwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T18:24:40.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ShortcutsHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\ShortcutsHandler.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Models\\ShortcutsHandler.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\ShortcutsHandler.cs",
+              "RelativeToolTip": "ToratEmet\\Models\\ShortcutsHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T19:07:43.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "RecentSearches.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\RecentSearches.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\RecentSearches.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\RecentSearches.cs",
+              "RelativeToolTip": "ToratEmet\\SearchModels\\RecentSearches.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA0AAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T22:02:46.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "WebViewControl.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\WebViewControl.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\WebViewControl.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\WebViewControl.cs",
+              "RelativeToolTip": "ToratEmet\\Controls\\WebViewControl.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAxwCUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T17:34:12.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "SearchControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchControl.xaml.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\SearchControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchControl.xaml.cs",
+              "RelativeToolTip": "ToratEmet\\Controls\\SearchControl.xaml.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T17:39:16.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "RegexSearch.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\RegexSearch.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\RegexSearch.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\RegexSearch.cs",
+              "RelativeToolTip": "ToratEmet\\SearchModels\\RegexSearch.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwB8AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T22:04:53.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "LuceneIndexer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\LuceneIndexer.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\LuceneIndexer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\LuceneIndexer.cs",
+              "RelativeToolTip": "ToratEmet\\SearchModels\\LuceneIndexer.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAADwv2AAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T01:11:59.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "SearchControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchControl.xaml",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\SearchControl.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchControl.xaml",
+              "RelativeToolTip": "ToratEmet\\Controls\\SearchControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-07T00:49:44.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ApplicationFolders.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\ApplicationFolders.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Initializers\\ApplicationFolders.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\ApplicationFolders.cs",
+              "RelativeToolTip": "ToratEmet\\Initializers\\ApplicationFolders.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAswFMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T19:07:04.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "SnippetBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\SnippetBuilder.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\SnippetBuilder.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\SnippetBuilder.cs",
+              "RelativeToolTip": "ToratEmet\\SearchModels\\SnippetBuilder.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAABRwB0AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T21:11:54.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "SearchExplorerControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchExplorerControl.xaml.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\SearchExplorerControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchExplorerControl.xaml.cs",
+              "RelativeToolTip": "ToratEmet\\Controls\\SearchExplorerControl.xaml.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAArwIgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T06:04:25.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "StaticGlobals.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\StaticGlobals.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Initializers\\StaticGlobals.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Initializers\\StaticGlobals.cs",
+              "RelativeToolTip": "ToratEmet\\Initializers\\StaticGlobals.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAuwC4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T19:00:25.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "SearchExplorerControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchExplorerControl.xaml",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\SearchExplorerControl.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\SearchExplorerControl.xaml",
+              "RelativeToolTip": "ToratEmet\\Controls\\SearchExplorerControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-31T21:58:11.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "FindTargetItem.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\FindTargetItem.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\FindTargetItem.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\FindTargetItem.cs",
+              "RelativeToolTip": "ToratEmet\\BookParsingModels\\FindTargetItem.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAADwvw0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T15:30:17.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "OpenFileControlViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\OpenFileControlViewModel.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\ViewModels\\OpenFileControlViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\OpenFileControlViewModel.cs",
+              "RelativeToolTip": "ToratEmet\\ViewModels\\OpenFileControlViewModel.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAWwEEAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T13:23:35.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "GenericExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Extensions\\GenericExtensions.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Extensions\\GenericExtensions.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Extensions\\GenericExtensions.cs",
+              "RelativeToolTip": "ToratEmet\\Extensions\\GenericExtensions.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAWwA8AAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T21:01:17.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "FreeFormSearch.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\FreeFormSearch.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\FreeFormSearch.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\FreeFormSearch.cs",
+              "RelativeToolTip": "ToratEmet\\SearchModels\\FreeFormSearch.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAWwBoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T22:05:06.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ContainsSearch.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\ContainsSearch.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\ContainsSearch.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\ContainsSearch.cs",
+              "RelativeToolTip": "ToratEmet\\SearchModels\\ContainsSearch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T21:59:18.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "OptionsWindow.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\OptionsWindow.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\OptionsWindow.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\OptionsWindow.cs",
+              "RelativeToolTip": "ToratEmet\\Controls\\OptionsWindow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T16:13:00.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "HostWindow.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\HostWindow.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\HostWindow.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\HostWindow.cs",
+              "RelativeToolTip": "ToratEmet\\Controls\\HostWindow.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAawB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T16:30:02.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "ProgressBarX.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\ProgressBarX.xaml.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\ProgressBarX.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\ProgressBarX.xaml.cs",
+              "RelativeToolTip": "ToratEmet\\Controls\\ProgressBarX.xaml.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAkwAQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T01:17:47.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ProgressBarX.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\ProgressBarX.xaml",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\ProgressBarX.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\ProgressBarX.xaml",
+              "RelativeToolTip": "ToratEmet\\Controls\\ProgressBarX.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-01T01:16:31.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "SearchExplorerControlViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\SearchExplorerControlViewModel.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\ViewModels\\SearchExplorerControlViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\SearchExplorerControlViewModel.cs",
+              "RelativeToolTip": "ToratEmet\\ViewModels\\SearchExplorerControlViewModel.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAiwC8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T21:58:33.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "ExternalFiles.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\ExternalFiles.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Models\\ExternalFiles.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\ExternalFiles.cs",
+              "RelativeToolTip": "ToratEmet\\Models\\ExternalFiles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBZwAUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T19:08:20.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "FindParentOrChild.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\FindParentOrChild.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Models\\FindParentOrChild.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\FindParentOrChild.cs",
+              "RelativeToolTip": "ToratEmet\\Models\\FindParentOrChild.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAWwAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T19:38:27.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "AramaicDictionaryControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\AramaicDictionaryControl.xaml",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\AramaicDictionaryControl.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\AramaicDictionaryControl.xaml",
+              "RelativeToolTip": "ToratEmet\\Controls\\AramaicDictionaryControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-01T10:05:52.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "AramaicDictionaryWindow.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\AramaicDictionaryWindow.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\AramaicDictionaryWindow.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\AramaicDictionaryWindow.cs",
+              "RelativeToolTip": "ToratEmet\\Controls\\AramaicDictionaryWindow.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwBsAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T10:11:01.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "AramaicDictionaryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\AramaicDictionaryViewModel.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\ViewModels\\AramaicDictionaryViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\ViewModels\\AramaicDictionaryViewModel.cs",
+              "RelativeToolTip": "ToratEmet\\ViewModels\\AramaicDictionaryViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBoAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T10:07:43.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "AramaicDictionaryControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\AramaicDictionaryControl.xaml.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Controls\\AramaicDictionaryControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\AramaicDictionaryControl.xaml.cs",
+              "RelativeToolTip": "ToratEmet\\Controls\\AramaicDictionaryControl.xaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAD4vxIAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T10:07:17.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "WordWIndowOwner.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\WordWIndowOwner.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\Models\\WordWIndowOwner.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\WordWIndowOwner.cs",
+              "RelativeToolTip": "ToratEmet\\Models\\WordWIndowOwner.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T10:02:29.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "TextFile1.txt",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TextFile1.txt",
+              "RelativeDocumentMoniker": "ToratEmet\\TextFile1.txt",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TextFile1.txt",
+              "RelativeToolTip": "ToratEmet\\TextFile1.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-03-30T19:45:03.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "ProcessHeaders.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\ProcessHeaders.cs",
+              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\ProcessHeaders.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\ProcessHeaders.cs",
+              "RelativeToolTip": "ToratEmet\\SearchModels\\ProcessHeaders.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAACBjwBEAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T01:11:47.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Ribbon1.xml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Ribbon1.xml",
+              "RelativeDocumentMoniker": "ToratEmet\\Ribbon1.xml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Ribbon1.xml",
+              "RelativeToolTip": "ToratEmet\\Ribbon1.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-04-02T11:29:45.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
               "Title": "OpenFileRecentSearches.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\OpenFileRecentSearches.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Models\\OpenFileRecentSearches.cs",
@@ -1571,12 +1537,11 @@
               "RelativeToolTip": "ToratEmet\\Models\\OpenFileRecentSearches.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAmwA0AAABkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T20:24:13.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T20:24:13.175Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 73,
               "Title": "ProgressBarDelegate.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\ProgressBarDelegate.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Models\\ProgressBarDelegate.cs",
@@ -1584,25 +1549,11 @@
               "RelativeToolTip": "ToratEmet\\Models\\ProgressBarDelegate.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T17:40:54.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-31T17:40:54.615Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "DistanceCalculator.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\DistanceCalculator.cs",
-              "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\DistanceCalculator.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\DistanceCalculator.cs",
-              "RelativeToolTip": "ToratEmet\\SearchModels\\DistanceCalculator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T06:30:36.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 75,
               "Title": "BookInfoBox.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Controls\\BookInfoBox.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Controls\\BookInfoBox.cs",
@@ -1610,12 +1561,11 @@
               "RelativeToolTip": "ToratEmet\\Controls\\BookInfoBox.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAiwBUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T06:13:43.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T06:13:43.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 76,
               "Title": "CopyRight.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\CopyRight.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Models\\CopyRight.cs",
@@ -1623,12 +1573,11 @@
               "RelativeToolTip": "ToratEmet\\Models\\CopyRight.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T16:06:52.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T16:06:52.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 78,
               "Title": "BookItem.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\BookItem.cs",
               "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\BookItem.cs",
@@ -1636,12 +1585,11 @@
               "RelativeToolTip": "ToratEmet\\BookParsingModels\\BookItem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T15:30:13.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T15:30:13.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 77,
               "Title": "ChapterTreeLoader.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\ChapterTreeLoader.cs",
               "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\ChapterTreeLoader.cs",
@@ -1649,12 +1597,11 @@
               "RelativeToolTip": "ToratEmet\\BookParsingModels\\ChapterTreeLoader.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T15:30:15.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T15:30:15.998Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 79,
               "Title": "BookIdSearch.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\BookParsingModels\\BookIdSearch.cs",
               "RelativeDocumentMoniker": "ToratEmet\\BookParsingModels\\BookIdSearch.cs",
@@ -1662,12 +1609,11 @@
               "RelativeToolTip": "ToratEmet\\BookParsingModels\\BookIdSearch.cs",
               "ViewState": "AQIAACwAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T15:30:08.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T15:30:08.551Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 86,
               "Title": "LuceneIntializer.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\SearchModels\\LuceneIntializer.cs",
               "RelativeDocumentMoniker": "ToratEmet\\SearchModels\\LuceneIntializer.cs",
@@ -1675,12 +1621,11 @@
               "RelativeToolTip": "ToratEmet\\SearchModels\\LuceneIntializer.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAD4vxEAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T01:10:12.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T01:10:12.302Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 88,
               "Title": "TreeItemSearch.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\TreeModels\\TreeItemSearch.cs",
               "RelativeDocumentMoniker": "ToratEmet\\TreeModels\\TreeItemSearch.cs",
@@ -1688,12 +1633,11 @@
               "RelativeToolTip": "ToratEmet\\TreeModels\\TreeItemSearch.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBZwDUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T00:20:49.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-31T00:20:49.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 89,
               "Title": "IShellShortcuts.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ToratEmet\\ToratEmet\\Models\\IShellShortcuts.cs",
               "RelativeDocumentMoniker": "ToratEmet\\Models\\IShellShortcuts.cs",
@@ -1701,8 +1645,7 @@
               "RelativeToolTip": "ToratEmet\\Models\\IShellShortcuts.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAAwBUAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T22:31:08.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T22:31:08.594Z"
             }
           ]
         }

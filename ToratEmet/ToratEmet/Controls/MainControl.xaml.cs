@@ -19,13 +19,22 @@ namespace ToratEmet.Controls
         {
             InitializeComponent();
             viewModel = new MainControlViewModel(this);
-            DataContext = viewModel;          
-            if (Properties.Settings.Default.IsOpenLastSessionEnabled) { RecentBooks.ResumeSession(tabControlX.tabControl); }
-            else { CostumeWindowsHandler.ShowOpenFileTab(tabControlX.tabControl); }
+            DataContext = viewModel;    
             if (Properties.Settings.Default.UpdatesDisabled) { ToggleUpdates.Content = "הפעל בדיקת עדכונים אוטומטית"; }
             else { ToggleUpdates.Content = "כבה בדיקת עדכונים אוטומטית"; }
+            Loaded += MainControl_Loaded;
         }
 
+        private void MainControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (Properties.Settings.Default.IsOpenLastSessionEnabled)
+            {
+                RecentBooks.ResumeSession(tabControlX.tabControl);
+                Properties.Settings.Default.IsOpenLastSessionEnabled = false;
+                Properties.Settings.Default.Save();
+            }
+            else { CostumeWindowsHandler.ShowOpenFileTab(tabControlX.tabControl); }
+        }
 
         private void MainMenuButton_Click(object sender, RoutedEventArgs e)
         {

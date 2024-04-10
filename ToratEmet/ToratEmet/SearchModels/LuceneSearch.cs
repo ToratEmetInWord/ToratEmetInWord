@@ -17,7 +17,7 @@ using ToratEmet.ViewModels;
 
 namespace ToratEmet.SearchModels
 {
-    public class LuceneSearch: LuceneIntializer
+    public class LuceneSearch : LuceneIntializer
     {
         FSDirectory directory;
         IndexReader reader;
@@ -26,7 +26,7 @@ namespace ToratEmet.SearchModels
         TopDocs topDocs;
         string searchTerm;
 
-        public LuceneSearch(SearchControlViewModel viewModel) : base(viewModel) {}
+        public LuceneSearch(SearchControlViewModel viewModel) : base(viewModel) { }
 
         public async Task ExecuteSearch(string searchterm)
         {
@@ -45,14 +45,15 @@ namespace ToratEmet.SearchModels
                         {
                             this.searchTerm = searchterm;
                             string[] searchWords = searchTerm.Split(' ');
-                            int docsCount = 0;
-                            string finalTerm = "";
-                            foreach (string word in searchWords)
-                            {
-                                topDocs = searcher.Search(new WildcardQuery(new Term("Snippet", word)), null, int.MaxValue, sort);
-                                if (docsCount == 0 || docsCount > topDocs.TotalHits) { finalTerm = word; docsCount = topDocs.TotalHits; }
-                            }
-                            topDocs = searcher.Search(new WildcardQuery(new Term("Snippet", finalTerm)), null, int.MaxValue, sort);
+                            
+                                PhraseQuery phraseQuery = new PhraseQuery();
+                                phraseQuery.Slop = 3;
+                                foreach (string word in searchWords)
+                                {
+                                    phraseQuery.Add(new Term("Snippet", word));
+                                }
+                                topDocs = searcher.Search(phraseQuery, null, int.MaxValue, sort);
+                            
                             processResults();
                         }
                     });
@@ -69,37 +70,32 @@ namespace ToratEmet.SearchModels
         void processResults()
         {
             cancellationTokenSource = new CancellationTokenSource();
-
             var token = cancellationTokenSource.Token;
             viewModel.MaxProgress = topDocs.ScoreDocs.Length;
-            string searchPattern = Regex.Escape(searchTerm)
-                                        .Replace(@"\?", "?")  // Replace escaped ?
-                                        .Replace(@"\*", ".*"); // Replace escaped *
-            
+
             List<string> resultList = new List<string>();
+            string[] searchWords = searchTerm.WhiteSpaceArray();
             foreach (ScoreDoc scoreDoc in topDocs.ScoreDocs)
             {
                 if (token.IsCancellationRequested) { break; }
                 viewModel.UpdateProgressBar(1);
                 Document resultDoc = searcher.Doc(scoreDoc.Doc);
                 string filePath = resultDoc.Get("FilePath");
-              
+
                 if (filesList.Contains(filePath))
                 {
                     string header = resultDoc.Get("HeaderId");
                     string content = resultDoc.Get("Snippet");
 
                     content = Regex.Replace(content, @"<.*?>", "");
-                    List<string> snippetList = SnippetBuilder.SplitStringIntoSnippets(content, 400, searchPattern.Length + 10);
+                    List<string> snippetList = SnippetBuilder.SplitStringIntoSnippets(content, 400, searchTerm.Length + 10);
                     for (int i = 0; i < snippetList.Count; i++)
                     {
-                        MatchCollection matches = Regex.Matches(snippetList[i], searchPattern);
-                        if (matches.Count > 0)
+                        if (snippetList[i].StringContains(searchWords, searchTerm.Length))
                         {
-                            foreach (Match match in matches)
+                            foreach (string word in searchWords) 
                             {
-                                string markedValue = $"<span style=\"color:magenta\">{match.Value}</span>";
-                                snippetList[i] = snippetList[i].Replace(match.Value, markedValue);
+                                snippetList[i] = snippetList[i].Replace(word, $"<span style=\"color:magenta\">{word}</span>"); 
                             }
                             resultList.Add(ResultItem(filePath, snippetList[i], header));
                         }

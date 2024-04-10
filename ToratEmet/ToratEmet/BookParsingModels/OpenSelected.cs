@@ -13,6 +13,7 @@ using ToratEmet.TreeModels;
 using ToratEmet.Initializers;
 using Microsoft.Web.WebView2.Core;
 using ToratEmet.WebViewModels;
+using System.Windows;
 
 
 namespace ToratEmet.Models
@@ -28,19 +29,26 @@ namespace ToratEmet.Models
             };
             if (openFileDialog.ShowDialog() == true)
             {
-                string filePath = openFileDialog.FileName;
+                ProcessExternalFile(openFileDialog.FileName, "", "", null);              
+            }
+        }
+
+        public void ProcessExternalFile(string filePath, string targetItemId, string savedLocation, TabControl tabControl)
+        {
+            if (File.Exists(filePath))
+            {
                 string fileName = System.IO.Path.GetFileNameWithoutExtension(filePath);
                 string extension = System.IO.Path.GetExtension(filePath).ToLower();
 
-                if (extension == ".txt")
+                if (extension == ".txt" || extension == ".html" || DetectFileType.IsTextFile(filePath))
                 {
                     BookItem newBook = CreateBook(fileName, filePath);
                     ChapterItem targitItem = GetTargetItem("", newBook);
                     TabItem tabItem = CreateNewTab(fileName, null);
                     BookViewer bookViewer = new BookViewer(newBook, tabItem);
                     bookViewer.viewModel.currentChapter = targitItem;
+                    try { bookViewer.viewModel.scrollPosition = double.Parse(savedLocation); } catch { }
                     tabItem.Content = bookViewer;
-                    bookViewer.viewModel.currentChapter = targitItem;
                 }
                 else
                 {
@@ -50,23 +58,16 @@ namespace ToratEmet.Models
                     {
                         webViewControl.CoreWebView2.Navigate(filePath);
                         WebViewPdfContextMenu.CreateCustomContextMenu(webViewControl, tabItem);
-                    };                   
-                    tabItem.Content = webViewControl;                    
+                    };
+                    tabItem.Content = webViewControl;
                     var taskPane = TaskPaneHandler.GetCurrentTaskPane();
-                    taskPane.Width = Math.Max(taskPane.Width, 600);
+                    if (extension == ".pdf") { taskPane.Width = Math.Max(taskPane.Width, 600); }
                 }
-                //else if (extension == ".html")
-                //{
-                //    WebViewControl webViewControl = new WebViewControl();
-                //    webViewControl.CoreWebView2InitializationCompleted += (sender, e) =>
-                //    {
-                //        webViewControl.CoreWebView2.Navigate(filePath);
-                //    };
-                //    TabItem tabItem = CreateNewTab(fileName, null);
-                //    tabItem.Content = webViewControl;
-                //}
+                updateRecentBooks(filePath);
             }
+            else { MessageBox.Show("הקובץ לא נמצא"); }           
         }
+
         public void OpenSelectedFile(TreeItem selectedItem, string targetItemId, string savedLocation, TabControl tabControl)
         {
             if (selectedItem is FileTreeItem fileTreeItem)
@@ -74,7 +75,7 @@ namespace ToratEmet.Models
                 string filePath = fileTreeItem.Address;
                 string fileName = fileTreeItem.Name;
 
-                if (File.Exists(filePath) && filePath.ToLower().EndsWith(".txt"))
+                if (File.Exists(filePath))
                 {
                     BookItem newBook = CreateBook(fileName, filePath);
                     newBook.RelativeBooks = GetRelativeBooks(fileTreeItem);
@@ -86,19 +87,9 @@ namespace ToratEmet.Models
                     tabItem.Content = bookViewer;
                     updateRecentBooks(filePath);
                 }
-                else
-                {
-                    WebViewControl webViewControl = new WebViewControl();
-                    webViewControl.CoreWebView2InitializationCompleted += (sender, e) =>
-                    {
-                        webViewControl.CoreWebView2.Navigate(filePath);
-                    };
-                    TabItem tabItem = CreateNewTab(fileName, null);
-                    tabItem.Content = webViewControl;
-                    var taskPane = TaskPaneHandler.GetCurrentTaskPane();
-                    taskPane.Width = Math.Max(taskPane.Width, 600);
-                }
+                else { MessageBox.Show("הקובץ לא נמצא"); }
             }
+            else { ProcessExternalFile(selectedItem.Address, targetItemId, savedLocation, tabControl); }
         }
         BookItem CreateBook(string fileName, string filePath)
         {

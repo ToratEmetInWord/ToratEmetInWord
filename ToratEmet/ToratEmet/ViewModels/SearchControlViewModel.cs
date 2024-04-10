@@ -166,7 +166,7 @@ namespace ToratEmet.ViewModels
             else if (searchType == "חיפוש רגקס") { searchMethod = new RegexSearch(this, false); RegexComboisEnabled = true; }
             else if (searchType == "חיפוש רגקס רחב") { searchMethod = new RegexSearch(this, true); RegexComboisEnabled = true; }
             else if (searchType == "חיפוש בנוסח חופשי") { searchMethod = new FreeFormSearch(this); RegexComboisEnabled = false; }
-            else if (searchType == "חיפוש מהיר") { searchMethod = new LuceneSearch(this); RegexComboisEnabled = false; }
+            else if (searchType == "חיפוש מהיר") { searchMethod = new LuceneWildCardSearch(this); RegexComboisEnabled = false; }
         }
 
         public async Task Search()

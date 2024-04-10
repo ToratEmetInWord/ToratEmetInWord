@@ -100,5 +100,18 @@ namespace ToratEmet.Extensions
 
             return input;
         }
+
+        public static string FixUnclosedHeaderTags(this string input)
+        {
+            //line = Regex.Replace(line, @"<h(\d)>\Z", @"<h\$1>");
+            if (input.Length >= 4 && input[input.Length - 4] == '<')
+            {
+                // Create a StringBuilder from the string
+                StringBuilder sb = new StringBuilder(input);
+                sb.Insert(input.Length - 3, '/');
+                input = sb.ToString();
+            }
+            return input;
+        }
     }
 }

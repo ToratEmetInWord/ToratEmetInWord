@@ -114,7 +114,7 @@ namespace ToratEmet.BookParsingModels
             string[] lines = line.LinesArray();
             foreach (string splitLine in lines)
             {
-                parser.ProcessLine(splitLine, "");
+                parser.ProcessLine(splitLine, "", "");
             }            
         }
         public string TanachTemplate(string line, string filePath)

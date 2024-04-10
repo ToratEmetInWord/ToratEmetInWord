@@ -22,10 +22,10 @@ namespace ToratEmet.Controls
             DataContext = viewModel;
             TreeLoader.PopulateTree(treeView);
             SearchTextBox.SelectAll();
-            SearchTextBox.Text = Properties.Settings.Default.OpenFileControlLastSearch;          
-            Loaded += (sender, e) => 
-            {                   
-                SearchTextBox.Focus(); 
+            SearchTextBox.Text = Properties.Settings.Default.OpenFileControlLastSearch;
+            Loaded += (sender, e) =>
+            {
+                SearchTextBox.Focus();
             };
         }
 
@@ -46,11 +46,11 @@ namespace ToratEmet.Controls
         }
         private void treeView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (treeView.SelectedItem is FileTreeItem fileTreeItem) { viewModel.OpenSelectedFile(fileTreeItem, "");}
+            if (treeView.SelectedItem is FileTreeItem fileTreeItem) { viewModel.OpenSelectedFile(fileTreeItem, ""); }
         }
         private void FileItemButton_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button button && button.Tag is FileTreeItem fileTreeItem){  viewModel.OpenSelectedFile(fileTreeItem, "");}
+            if (sender is Button button && button.Tag is FileTreeItem fileTreeItem) { viewModel.OpenSelectedFile(fileTreeItem, ""); }
         }
         private void SearchTextBox_PreviewKeyDown(object sender, KeyEventArgs e)
         {
@@ -133,9 +133,9 @@ namespace ToratEmet.Controls
 
         private void SearchComboBoxItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (sender is ComboBoxItem comboBoxItem && comboBoxItem.Content is FileTreeItem treeItem) 
+            if (sender is ComboBoxItem comboBoxItem && comboBoxItem.Content is FileTreeItem treeItem)
             {
-                OpenSelected openSelected = new OpenSelected(); 
+                OpenSelected openSelected = new OpenSelected();
                 openSelected.OpenSelectedFile(treeItem, "", "", null);
                 e.Handled = true;
             }

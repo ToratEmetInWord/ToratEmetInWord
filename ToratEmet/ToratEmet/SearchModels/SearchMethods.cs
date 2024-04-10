@@ -43,7 +43,7 @@ namespace ToratEmet
             {
                 await freeFormMethod.SearchAsync(searchString);
             }
-            else if (viewModel.searchMethod is LuceneSearch luceneSearch)
+            else if (viewModel.searchMethod is LuceneWildCardSearch luceneSearch)
             {
                 await luceneSearch.ExecuteSearch(searchString);
             }
