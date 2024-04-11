@@ -37,7 +37,7 @@ namespace ToratEmet.Controls
                 {
                     folderTreeItem.IsExpanded = !folderTreeItem.IsExpanded;
                 }
-                else if (treeView.SelectedItem is FileTreeItem fileTreeItem)
+                else if (treeView.SelectedItem is TreeItem fileTreeItem)
                 {
                     viewModel.OpenSelectedFile(fileTreeItem, "");
                 }
@@ -46,11 +46,11 @@ namespace ToratEmet.Controls
         }
         private void treeView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (treeView.SelectedItem is FileTreeItem fileTreeItem) { viewModel.OpenSelectedFile(fileTreeItem, ""); }
+            if (treeView.SelectedItem is TreeItem fileTreeItem) { viewModel.OpenSelectedFile(fileTreeItem, ""); }
         }
         private void FileItemButton_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button button && button.Tag is FileTreeItem fileTreeItem) { viewModel.OpenSelectedFile(fileTreeItem, ""); }
+            if (sender is Button button && button.Tag is TreeItem fileTreeItem) { viewModel.OpenSelectedFile(fileTreeItem, ""); }
         }
         private void SearchTextBox_PreviewKeyDown(object sender, KeyEventArgs e)
         {
@@ -77,7 +77,7 @@ namespace ToratEmet.Controls
 
         private void ItemPanel_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (sender is StackPanel panel && panel.Tag is FileTreeItem fileTreeItem)
+            if (sender is StackPanel panel && panel.Tag is TreeItem fileTreeItem)
             {
                 viewModel.OpenSelectedFile(fileTreeItem, SearchComboBox.Tag.ToString());
             }
@@ -99,12 +99,22 @@ namespace ToratEmet.Controls
             }
             else if (e.Key == Key.Enter)
             {
-                if (e.OriginalSource is ComboBoxItem comboBoxItem && comboBoxItem.Tag is FileTreeItem fileTreeItem)
+                if (e.OriginalSource is ComboBoxItem comboBoxItem && comboBoxItem.Tag is TreeItem fileTreeItem)
                 {
                     viewModel.OpenSelectedFile(fileTreeItem, SearchComboBox.Tag.ToString());
                 }
             }
 
+        }
+
+        private void SearchComboBoxItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (sender is ComboBoxItem comboBoxItem && comboBoxItem.Content is TreeItem fileTreeItem)
+            {
+                OpenSelected openSelected = new OpenSelected();
+                viewModel.OpenSelectedFile(fileTreeItem, SearchComboBox.Tag.ToString());
+                e.Handled = true;
+            }
         }
 
         private void RecentSearchesButton_Click(object sender, RoutedEventArgs e)
@@ -129,16 +139,6 @@ namespace ToratEmet.Controls
             {
                 txtControl.SelectAll();
             }));
-        }
-
-        private void SearchComboBoxItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (sender is ComboBoxItem comboBoxItem && comboBoxItem.Content is FileTreeItem treeItem)
-            {
-                OpenSelected openSelected = new OpenSelected();
-                openSelected.OpenSelectedFile(treeItem, "", "", null);
-                e.Handled = true;
-            }
         }
     }
 }

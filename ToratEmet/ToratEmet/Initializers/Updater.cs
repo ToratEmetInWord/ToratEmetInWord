@@ -19,7 +19,7 @@ namespace ToratEmet
                 bool fileExists = await CheckFileExists("https://drive.google.com/uc?id=1BNQmVsXixLZ7pg3vU9DZJSbO0XPYPzUd");
                 if (fileExists)
                 {
-                    fileExists = await CheckFileExists("https://drive.google.com/uc?id=1OFC4Hh6snAWUxclKWMQNH_E1Ep_SUpAy");
+                    fileExists = await CheckFileExists("https://drive.google.com/uc?id=1YUTBuJOujvrsMRDqRhQYZIHm-5iI90Xr");
                     if (!fileExists)
                     {
                         DialogResult result = MessageBox.Show("נמצאו עדכונים לתוסף \"תורת אמת בוורד\". האם ברצונכם להוריד את העדכונים כעת?", "עדכון נמצא!", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);

@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:treeSource="clr-namespace:ToratEmet.TreeModels"
-             xmlns:local="clr-namespace:ToratEmet.Controls"
-             
+             xmlns:local="clr-namespace:ToratEmet.Controls"           
              mc:Ignorable="d"
              FlowDirection="RightToLeft"
              FontSize="14"
@@ -93,7 +92,7 @@
              BorderThickness="0,1,1,1"
              Click="RecentSearchesButton_Click"/>
         </StackPanel>
-
+        
         <TreeView x:Name="treeView" 
                  Grid.Row="1" Grid.ColumnSpan="3"
                  Margin="0,2,0,0"

@@ -60,7 +60,7 @@ namespace ToratEmet.Controls.ViewModels
             if (results.Count == 0) { MessageBox.Show("לא נמצאו תוצאות"); }
         }
 
-        public void OpenSelectedFile(FileTreeItem fileTreeItem, string targetId)
+        public void OpenSelectedFile(TreeItem fileTreeItem, string targetId)
         {
             OpenSelected openSelected = new OpenSelected();
             openSelected.OpenSelectedFile(fileTreeItem, targetId,"", null);
