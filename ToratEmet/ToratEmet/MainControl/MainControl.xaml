@@ -1,0 +1,220 @@
+﻿<UserControl x:Class="ToratEmet.Controls.MainControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ToratEmet.Controls"
+             xmlns:treeSource="clr-namespace:ToratEmet.TreeModels"
+             
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="400"
+                         FontSize="14"
+             Background="White"
+             FlowDirection="RightToLeft">
+
+    <UserControl.Resources>
+        <Style TargetType="ToolTip">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToolTip">
+                        <Border BorderBrush="#FFACACAC" BorderThickness="1"
+                         Padding="5" Background="White" FlowDirection="RightToLeft">
+                            <TextBlock Text="{TemplateBinding Content}" 
+                  TextWrapping="Wrap" MaxWidth="200"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <WrapPanel Grid.Row="0" Background="WhiteSmoke">
+            <WrapPanel.Resources>
+                <Style TargetType="Image">
+                    <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality" />
+                    <Setter Property="Height" Value="20"/>
+                </Style>
+                <Style TargetType="ComboBox">
+                    <Style.Resources>
+                        <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="WhiteSmoke" />
+                        <SolidColorBrush x:Key="{x:Static SystemColors.WindowFrameBrushKey}" Color="#FFACACAC" />
+                    </Style.Resources>
+                    <Setter Property="Width" Value="28"/>
+                    <Setter Property="Background" Value="{x:Null}"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="Padding" Value="3"/>
+                    <Setter Property="MaxWidth" Value="250"/>
+                </Style>
+                <Style TargetType="Button">
+                    <Setter Property="FlowDirection" Value="LeftToRight"/>
+                    <Setter Property="Background" Value="WhiteSmoke"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Width" Value="28"/>
+                    <Setter Property="Height" Value="28"/>
+                </Style>
+                <Style TargetType="ToggleButton">
+                    <Setter Property="FlowDirection" Value="LeftToRight"/>
+                    <Setter Property="Background" Value="WhiteSmoke"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Width" Value="28"/>
+                    <Setter Property="Height" Value="28"/>
+                </Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/>
+                </Style>
+            </WrapPanel.Resources>
+
+            <Grid x:Name="MainMenuGrid">
+                <ComboBox x:Name="MainMenuComboBox" SelectionChanged="MainMenuComboBox_SelectionChanged" MaxDropDownHeight="280">
+                    <ComboBoxItem x:Name="OpenExternalFile" Content="פתח קובץ שאינו בספריה"
+                              ToolTip="מאפשר גם פתיחת קבצי PDF - שים לב לאפשרות החיפוש המובנית"
+                              Selected="OpenExternalFile_Selected"/>
+                    <ComboBoxItem x:Name="SetExternalDefaultFolder" Content="תיקיית ברירת מחדל לקבצים חיצונים"
+                              Selected="SetExternalDefaultFolder_Selected"/>
+                    <ComboBoxItem x:Name="ShowFilesFolder" Content="פתח את תיקית הספרים" ToolTip="מאפשר למחוק ולהוסיף קיצורי דרך עבור מיקומי הספרים שלכם"
+                              Selected="ShowFilesFolder_Selected"/>
+                    <ComboBoxItem x:Name="ChangeFolderLocation" Content="בחר מיקום אחר עבור קבצי התוסף"
+                              Selected="ChangeFolderLocation_Selected"/>
+                    <ComboBoxItem x:Name="ChangeToratEmetLocation" Content="בחר מיקום אחר עבור התקנת תורת אמת"
+                                  Selected="ChangeToratEmetLocation_Selected"/>
+                    <ComboBoxItem x:Name="CreateNewIndex" Content="צור אינדקס חדש"
+                              Selected="CreateNewIndex_Selected"/>
+                    <ComboBoxItem x:Name="DeleteIndex" Content="מחק אינדקס"
+                              Selected="DeleteIndex_Selected"/>
+                    <ComboBoxItem x:Name="ResetFontSettings" Content="אפס הגדרות גופן"
+                              Selected="ResetFontSettings_Selected"/>
+                    <ComboBoxItem x:Name="ShemHashemDisplayOptions" Content="תצוגת שם השם"
+                              Selected="ShemHashemDisplayOptions_Selected"/>
+                    <ComboBoxItem x:Name="ToggleUpdates" Content="כבה בדיקת עדכונים אוטומטית"
+                                  Selected="ToggleUpdates_Selected"/>
+                    <ComboBoxItem x:Name="AboutButton" Content="אודות"
+                              Selected="AboutButton_Selected"/>
+                </ComboBox>
+                <Button x:Name="MainMenuButton" Click="MainMenuButton_Click">
+                    <!--<TextBlock Text="☰" ToolTip="תפריט ראשי" LineHeight="22"/>-->
+                    <Image Source="/ToratEmet;component/Resources/MainMenu.png" Height="18"/>
+                </Button>
+            </Grid>
+            <Button x:Name="OpenFileButton"
+                    ToolTip="פתח ספר (לחץ לחיצה ימנית לפתיחת התפריט בחלונית נפרדת)"
+                    Click="OpenFileButton_Click"
+                    PreviewMouseRightButtonDown="OpenFileButton_PreviewMouseRightButtonDown">
+                <!--<TextBlock Text="📁" FontSize="16" LineHeight="19"/>-->
+                <Image Source="/ToratEmet;component/Resources/FolderIcon.png" />
+            </Button>
+            <Grid x:Name="RecentBooksGrid">
+                <ComboBox x:Name="RecentBooksComboBox" SelectionChanged="RecentBooksComboBox_SelectionChanged">
+                    <ComboBox.Resources>
+                        <DataTemplate DataType="{x:Type treeSource:TreeItem}">
+                            <StackPanel x:Name="FolderItemPanel" Orientation="Horizontal">
+                                <TextBlock Text="🗋" Margin="0,0,3,0"/>
+                                <TextBlock Text="{Binding Name}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                        <DataTemplate DataType="{x:Type treeSource:FileTreeItem}">
+                            <StackPanel x:Name="FolderItemPanel" Orientation="Horizontal">
+                                <TextBlock Text="🗎" Margin="0,0,3,0"/>
+                                <TextBlock Text="{Binding Name}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.Resources>
+                </ComboBox>
+                <Button x:Name="RecentBooksButton" ToolTip="ספרים אחרונים"
+                        Click="RecentBooksButton_Click">
+               <Image Source="/ToratEmet;component/Resources/RecentIcon.png" />
+
+            </Button>
+            </Grid>
+
+            <!--<Button x:Name="BookMarksButton" ToolTip="סימניות">
+            <Image Source="/ToratEmet;component/Resources/BookMarksIcon.png" />
+            </Button>-->
+
+            <Button x:Name="SearchButton" ToolTip="חיפוש (לחץ לחיצה ימנת לפתיחת החיפוש בחלונית נפרדת)"
+                    Click="SearchButton_Click"
+                    PreviewMouseRightButtonDown="SearchButton_PreviewMouseRightButtonDown">
+                <!--<TextBlock Text="🔍" FontSize="12" LineHeight="16"/>-->
+                <Image Source="/ToratEmet;component/Resources/Search.png" />
+            </Button>
+            
+            <!--fonts-->
+            <Grid x:Name="FontsComboGrid">
+            <ComboBox x:Name="FontsCombo"
+                      ItemsSource="{Binding FontsList, Mode=TwoWay, BindsDirectlyToSource=True}"
+                      SelectionChanged="FontsCombo_SelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Source}" FontFamily="{Binding}" />
+                            <TextBlock Text="  אבגדהוז" FontFamily="{Binding}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Button x:Name="FontFamilyButton" ToolTip="בחר גופן" 
+                    Click="FontFamilyButton_Click">
+                <!--<TextBlock Text="F" FontFamily="Baskerville Old Face" 
+                                   Margin="0,2,0,0" FontSize="16"/>-->
+                <Image Source="/ToratEmet;component/Resources/FontsIcon.png" />
+
+            </Button>
+            </Grid>
+        
+            <Button x:Name="IncreaseFontSizeButton" ToolTip="הגדל גופן" 
+                    Click="IncreaseFontSizeButton_Click">
+                <!--<StackPanel Orientation="Horizontal">
+                    <TextBlock Text="🗛" LineHeight="20"/>
+                    <TextBlock Text="▴" LineHeight="17" Margin="-5,0,0,0"
+                                       Foreground="DarkBlue"/>
+                </StackPanel>-->
+                <Image Source="/ToratEmet;component/Resources/LargeTextIcon.png" />
+
+            </Button>
+            <Button x:Name="DecreaseFontSizeButton" ToolTip="הקטן גופן"
+                    Click="DecreaseFontSizeButton_Click">
+                <!--<StackPanel Orientation="Horizontal">
+                    <TextBlock Text="🗚" FontSize="12" LineHeight="20"/>
+                    <TextBlock Text="▾" LineHeight="17" Margin="-5,0,0,0"
+                                       Foreground="DarkBlue"/>
+                </StackPanel>-->
+                <Image Source="/ToratEmet;component/Resources/SmallTextIcon.png" />
+
+            </Button>
+            <Button x:Name="DictionaryButton" ToolTip="מילון ארמי עברי וראשי תיבות"
+                    Click="DictionaryButton_Click">
+                <!--<TextBlock Text="📖" FontSize="15" LineHeight="19" FontFamily="Segoe UI Symbol"/>-->
+<Image Source="/ToratEmet;component/Resources/DictionaryIcon.png"/>
+
+            </Button>
+            <Button x:Name="CopyRightButton" ToolTip="זכויות יוצרים"
+                    Click="CopyRightButton_Click">
+                <!--<TextBlock Text="©" FontSize="19" LineHeight="24"/>-->
+                <Image Source="/ToratEmet;component/Resources/CopyRightIcon.png" />
+            </Button>
+
+            <Button x:Name="Instructions" ToolTip="הוראות"
+                    Click="Instructions_Click">
+                <!--<TextBlock Text="ⓘ" FontSize="19" LineHeight="24"/>-->
+                <Image Source="/ToratEmet;component/Resources/InformationIcon.png" />
+            </Button>
+            <ToggleButton x:Name="SaveSession" ToolTip="שמור תמונת מצב - כאשר לחצן זה לחוץ התוכנה שומרת את תמונת המצב בעת סגירת התוכנה עבור פעם הבאה">
+                <TextBlock Text="🖫" FontSize="16"/>
+            </ToggleButton>
+        </WrapPanel>
+
+        <Separator Grid.Row="1" Margin="0"/>
+
+        <local:TabControlX x:Name="tabControlX" Grid.Row="2"/>
+        
+    </Grid>
+</UserControl>
+

@@ -1,10 +1,10 @@
 ﻿C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\GeneratedInternalTypeHelper.g.cs
 
-FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\Controls\AramaicDictionaryControl.xaml;;
-FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\Controls\BookViewer.xaml;;
-FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\Controls\MainControl.xaml;;
-FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\Controls\OpenFileControl.xaml;;
-FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\Controls\SearchControl.xaml;;
-FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\Controls\SearchExplorerControl.xaml;;
-FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\Controls\TabControlX.xaml;;
+FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\Dictionary\AramaicDictionaryControl.xaml;;
+FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\BookViewer\BookViewer.xaml;;
+FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\MainControl\MainControl.xaml;;
+FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\FileManaging\OpenFileControl.xaml;;
+FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\Search\SearchControl.xaml;;
+FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\Search\SearchExplorerControl.xaml;;
+FC:\Users\Admin\source\repos\ToratEmet\ToratEmet\MainControl\TabControlX.xaml;;
 

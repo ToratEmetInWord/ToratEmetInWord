@@ -1,0 +1,200 @@
+﻿<UserControl x:Class="ToratEmet.Controls.BookViewer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ToratEmet.Controls"
+             
+             xmlns:treeSource="clr-namespace:ToratEmet.TreeModels"
+             mc:Ignorable="d" 
+             FlowDirection="RightToLeft"
+             d:DesignHeight="450" d:DesignWidth="350" 
+             FontSize="14"
+             PreviewKeyDown="UserControl_PreviewKeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <WrapPanel x:Name="toolBarPanel" Grid.Row="0" Grid.ColumnSpan="3"
+                   Background="WhiteSmoke">
+            <WrapPanel.Resources>
+                <Style TargetType="Image">
+                    <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality" />
+                    <Setter Property="Height" Value="20"/>
+                </Style>
+                <Style TargetType="Button">
+                    <Setter Property="Padding" Value="3"/>
+                    <Setter Property="Width" Value="25"/>
+                    <Setter Property="Height" Value="25"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Background" Value="{x:Null}"/>
+                    <Setter Property="Background" Value="WhiteSmoke"/>
+                    <Setter Property="FlowDirection" Value="LeftToRight"/>
+                </Style>
+                <Style TargetType="ToggleButton">
+                    <Setter Property="Padding" Value="3"/>
+                    <Setter Property="Width" Value="25"/>
+                    <Setter Property="Height" Value="25"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Background" Value="{x:Null}"/>
+                </Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/>
+                    <Setter Property="LineHeight" Value="16"/>
+                </Style>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="FontSize" Value="14"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="MaxWidth" Value="225"/>
+                </Style>
+            </WrapPanel.Resources>
+           
+            <Button x:Name="BookInfoButton" ToolTip="מידע על הספר"
+                    Click="BookInfoButton_Click">
+                <Image Source="/ToratEmet;component/Resources/InformationIcon.png" />
+
+            </Button>
+            <Grid x:Name="RelativeBooksGrid">
+                <ComboBox x:Name="RelativeBooksCombo" Width="0" ItemsSource="{Binding ComboViewlist}">
+                    <ComboBox.Resources>
+                        <DataTemplate DataType="{x:Type treeSource:TreeItem}">
+                            <StackPanel x:Name="FileItemPanel" Orientation="Horizontal" 
+             ToolTip="לחץ לפתיחת הספר, או סמן v לתצוגה משולבת"
+             Tag="{Binding BindsDirectlyToSource=True}">
+                                <TextBlock x:Name="FileItemButton" Text="🗎" 
+                            Margin="0,0,3,0" Background="{x:Null}"
+                            Tag="{Binding BindsDirectlyToSource=True}"
+                            MouseDown="ReltiveBooks_FileItemButton_MouseDown"
+                            LineStackingStrategy="MaxHeight"/>
+                                <CheckBox IsChecked="{Binding IsChecked}"
+                           Checked="RelativeBooks_CheckChanged"
+                           Unchecked="RelativeBooks_CheckChanged">
+                                    <TextBlock Text="{Binding Name}" Tag="{Binding BindsDirectlyToSource=True}"
+                                PreviewMouseDown="ReltiveBooks_FileItemButton_MouseDown" />
+                                </CheckBox>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.Resources>
+                </ComboBox>
+            
+            <Button x:Name="RealtiveBooksButton" ToolTip="ספרים קרובים"
+                    Click="RealtiveBooksButton_Click">
+                    <Image Source="/ToratEmet;component/Resources/RelativeBooks.png" />
+                </Button>
+            </Grid>
+            <Button x:Name="ChapterTreeButton" ToolTip="הצג \ הסתר עץ כותרות"
+                    Click="ChapterTreeButton_Click">
+                <Image Source="/ToratEmet;component/Resources/HeadersIcon.png" />
+            </Button>
+
+            <!--<Button x:Name="BookMarkButton" ToolTip="צור סימניה"
+                    Click="BookMarkButton_Click">
+                <Image Source="/ToratEmet;component/Resources/BookMarkIcon.png" />
+            </Button>-->
+
+            <Button x:Name="ShowLessButton" ToolTip="הצג פחות"
+                    Click="ShowLessButton_Click">
+                <TextBlock Text="⇲"/>
+            </Button>
+            <Button x:Name="ShowMoreButton" ToolTip="הצג יותר"
+                    Click="ShowMoreButton_Click">
+                <TextBlock Text="⇱"/>
+            </Button>
+            <Button x:Name="PreviousButton" ToolTip="הקודם"
+                    Click="PreviousButton_Click">
+                <TextBlock Text="⎘"/>
+            </Button>
+            <Button x:Name="NextButton" ToolTip="הבא"
+                    Click="NextButton_Click">
+                <TextBlock Text="⎗"/>
+            </Button>
+            <ToggleButton x:Name="NikkudButton" ToolTip="הצג/הסתר ניקוד"
+                    Click="NikkudButton_Click">
+            <Image Source="/ToratEmet;component/Resources/Komatz.png"/>
+
+            </ToggleButton>
+            <ToggleButton x:Name="CatillationsButton" ToolTip="הצג/הסתר טעמים"
+                    Click="CatillationsButton_Click">
+               <Image Source="/ToratEmet;component/Resources/Cantillations.png"/>
+
+            </ToggleButton>
+            <Button x:Name="RefreshButton" ToolTip="רענן" Click="RefreshButton_Click"
+                    FlowDirection="RightToLeft">
+                <Image Source="/ToratEmet;component/Resources/RecentIcon.png" />
+            </Button>
+            <Button x:Name="OpenInNewWIndowButton" 
+                    ToolTip="פתח בחלונית חדשה"
+                    Click="OpenInNewWIndowButton_Click">
+                <TextBlock Text="🗗"/>
+            </Button>
+            <ToggleButton x:Name="ToggleSearchButton" ToolTip="חיפוש (לחץ Cntrl + F לפתיחת חיפוש משודרג)"
+                          Click="ToggleSearchButton_Click" FlowDirection="LeftToRight">
+               <Image Source="/ToratEmet;component/Resources/Search.png" Height="18"/>
+ 
+            </ToggleButton>
+        </WrapPanel>
+
+        <Border x:Name="SearchToolBar" Background="WhiteSmoke"
+              Grid.Row="1" Grid.ColumnSpan="3"
+                Padding="3,3,3,5" Visibility="Collapsed">
+            <Border.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Padding" Value="3"/>
+                    <Setter Property="Width" Value="25"/>
+                    <Setter Property="Height" Value="25"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Background" Value="{x:Null}"/>
+                    <Setter Property="Background" Value="WhiteSmoke"/>
+                </Style>
+            </Border.Resources>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="SearchTextBox" Grid.Column="0"
+                     KeyDown="SearchTextBox_KeyDown"
+                         GotKeyboardFocus="SearchTextBox_GotKeyboardFocus"/>
+                <StackPanel Orientation="Horizontal" Grid.Column="1"
+                            Margin="5,0,5,0">
+                    <Button x:Name="SearchNextButton" Height="18" Width="20"
+                            Click="SearchNextButton_Click">
+                        <TextBlock Text="⋁" FontSize="10" Margin="-8,0,0,0"
+                               LineHeight="12">
+                            <TextBlock.RenderTransform>
+                                <ScaleTransform ScaleX="2"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                    </Button>
+                    <Button x:Name="SearchPreviousButton" Height="18" Width="20"
+                            Click="SearchPreviousButton_Click">
+                        <TextBlock Text="⋀" FontSize="10" Margin="-8,0,0,0"
+                           LineHeight="12">
+                            <TextBlock.RenderTransform>
+                                <ScaleTransform ScaleX="2"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <TextBlock Grid.Row="2" x:Name="AdressTextBlock" 
+           Grid.ColumnSpan="3" FontSize="12" Padding="3"
+           Text="{Binding AdressBlockText}"
+           ToolTip="{Binding AdressBlockText}"/>
+
+        <Separator Grid.Row="3" Grid.ColumnSpan="3"/>
+
+        <local:WebViewControl  x:Name="webViewControl"
+                       Grid.Column="2" Grid.Row="4"/>
+
+    </Grid>
+</UserControl>
+

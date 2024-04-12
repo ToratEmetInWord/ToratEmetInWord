@@ -280,82 +280,83 @@
     <Compile Include="BookParsingModels\Navigate_To_Header.cs" />
     <Compile Include="BookParsingModels\OpenSelected.cs" />
     <Compile Include="BookParsingModels\ToratEmetTemplates.cs" />
-    <Compile Include="Controls\AramaicDictionaryControl.xaml.cs">
+    <Compile Include="Dictionary\AramaicDictionaryControl.xaml.cs">
       <DependentUpon>AramaicDictionaryControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\AramaicDictionaryWindow.cs" />
-    <Compile Include="Controls\BookInfoBox.cs" />
-    <Compile Include="Controls\BookViewer.xaml.cs">
+    <Compile Include="Dictionary\DictionaryWindowWrapper.cs" />
+    <Compile Include="MainControl\BookInfoBox.cs" />
+    <Compile Include="BookViewer\BookViewer.xaml.cs">
       <DependentUpon>BookViewer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\HostControl.cs">
+    <Compile Include="MainControl\HostControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\HostControl.Designer.cs">
+    <Compile Include="MainControl\HostControl.Designer.cs">
       <DependentUpon>HostControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\HostWindow.cs" />
-    <Compile Include="Controls\MainControl.xaml.cs">
+    <Compile Include="MainControl\HostWindow.cs" />
+    <Compile Include="MainControl\MainControl.xaml.cs">
       <DependentUpon>MainControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\OpenFileControl.xaml.cs">
+    <Compile Include="FileExplorer\OpenFileControl.xaml.cs">
       <DependentUpon>OpenFileControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\OptionsWindow.cs" />
-    <Compile Include="Controls\ProgressBarX.xaml.cs">
+    <Compile Include="MainControl\OptionsWindow.cs" />
+    <Compile Include="Search\ProgressBarX.xaml.cs">
       <DependentUpon>ProgressBarX.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\SearchControl.xaml.cs">
+    <Compile Include="Search\SearchControl.xaml.cs">
       <DependentUpon>SearchControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\SearchExplorerControl.xaml.cs">
+    <Compile Include="Search\SearchExplorerControl.xaml.cs">
       <DependentUpon>SearchExplorerControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TabControlX.xaml.cs">
+    <Compile Include="MainControl\TabControlX.xaml.cs">
       <DependentUpon>TabControlX.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\WebViewControl.cs" />
+    <Compile Include="WebView\WebViewControl.cs" />
     <Compile Include="Extensions\GenericExtensions.cs" />
     <Compile Include="Extensions\HebrewNumbering.cs" />
     <Compile Include="Extensions\PrivateExtensions.cs" />
     <Compile Include="Extensions\SearchExtensions.cs" />
     <Compile Include="Initializers\CostumeWindowsHandler.cs" />
+    <Compile Include="Initializers\KeyBoardHooks.cs" />
     <Compile Include="Models\DetectFileType.cs" />
-    <Compile Include="Ribbon1.cs" />
-    <Compile Include="Models\CopyRight.cs" />
-    <Compile Include="Models\MoveTabToNewWindow.cs" />
+    <Compile Include="Ribbon\Ribbon1.cs" />
+    <Compile Include="MainControl\Models\CopyRight.cs" />
+    <Compile Include="MainControl\Models\MoveTabToNewWindow.cs" />
     <Compile Include="Models\ProgressBarDelegate.cs" />
-    <Compile Include="Models\RecentBooks.cs" />
-    <Compile Include="SearchModels\LuceneSearch.cs" />
-    <Compile Include="SearchModels\SnippetBuilder.cs" />
+    <Compile Include="MainControl\Models\RecentBooks.cs" />
+    <Compile Include="Search\SearchModels\LuceneSearch.cs" />
+    <Compile Include="Search\SearchModels\SnippetBuilder.cs" />
     <Compile Include="Models\StreamReaderX.cs" />
     <Compile Include="Models\WordWIndowOwner.cs" />
-    <Compile Include="SearchModels\ContainsSearch.cs" />
-    <Compile Include="SearchModels\DistanceCalculator.cs" />
-    <Compile Include="SearchModels\DistanceSearch.cs" />
-    <Compile Include="SearchModels\FreeFormSearch.cs" />
-    <Compile Include="SearchModels\LuceneIndexer.cs" />
-    <Compile Include="SearchModels\LuceneIntializer.cs" />
-    <Compile Include="SearchModels\LuceneWildCardSearch.cs" />
-    <Compile Include="SearchModels\ProcessHeaders.cs" />
-    <Compile Include="SearchModels\RecentSearches.cs" />
-    <Compile Include="SearchModels\RegexSearch.cs" />
-    <Compile Include="SearchModels\SearchMethods.cs" />
+    <Compile Include="Search\SearchModels\ContainsSearch.cs" />
+    <Compile Include="Search\SearchModels\DistanceCalculator.cs" />
+    <Compile Include="Search\SearchModels\DistanceSearch.cs" />
+    <Compile Include="Search\SearchModels\FreeFormSearch.cs" />
+    <Compile Include="Search\SearchModels\LuceneIndexer.cs" />
+    <Compile Include="Search\SearchModels\LuceneIntializer.cs" />
+    <Compile Include="Search\SearchModels\LuceneWildCardSearch.cs" />
+    <Compile Include="Search\SearchModels\ProcessHeaders.cs" />
+    <Compile Include="Search\SearchModels\RecentSearches.cs" />
+    <Compile Include="Search\SearchModels\RegexSearch.cs" />
+    <Compile Include="Search\SearchModels\SearchMethods.cs" />
     <Compile Include="Initializers\Updater.cs" />
-    <Compile Include="ViewModels\AramaicDictionaryViewModel.cs" />
-    <Compile Include="ViewModels\BookViewerViewModel.cs" />
-    <Compile Include="ViewModels\MainControlViewModel.cs" />
-    <Compile Include="ViewModels\OpenFileControlViewModel.cs" />
+    <Compile Include="Dictionary\AramaicDictionaryViewModel.cs" />
+    <Compile Include="BookViewer\BookViewerViewModel.cs" />
+    <Compile Include="MainControl\MainControlViewModel.cs" />
+    <Compile Include="FileExplorer\OpenFileControlViewModel.cs" />
     <Compile Include="Initializers\Intializer.cs" />
     <Compile Include="Initializers\TaskPaneHandler.cs" />
     <Compile Include="Initializers\ApplicationFolders.cs" />
-    <Compile Include="Models\ExternalFiles.cs" />
+    <Compile Include="MainControl\Models\ExternalFiles.cs" />
     <Compile Include="Models\FindParentOrChild.cs" />
     <Compile Include="Models\FolderPicker.cs" />
     <Compile Include="Models\IShellShortcuts.cs" />
     <Compile Include="Models\Levenshtein.cs" />
-    <Compile Include="Models\MainMenuCommands.cs" />
-    <Compile Include="Models\OpenFileRecentSearches.cs" />
+    <Compile Include="MainControl\Models\MainMenuCommands.cs" />
+    <Compile Include="FileExplorer\Models\OpenFileRecentSearches.cs" />
     <Compile Include="Models\ShortcutsHandler.cs" />
     <Compile Include="Models\TranslatorClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -365,13 +366,13 @@
     <Compile Include="TreeModels\TreeItem.cs" />
     <Compile Include="TreeModels\TreeItemSearch.cs" />
     <Compile Include="TreeModels\TreeLoader.cs" />
-    <Compile Include="ViewModels\SearchControlViewModel.cs" />
-    <Compile Include="ViewModels\SearchExplorerControlViewModel.cs" />
-    <Compile Include="WebViewModels\WebViewPdfContextMenu.cs" />
-    <Compile Include="WebViewModels\WebViewCommands.cs" />
-    <Compile Include="WebViewModels\WebViewContextMenu.cs" />
-    <Compile Include="WebViewModels\WebViewMessageHandler.cs" />
-    <EmbeddedResource Include="Controls\HostControl.resx">
+    <Compile Include="Search\SearchControlViewModel.cs" />
+    <Compile Include="Search\SearchExplorerControlViewModel.cs" />
+    <Compile Include="WebView\WebViewPdfContextMenu.cs" />
+    <Compile Include="WebView\WebViewCommands.cs" />
+    <Compile Include="WebView\WebViewContextMenu.cs" />
+    <Compile Include="WebView\WebViewMessageHandler.cs" />
+    <EmbeddedResource Include="MainControl\HostControl.resx">
       <DependentUpon>HostControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -460,35 +461,35 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Page Include="Controls\AramaicDictionaryControl.xaml">
+    <Page Include="Dictionary\AramaicDictionaryControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\BookViewer.xaml">
+    <Page Include="BookViewer\BookViewer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\MainControl.xaml">
+    <Page Include="MainControl\MainControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\OpenFileControl.xaml">
+    <Page Include="FileExplorer\OpenFileControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\ProgressBarX.xaml">
+    <Page Include="Search\ProgressBarX.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\SearchControl.xaml">
+    <Page Include="Search\SearchControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\SearchExplorerControl.xaml">
+    <Page Include="Search\SearchExplorerControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TabControlX.xaml">
+    <Page Include="MainControl\TabControlX.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -520,8 +521,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Ribbon1.xml" />
-    <Content Include="TextFile1.txt" />
+    <EmbeddedResource Include="Ribbon\Ribbon1.xml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
