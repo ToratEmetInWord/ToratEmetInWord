@@ -55,10 +55,10 @@ C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\ToratEmet.csproj.Assem
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\Interop.IWshRuntimeLibrary.dll
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\ToratEmet.csproj.ResolveComReference.cache
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\Search\ProgressBarX.baml
-C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\Dictionary\AramaicDictionaryControl.g.cs
-C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\BookViewer\BookViewer.g.cs
+C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\FileManaging\Controls\OpenFileControl.g.cs
+C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\AramaicDictionary\AramaicDictionaryControl.g.cs
+C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\Display\BookViewer.g.cs
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\MainControl\MainControl.g.cs
-C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\FileManaging\OpenFileControl.g.cs
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\Search\ProgressBarX.g.cs
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\Search\SearchControl.g.cs
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\Search\SearchExplorerControl.g.cs
@@ -66,10 +66,10 @@ C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\MainControl\TabControl
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\ToratEmet_MarkupCompile.cache
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\ToratEmet_MarkupCompile.lref
-C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\Dictionary\AramaicDictionaryControl.baml
-C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\BookViewer\BookViewer.baml
+C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\FileManaging\Controls\OpenFileControl.baml
+C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\AramaicDictionary\AramaicDictionaryControl.baml
+C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\Display\BookViewer.baml
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\MainControl\MainControl.baml
-C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\FileManaging\OpenFileControl.baml
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\Search\SearchControl.baml
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\Search\SearchExplorerControl.baml
 C:\Users\Admin\source\repos\ToratEmet\ToratEmet\obj\Debug\MainControl\TabControlX.baml

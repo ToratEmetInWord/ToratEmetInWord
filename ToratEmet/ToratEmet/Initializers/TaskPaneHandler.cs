@@ -14,13 +14,13 @@ namespace ToratEmet.Initializers
     public static class TaskPaneHandler
     {
         public static CustomTaskPane LaunchTaskPane()
-        {
-            Updater.CheckForUpdates();
-
+        {           
             CustomTaskPane taskPane = GetCurrentTaskPane();
 
             if (taskPane == null)
             {
+                Updater.CheckForUpdates();
+
                 HostControl hostControl = new HostControl();
                 taskPane = Globals.ThisAddIn.CustomTaskPanes.Add(hostControl, "תורת אמת");
                 taskPane.Width = 500;

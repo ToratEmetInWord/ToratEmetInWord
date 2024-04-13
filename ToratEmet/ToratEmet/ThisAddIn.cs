@@ -10,6 +10,7 @@ using ToratEmet.Initializers;
 using ToratEmet.WebViewModels;
 using System.Collections.Specialized;
 using ToratEmet.Controls;
+using ToratEmet.Ribbon;
 
 namespace ToratEmet
 {
@@ -17,7 +18,7 @@ namespace ToratEmet
     {
         protected override Microsoft.Office.Core.IRibbonExtensibility CreateRibbonExtensibilityObject()
         {
-            return new Ribbon1();
+            return new ToratEmetRibbon();
         }
 
         private void ThisAddIn_Startup(object sender, System.EventArgs e)

@@ -10,11 +10,11 @@ none
 false
 VSTO40;UseOfficeInterop;DEBUG;TRACE
 
-8-673120775
-5-1035686641
-84-938497859
+8177006472
+4-901655049
+83571074784
 471934882853
-Dictionary\AramaicDictionaryControl.xaml;BookViewer\BookViewer.xaml;MainControl\MainControl.xaml;FileManaging\OpenFileControl.xaml;Search\ProgressBarX.xaml;Search\SearchControl.xaml;Search\SearchExplorerControl.xaml;MainControl\TabControlX.xaml;
+FileManaging\Controls\OpenFileControl.xaml;AramaicDictionary\AramaicDictionaryControl.xaml;Display\BookViewer.xaml;MainControl\MainControl.xaml;Search\ProgressBarX.xaml;Search\SearchControl.xaml;Search\SearchExplorerControl.xaml;MainControl\TabControlX.xaml;
 
 False
 

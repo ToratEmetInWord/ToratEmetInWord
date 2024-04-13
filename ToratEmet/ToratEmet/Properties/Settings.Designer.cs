@@ -328,5 +328,41 @@ namespace ToratEmet.Properties {
                 this["LastSessionSelectedTab"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LastUpdateCheck {
+            get {
+                return ((string)(this["LastUpdateCheck"]));
+            }
+            set {
+                this["LastUpdateCheck"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Fri, 12 Apr 2024 02:14:48 GMT")]
+        public string UpdateFileInfo {
+            get {
+                return ((string)(this["UpdateFileInfo"]));
+            }
+            set {
+                this["UpdateFileInfo"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public double DictionaryWindowLeft {
+            get {
+                return ((double)(this["DictionaryWindowLeft"]));
+            }
+            set {
+                this["DictionaryWindowLeft"] = value;
+            }
+        }
     }
 }
