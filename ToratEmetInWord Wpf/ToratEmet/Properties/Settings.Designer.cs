@@ -343,7 +343,7 @@ namespace ToratEmet.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Fri, 12 Apr 2024 02:14:48 GMT")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Fri, 12 Apr 2024 01:31:11 GMT")]
         public string UpdateFileInfo {
             get {
                 return ((string)(this["UpdateFileInfo"]));

@@ -47,10 +47,7 @@
                   PreviewKeyDown="SearchComboBox_PreviewKeyDown">
             <ComboBox.Resources>
                 <DataTemplate DataType="{x:Type treeSource:FileTreeItem}">
-                    <StackPanel x:Name="FolderItemPanel" Orientation="Horizontal"
-                                PreviewMouseDown="ItemPanel_PreviewMouseDown"
-                                Tag="{Binding BindsDirectlyToSource=True}"
-                                Background="Transparent">
+                    <StackPanel x:Name="FolderItemPanel" Orientation="Horizontal">
                         <TextBlock Text="🗎" Margin="0,0,3,0"/>
                         <TextBlock Text="{Binding Name}" />
                         <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type ComboBox}}, Path=Tag}"

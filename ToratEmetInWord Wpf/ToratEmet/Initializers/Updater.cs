@@ -17,10 +17,10 @@ namespace ToratEmet
                 LogDateTime();
                 try
                 {
-                    bool fileExists = await CheckFileExists("https://drive.google.com/uc?id=1BNQmVsXixLZ7pg3vU9DZJSbO0XPYPzUd");
+                    bool fileExists = await CheckFileExists("https://drive.google.com/uc?id=1YUTBuJOujvrsMRDqRhQYZIHm-5iI90Xr");
                     if (fileExists)
                     {
-                        string modifiedDate = await GetModifiedDate("https://drive.google.com/uc?id=1BNQmVsXixLZ7pg3vU9DZJSbO0XPYPzUd");
+                        string modifiedDate = await GetModifiedDate("https://drive.google.com/uc?id=1YUTBuJOujvrsMRDqRhQYZIHm-5iI90Xr");
                         if (modifiedDate != Properties.Settings.Default.UpdateFileInfo) 
                         {
                             DialogResult result = MessageBox.Show("נמצאו עדכונים לתוסף \"תורת אמת בוורד\". האם ברצונכם להוריד את העדכונים כעת?", "עדכון נמצא!", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
@@ -42,7 +42,7 @@ namespace ToratEmet
             if (DateTime.TryParse(Properties.Settings.Default.LastUpdateCheck, out lastLogDate))             // Get the last log date from settings
             {
                 int daysSinceLastUpdate = (DateTime.Now - lastLogDate).Days;
-                return (DateTime.Now - lastLogDate).TotalDays >= 2;// Check if seven days have passed since the last log
+                return (DateTime.Now - lastLogDate).TotalDays >= 1;// Check if seven days have passed since the last log
             }
             else
             {
