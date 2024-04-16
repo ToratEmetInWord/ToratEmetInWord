@@ -40,6 +40,7 @@ namespace ToratEmet.Controls
                 {
                     Loaded += (sender, e) => { SetCore(); };
                 }
+                catch { }
             }
         }
     }

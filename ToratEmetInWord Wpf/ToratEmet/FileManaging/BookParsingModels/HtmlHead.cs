@@ -67,12 +67,10 @@ cursor: pointer;
         var isVowelsReversed = false;
         var isCantillationReversed = false;
 
-// JavaScript to handle page intial chapter
+// JavaScript to handle page intial scrollPosition
         var element = document.getElementById(""{elementId}"");
         if (element !== null) {{ element.scrollIntoView(); }}
-
-// JavaScript to handle page intial scrollPosition
-document.getElementById(""contentBox"").scrollTop = {scrollPosition};
+        else{{document.getElementById(""contentBox"").scrollTop = {scrollPosition};}}
 
 // JavaScript to handle tab switching and interaction with C#
  function openComboContent(event) {{
@@ -86,10 +84,11 @@ function sendBookLink(item) {{
 }}
 
 function setBookLinkTitle(item) {{
-  if (!item.title) {{
+  if (item.title.trim().length < 1) {{
     window.chrome.webview.postMessage('setBookLinkTitle=' + item.innerHTML);
   }}
 }}
+
 
 {TreeViewJS()}
 {CurrentChapterJs()}
@@ -280,16 +279,19 @@ function expandTreeView() {{
     element.style.maxWidth = ""50%"";
 }}
 
+var allowCollapse = true;
 function collapseTreeView() {{
   var element = document.getElementById(""treeView-container"");
-  element.style.maxWidth = ""0px""
+if (allowCollapse === true){{
+ element.style.maxWidth = ""0px""
+}}
 }}
 
 function toggleTreeview(){{
  var element = document.getElementById(""treeView-container"");
 if (element.style.maxWidth === ""0px"")
 {{ element.style.maxWidth = ""50%"";}}
-else{{ element.style.maxWidth = ""0px""}} 
+else{{ element.style.maxWidth = ""0px""; allowCollapse = true}} 
 }}
 
 

@@ -51,7 +51,15 @@ namespace ToratEmet.Controls
         private void ChapterTreeButton_Click(object sender, RoutedEventArgs e)
         {
             viewModel.ShowChapterTree();
+            ChapterTreeButton.IsChecked = false;
         }
+
+        private void ChapterTreeButton_PreviewMouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            viewModel.PinChapterTree();
+            ChapterTreeButton.IsChecked = !ChapterTreeButton.IsChecked;
+        }
+
         private void ShowLessButton_Click(object sender, RoutedEventArgs e)
         {
             viewModel.ShowLess();
@@ -128,5 +136,7 @@ namespace ToratEmet.Controls
                 txtControl.SelectAll();
             }));
         }
+
+       
     }
 }

@@ -31,7 +31,8 @@ namespace ToratEmet.Controls
             {
                 RecentBooks.ResumeSession(tabControlX.tabControl);
                 Properties.Settings.Default.IsOpenLastSessionEnabled = false;
-                Properties.Settings.Default.Save();
+                Properties.Settings.Default.LastSessionCollection = null;
+                Properties.Settings.Default.Save();               
             }
             else { CostumeWindowsHandler.ShowOpenFileTab(tabControlX.tabControl); }
         }

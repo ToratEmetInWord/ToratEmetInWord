@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ToratEmet.Controls"
              mc:Ignorable="d" 
+             FontFamily="Segoe UI Semilight"
              FlowDirection="RightToLeft"
              d:DesignHeight="200" d:DesignWidth="400">
     <Grid>

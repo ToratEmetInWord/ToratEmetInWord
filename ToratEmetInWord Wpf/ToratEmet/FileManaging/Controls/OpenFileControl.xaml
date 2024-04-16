@@ -8,8 +8,9 @@
              mc:Ignorable="d"
              FlowDirection="RightToLeft"
              FontSize="14"
+             FontFamily="Segoe UI Semilight"
              Padding="0"
-             d:DesignHeight="450" d:DesignWidth="350">
+             d:DesignHeight="450" d:DesignWidth="350" >
     <UserControl.Resources>
         <Style TargetType="Button">
             <Setter Property="Background" Value="#FFEFEFEF"/>

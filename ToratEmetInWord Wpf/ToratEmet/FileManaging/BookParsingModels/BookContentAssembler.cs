@@ -15,7 +15,7 @@ namespace ToratEmet.BookParsingModels
         string content;
         int counter;
 
-        public string Export(ChapterItem chapterItem, string itemId, double scrollPosition,
+        public string Export(ChapterItem chapterItem, string title, string itemId, double scrollPosition,
             bool isCombinedView, List<TreeItem> combinedviewitems, ChapterItem rootChapter)
         {
             combinedViewItems = combinedviewitems?? new List<TreeItem>();
@@ -23,7 +23,7 @@ namespace ToratEmet.BookParsingModels
             StringBuilder stb = new StringBuilder();
             AppendItemContent(chapterItem, stb);
             content = stb.ToString();
-            return BuildPage(rootChapter, itemId, scrollPosition);
+            return BuildPage(rootChapter, title, itemId, scrollPosition);
         }
 
         string CreateChapterTreeView(ChapterItem rootChapter)
@@ -36,11 +36,11 @@ namespace ToratEmet.BookParsingModels
 ";
         }
         //onmouseout=""collapseTreeView()""
-        string BuildPage(ChapterItem rootChapter, string itemId, double scrollPosition)
+        string BuildPage(ChapterItem rootChapter, string title, string itemId, double scrollPosition)
         {
             
             return $@"
-{HtmlHead.htmlHead(itemId)}
+{HtmlHead.htmlHead(title)}
 
 <div dir=""rtl"" class=""container"">
 

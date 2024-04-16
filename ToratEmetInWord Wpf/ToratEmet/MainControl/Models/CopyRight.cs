@@ -26,7 +26,7 @@ box-sizing: border-box;
 <div style=""background-color:whitesmoke; padding-bottom:3px; padding-top:3px;"">
 <center><P>
 <span style=""font-weight:bold; font-size:52px;"">
-תורת אמת</span><br>
+תורת אמת - בוורד</span><br>
 
 <B><BIG>מאגר תורני חופשי לכבוד השם יתברך</BIG></B>
 </center>

@@ -17,10 +17,12 @@ namespace ToratEmet
                 LogDateTime();
                 try
                 {
-                    bool fileExists = await CheckFileExists("https://drive.google.com/uc?id=1YUTBuJOujvrsMRDqRhQYZIHm-5iI90Xr");
+                    bool fileExists = await CheckFileExists("https://drive.google.com/uc?id=1YUTBuJOujvrsMRDqRhQYZIHm-5iI90Xr");//file1
+                    //bool fileExists = await CheckFileExists("https://drive.google.com/uc?id=1BNQmVsXixLZ7pg3vU9DZJSbO0XPYPzUd"); //file2
                     if (fileExists)
                     {
-                        string modifiedDate = await GetModifiedDate("https://drive.google.com/uc?id=1YUTBuJOujvrsMRDqRhQYZIHm-5iI90Xr");
+                        string modifiedDate = await GetModifiedDate("https://drive.google.com/uc?id=1YUTBuJOujvrsMRDqRhQYZIHm-5iI90Xr");//file1
+                        //string modifiedDate = await GetModifiedDate("https://drive.google.com/uc?id=1BNQmVsXixLZ7pg3vU9DZJSbO0XPYPzUd");//file2
                         if (modifiedDate != Properties.Settings.Default.UpdateFileInfo) 
                         {
                             DialogResult result = MessageBox.Show("נמצאו עדכונים לתוסף \"תורת אמת בוורד\". האם ברצונכם להוריד את העדכונים כעת?", "עדכון נמצא!", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);

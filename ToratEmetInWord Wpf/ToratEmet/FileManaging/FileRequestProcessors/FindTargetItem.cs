@@ -17,7 +17,11 @@ namespace ToratEmet.Models
         {
             targetId = targetId.NormalizeIdString();
             //ChapterItem targetItem = bookItem.AllChapters.FirstOrDefault(chapter => chapter.Id.NormalizeIdString().EndsWith(targetId));
-            string[] splitIds = targetId.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] splitIds;
+            if (targetId.Contains(",")) { splitIds = targetId.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries); }
+            else { splitIds = targetId.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries); }
+            
+
             
             ChapterItem targetItem = searchNextLevel(new ObservableCollection<ChapterItem> { bookItem.RootItem }, splitIds, 0);
 

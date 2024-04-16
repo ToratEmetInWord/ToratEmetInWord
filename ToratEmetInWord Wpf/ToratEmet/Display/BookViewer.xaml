@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:ToratEmet.Controls"
-             
+             xmlns:local="clr-namespace:ToratEmet.Controls"           
              xmlns:treeSource="clr-namespace:ToratEmet.TreeModels"
              mc:Ignorable="d" 
              FlowDirection="RightToLeft"
              d:DesignHeight="450" d:DesignWidth="350" 
              FontSize="14"
+             FontFamily="Segoe UI Semilight"
              PreviewKeyDown="UserControl_PreviewKeyDown">
     <Grid>
         <Grid.RowDefinitions>
@@ -87,10 +87,11 @@
                     <Image Source="/ToratEmet;component/Resources/RelativeBooks.png" />
                 </Button>
             </Grid>
-            <Button x:Name="ChapterTreeButton" ToolTip="הצג \ הסתר עץ כותרות"
-                    Click="ChapterTreeButton_Click">
+            <ToggleButton x:Name="ChapterTreeButton" ToolTip="הצג \ הסתר עץ כותרות (לחץ לחיצה ימנית לנעיצה)"
+                    Click="ChapterTreeButton_Click"
+                    PreviewMouseRightButtonDown="ChapterTreeButton_PreviewMouseRightButtonDown">
                 <Image Source="/ToratEmet;component/Resources/HeadersIcon.png" />
-            </Button>
+            </ToggleButton>
 
             <!--<Button x:Name="BookMarkButton" ToolTip="צור סימניה"
                     Click="BookMarkButton_Click">

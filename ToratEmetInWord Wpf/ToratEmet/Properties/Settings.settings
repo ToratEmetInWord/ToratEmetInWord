@@ -84,7 +84,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="UpdateFileInfo" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Fri, 12 Apr 2024 01:31:11 GMT</Value>
+      <Value Profile="(Default)">Mon, 15 Apr 2024 23:07:40 GMT</Value>
     </Setting>
     <Setting Name="DictionaryWindowLeft" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>

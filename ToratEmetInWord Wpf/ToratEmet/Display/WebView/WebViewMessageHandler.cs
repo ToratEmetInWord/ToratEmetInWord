@@ -5,12 +5,7 @@ using System.Windows;
 using ToratEmet.ViewModels;
 using ToratEmet.Models;
 using ToratEmet.BookParsingModels;
-using ToratEmet.Extensions;
-using ToratEmet.TreeModels;
-using System.Windows.Controls;
-using ToratEmet.Controls;
-using System.Text.RegularExpressions;
-using static System.Net.Mime.MediaTypeNames;
+using ToratEmet.FileManaging.FileRequestProcessors;
 
 namespace ToratEmet.WebViewModels
 {
@@ -24,11 +19,11 @@ namespace ToratEmet.WebViewModels
 
                 if (message.StartsWith("bookLink="))
                 {
-                    OpenBooklink(message.Replace("bookLink=", ""), webView2);
+                    HyperLinkManager.OpenBooklink(message.Replace("bookLink=", ""), webView2);
                 }
                 else if (message.StartsWith("setBookLinkTitle="))
                 {
-                    SetLinkTitle(message.Replace("setBookLinkTitle=", ""), webView2);
+                    HyperLinkManager.SetLinkTitle(message.Replace("setBookLinkTitle=", ""), webView2);
                 }
                 else if (message.StartsWith("copyToWord="))
                 {
@@ -83,82 +78,7 @@ namespace ToratEmet.WebViewModels
             webView2.CoreWebView2.ExecuteScriptAsync(script2);
         }
 
-        void OpenBooklink(string message, WebView2 webView2)
-        {
-            TabControlX tabControlX = FindParentOrChild.TryFindParent<TabControlX>(webView2);
-
-            TreeItem treeItem = ProcessBooklink(ref message);
-
-            if (treeItem != null)
-            {
-                OpenSelected openSelected = new OpenSelected();
-                if (tabControlX != null) { openSelected.OpenSelectedFile(treeItem, message, "", tabControlX.tabControl); }
-                //else { openSelected.OpenSelectedFile(treeItem, message, null); }
-            }
-        }
-
-        TreeItem ProcessBooklink(ref string message)
-        {            
-            message = message.RemoveAllParenthesis().FixBookLink().Trim();
-            string bookname;
-            bookname = Regex.Replace(message, @"(דברי הימים [אב]|שמואל [אב]|מלכים [אב]).*", "$1,");           
-
-            bookname = message.GetTextTillFirstChar(',');
-            
-
-            if (bookname == message && message.Count(c => c == ' ') == 1)
-            {
-                message = message.Replace(" ", ", ");
-                bookname = message.GetTextTillFirstChar('ת');
-            }
-
-            if (message != bookname) { message = message.Replace(bookname, ""); }
-
-            return StaticGlobals.treeItemsList
-                    .OrderBy(item => Levenshtein.LevenshteinDistance(bookname, item.Name))
-                    .FirstOrDefault();
-        }
-
-        void SetLinkTitle(string message, WebView2 webView2)
-        {
-            string content = "לא נמצא תוכן תואם או שהתוכן ארוך מדי";
-            string originalMessage = message;
-
-           TreeItem treeItem = ProcessBooklink(ref message);
-
-            if (treeItem != null)
-            {
-                BookParser parser = new BookParser();
-                ChapterItem chapterItem = parser.GetTargetItem(treeItem.Address, message);
-                if (chapterItem != null)
-                {
-                    BookContentAssembler bookExport = new BookContentAssembler();
-                    content = $"{bookExport.ComboViewChapterExport(chapterItem).Trim('\r', '\n')} ({chapterItem.Id})";
-                    content = Regex.Replace(content, @"<h.>.*?</h.>|<.*?inlineHeader.*?>.*?</span>|<.*?>|&nbsp.*?&nbsp;?|&nbsp;?", "").Trim('\r', '\n');
-                }
-
-                if (content.Length < 300)
-                { 
-                string script = $@"
-var spans = document.querySelectorAll('.booklinks');
-if (spans.length > 0) {{
-    spans.forEach(function(span) {{
-        if (span.innerHTML === `{originalMessage}`) {{
-            span.setAttribute('title', `{content}`);
-var event = new MouseEvent('mouseover', {{bubbles: true,
-            cancelable: true,
-            view: window
-        }});
-        span.dispatchEvent(event);
-        }}
-    }});
-}}";
-
-                webView2.CoreWebView2.ExecuteScriptAsync(script);
-                }
-
-            }
-        }
+       
 
          //spans.forEach(function(span) {{
          //   if (span.textContent === '{originalMessage}') {{
@@ -179,3 +99,25 @@ var event = new MouseEvent('mouseover', {{bubbles: true,
         //}
     }
 }
+
+
+//TreeItem ProcessBooklink(ref string message)
+//{
+//    message = message.RemoveAllParenthesis().FixBookLink().Trim();
+//    string bookname;
+//    bookname = Regex.Replace(message, @"(דברי הימים [אב]|שמואל [אב]|מלכים [אב]).*", "$1,");
+//    bookname = message.GetTextTillFirstChar(',');
+
+
+//    if (bookname == message && message.Count(c => c == ' ') == 1)
+//    {
+//        message = message.Replace(" ", ", ");
+//        bookname = message.GetTextTillFirstChar('ת');
+//    }
+
+//    if (message != bookname) { message = message.Replace(bookname, ""); }
+
+//    return StaticGlobals.treeItemsList
+//            .OrderBy(item => Levenshtein.LevenshteinDistance(bookname, item.Name))
+//            .FirstOrDefault();
+//}

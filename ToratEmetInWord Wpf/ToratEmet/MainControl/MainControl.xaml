@@ -5,10 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ToratEmet.Controls"
              xmlns:treeSource="clr-namespace:ToratEmet.TreeModels"
-             
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="400"
-                         FontSize="14"
+             FontSize="14"
+             FontFamily="Segoe UI Semilight"
              Background="White"
              FlowDirection="RightToLeft">
 
@@ -74,7 +74,7 @@
             </WrapPanel.Resources>
 
             <Grid x:Name="MainMenuGrid">
-                <ComboBox x:Name="MainMenuComboBox" SelectionChanged="MainMenuComboBox_SelectionChanged" MaxDropDownHeight="280">
+                <ComboBox x:Name="MainMenuComboBox" SelectionChanged="MainMenuComboBox_SelectionChanged" MaxDropDownHeight="300">
                     <ComboBoxItem x:Name="OpenExternalFile" Content="פתח קובץ שאינו בספריה"
                               ToolTip="מאפשר גם פתיחת קבצי PDF - שים לב לאפשרות החיפוש המובנית"
                               Selected="OpenExternalFile_Selected"/>

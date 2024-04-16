@@ -36,7 +36,7 @@
     <PublishUrl>C:\Users\Admin\Desktop\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.31</ApplicationVersion>
+    <ApplicationVersion>3.5.7.1</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -278,6 +278,7 @@
     <Compile Include="FileManaging\FileRequestProcessors\FindTargetItem.cs" />
     <Compile Include="FileManaging\BookParsingModels\HtmlHead.cs" />
     <Compile Include="FileManaging\BookParsingModels\Navigate_To_Header.cs" />
+    <Compile Include="FileManaging\FileRequestProcessors\HyperLinkManager.cs" />
     <Compile Include="FileManaging\FileRequestProcessors\OpenSelected.cs" />
     <Compile Include="FileManaging\BookParsingModels\ToratEmetTemplates.cs" />
     <Compile Include="FileManaging\Controls\OpenFileControl.xaml.cs">
@@ -287,6 +288,7 @@
       <DependentUpon>AramaicDictionaryControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="AramaicDictionary\DictionaryWindowWrapper.cs" />
+    <Compile Include="GlobalMethods\Models\Jaccard.cs" />
     <Compile Include="MainControl\Models\BookInfoBox.cs" />
     <Compile Include="Display\BookViewer.xaml.cs">
       <DependentUpon>BookViewer.xaml</DependentUpon>
@@ -297,7 +299,7 @@
     <Compile Include="MainControl\HostControl.Designer.cs">
       <DependentUpon>HostControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Globals\Models\HostWindow.cs" />
+    <Compile Include="GlobalMethods\Models\HostWindow.cs" />
     <Compile Include="MainControl\MainControl.xaml.cs">
       <DependentUpon>MainControl.xaml</DependentUpon>
     </Compile>
@@ -316,21 +318,21 @@
       <DependentUpon>TabControlX.xaml</DependentUpon>
     </Compile>
     <Compile Include="Display\WebView\WebViewControl.cs" />
-    <Compile Include="Globals\Extensions\GenericExtensions.cs" />
-    <Compile Include="Globals\Extensions\HebrewNumbering.cs" />
-    <Compile Include="Globals\Extensions\AppSpecificExtensions.cs" />
+    <Compile Include="GlobalMethods\Extensions\GenericExtensions.cs" />
+    <Compile Include="GlobalMethods\Extensions\HebrewNumbering.cs" />
+    <Compile Include="GlobalMethods\Extensions\AppSpecificExtensions.cs" />
     <Compile Include="Search\SearchMethods\SearchHelpers\SearchExtensions.cs" />
     <Compile Include="Initializers\CostumeWindowsHandler.cs" />
     <Compile Include="Initializers\KeyBoardHooks.cs" />
-    <Compile Include="Globals\Models\DetectFileType.cs" />
+    <Compile Include="GlobalMethods\Models\DetectFileType.cs" />
     <Compile Include="MainControl\Models\CopyRight.cs" />
     <Compile Include="MainControl\Models\MoveTabToNewWindow.cs" />
-    <Compile Include="Globals\Models\ProgressBarDelegate.cs" />
+    <Compile Include="GlobalMethods\Models\ProgressBarDelegate.cs" />
     <Compile Include="MainControl\Models\RecentBooks.cs" />
     <Compile Include="Search\SearchMethods\LuceneSearch\LuceneSearch.cs" />
     <Compile Include="Search\SearchMethods\SearchHelpers\SnippetBuilder.cs" />
-    <Compile Include="Globals\Models\StreamReaderX.cs" />
-    <Compile Include="Globals\Models\WordWIndowOwner.cs" />
+    <Compile Include="GlobalMethods\Models\StreamReaderX.cs" />
+    <Compile Include="GlobalMethods\Models\WordWIndowOwner.cs" />
     <Compile Include="Search\SearchMethods\ContainsSearch.cs" />
     <Compile Include="Search\SearchMethods\DistanceCalculator.cs" />
     <Compile Include="Search\SearchMethods\DistanceSearch.cs" />
@@ -351,14 +353,14 @@
     <Compile Include="Initializers\TaskPaneHandler.cs" />
     <Compile Include="Initializers\ApplicationFolders.cs" />
     <Compile Include="FileManaging\FileRequestProcessors\ExternalFiles.cs" />
-    <Compile Include="Globals\Models\FindParentOrChild.cs" />
-    <Compile Include="Globals\Models\FolderPicker.cs" />
-    <Compile Include="Globals\Models\IShellShortcuts.cs" />
-    <Compile Include="Globals\Models\Levenshtein.cs" />
+    <Compile Include="GlobalMethods\Models\FindParentOrChild.cs" />
+    <Compile Include="GlobalMethods\Models\FolderPicker.cs" />
+    <Compile Include="GlobalMethods\Models\IShellShortcuts.cs" />
+    <Compile Include="GlobalMethods\Models\Levenshtein.cs" />
     <Compile Include="MainControl\Models\MainMenuCommands.cs" />
     <Compile Include="FileManaging\Controls\OpenFileRecentSearches.cs" />
-    <Compile Include="Globals\Models\ShortcutsHandler.cs" />
-    <Compile Include="Globals\Models\TranslatorClass.cs" />
+    <Compile Include="GlobalMethods\Models\ShortcutsHandler.cs" />
+    <Compile Include="GlobalMethods\Models\TranslatorClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

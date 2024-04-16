@@ -119,6 +119,29 @@ namespace ToratEmet.ViewModels
             }
         }
 
+        public async void PinChapterTree()
+        {
+            try
+            {
+                var result = await webView.CoreWebView2.ExecuteScriptWithResultAsync("toggleTreeview(); allowCollapse = false;");
+                if (!result.Succeeded)
+                {
+                    MessageBox.Show("המסמך עדיין בטעינה אנא המתינו כמה רגעים.\r\n (במקרה שהשגיאה ממשיכה לאחר מספר רגעים\r\n מומלץ ללחוץ על הלחצן \"הצג פחות\" ⇲)", "שגיאת מסמכים ארוכים", MessageBoxButton.OK, MessageBoxImage.Warning, MessageBoxResult.None, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+                }
+            }
+            catch
+            {
+                try
+                {
+                    var result = await webView.ExecuteScriptAsync("toggleTreeview(); allowCollapse = false;");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
         public void ComboViewItemsCheckChange()
         {
             if (isComboView) { NavigateToItem(currentChapter, "", false); }
@@ -140,10 +163,13 @@ namespace ToratEmet.ViewModels
                     .ToList();
 
             BookContentAssembler bookExport = new BookContentAssembler();
-            string content = bookExport.Export(targetChapter, itemId, scrollPosition,
+            string content = bookExport.Export(targetChapter, targetChapter.Id, itemId, scrollPosition,
                 isComboView, comboViewItems, currentBook.RootItem);
 
-            try { webView.NavigateToString(content); currentChapter = targetChapter; }
+            try 
+            {
+                webView.NavigateToString(content); currentChapter = targetChapter; 
+            }
             catch 
             {
                 if (targetChapter != currentBook.RootItem || IsShowingMore == false)
@@ -154,7 +180,7 @@ namespace ToratEmet.ViewModels
                 else if (IsShowingMore == null)
                 {
                     currentChapter = targetChapter.Children[0];
-                    content = bookExport.Export(currentChapter, itemId, scrollPosition, isComboView,
+                    content = bookExport.Export(currentChapter, currentChapter.Id, itemId, scrollPosition, isComboView,
                             comboViewItems, currentBook.RootItem);
                     WebViewCommands.WebViewNavigateToString(content, webView);
                 }
